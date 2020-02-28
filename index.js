@@ -61,6 +61,31 @@ if (process.env.NODE_ENV !== "production" && module.hot) {
     document.styleSheets[0].disabled = true;
 }
 
+const navbarScriptUrl = 'https://estadisticas.arte-consultores.com/navigation-bar-internal';
+function loadScript(dynamicScript) {
+    return new Promise((resolve, reject) => {
+        const scriptEle = document.createElement('script');
+        scriptEle.onload = resolve;
+        scriptEle.onerror = reject;
+        scriptEle.src = dynamicScript;
+        scriptEle.type = 'text/javascript';
+        scriptEle.async = false;
+        scriptEle.charset = 'utf-8';
+        document.getElementsByTagName('head')[0].appendChild(scriptEle);
+    })
+}
+loadScript(`${navbarScriptUrl}/js/metamac-navbar.js`)
+    .then(
+    _ => {
+        MetamacNavBar.loadNavbar({
+            element: 'metamac-navbar'
+        });
+    },
+    (err) => {
+        // TODO: preguntar qué hacer;
+        console.error('Error al obtener el navbar', err);
+    })
+        
 module.exports = terria.start({
     // If you don't want the user to be able to control catalog loading via the URL, remove the applicationUrl property below
     // as well as the call to "updateApplicationOnHashChange" further down.

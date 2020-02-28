@@ -1,9 +1,14 @@
 @import "~terriajs-variables";
 @import "~terriajs/lib/Sass/global/global";
 
+$istacNarvar: 70px;
+
 body {
   margin: 0;
   overflow: hidden;
+}
+h1 {
+  margin: 0;
 }
 
 :global {
@@ -11,6 +16,31 @@ body {
     .nationalmap-print-disclaimer {
       color: #000;
       display: block;
+    }
+  }
+
+  /* BEGIN TERRIAJS OVERRIDES */
+  .tjs-standard-user-interface__story-wrapper {
+    height: calc(100vh - #{$istacNarvar});
+    .tjs-standard-user-interface__ui,
+    .tjs-standard-user-interface__uiInner,
+    .tjs-standard-user-interface__map {
+      height: 100%;
+    }
+  }
+
+  .tjs-workbench-list__workbench-content {
+    height: calc(
+      100vh - #{$istacNarvar} - #{$workbench-header} - #{$logo-height}
+    );
+  }
+  /* END TERRIAJS OVERRIDES */
+
+  /* Navbar ISTAC */
+  #metamac-navbar {
+    height: $istacNarvar;
+    .navbar {
+      margin-bottom: 0;
     }
   }
 
