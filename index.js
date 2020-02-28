@@ -23,6 +23,10 @@ import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProvi
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
 
+/* Add es translation */
+import i18n from 'terriajs/lib/Models/i18n';
+import translationES from "./lib/Language/es/translation.json";
+i18n.addResourceBundle('es', 'translation', translationES);
 
 //import WebMapTileServiceCatalogItem from 'terriajs/lib/Models/WebMapTileServiceCatalogItem';
 //import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
