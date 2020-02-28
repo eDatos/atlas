@@ -1,10 +1,11 @@
 {
   "homeCamera": {
-    "north": -8,
-    "east": 158,
-    "south": -45,
-    "west": 109
+    "north": 30,
+    "east": -13,
+    "south": 27,
+    "west": -19
   },
+  "baseMapName": "Natural Earth II",
   "catalog": [
     {
       "name": "Example Datasets",
