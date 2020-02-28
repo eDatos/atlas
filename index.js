@@ -23,6 +23,10 @@ import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProvi
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
 
+
+//import WebMapTileServiceCatalogItem from 'terriajs/lib/Models/WebMapTileServiceCatalogItem';
+//import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
+
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
 // the code in the registerCatalogMembers function here instead.
@@ -86,7 +90,28 @@ module.exports = terria.start({
         var australiaBaseMaps = createAustraliaBaseMapOptions(terria);
         var globalBaseMaps = createGlobalBaseMapOptions(terria, terria.configParameters.bingMapsKey);
 
-        var allBaseMaps = australiaBaseMaps.concat(globalBaseMaps);
+        var aremiBaseMaps = [];
+        /*
+        var osmSimpleLight = new WebMapTileServiceCatalogItem(terria);
+        osmSimpleLight.name = 'ISTAC base';
+        osmSimpleLight.layer = 'Demographics_USA_Population_Density';
+        
+        // Issue: https://github.com/TerriaJS/terriajs/issues/2927
+        //osmSimpleLight.type = 'wmts';
+        //osmSimpleLight.metadataUrl = 'https://api.mapbox.com/styles/v1/istac/cjucn2je5190f1ft71y0c829a/wmts?access_token=pk.eyJ1IjoiaXN0YWMiLCJhIjoiY2p1Y21zenNiMG53MDQ0cGk1OGtzczl1MCJ9.Yp_T9Jf8_bHI2j0FsGXiKw';
+        osmSimpleLight.url = 'https://services.arcgisonline.com/arcgis/rest/services/Demographics/USA_Population_Density/MapServer/WMTS';
+        osmSimpleLight.format = "image/png";
+        
+        //osmSimpleLight.getFeatureInfoFormats = [];
+        
+        osmSimpleLight.opacity = 1.0;
+        aremiBaseMaps.push(new BaseMapViewModel({
+            image: 'images/terrarium.png',
+            catalogItem: osmSimpleLight,
+        }));
+
+        */
+        var allBaseMaps = aremiBaseMaps.concat(australiaBaseMaps).concat(globalBaseMaps);
         selectBaseMap(terria, allBaseMaps, 'Bing Maps Aerial with Labels', true);
 
         // Show a modal disclaimer before user can do anything else.

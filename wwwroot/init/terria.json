@@ -8,6 +8,21 @@
   "baseMapName": "Natural Earth II",
   "catalog": [
     {
+      "name": "My example Datasets",
+      "type": "group",
+      "preserveOrder": true,
+      "isOpen": true,
+      "items": [
+        {
+          "layers": "edatos:PMH_2017_GRID250",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/edatos/wms",
+          "type": "wms",
+          "name": "GRID 250",
+          "isShown": true
+        }
+      ]
+    },
+    {
       "name": "Example Datasets",
       "type": "group",
       "preserveOrder": true,
