@@ -1,0 +1,18 @@
+{
+    "baseMaps": [
+        {
+            "name": "Orto Express",
+            "url": "https://idecan1.grafcan.es/ServicioWMS/OrtoExpress_bat",
+            "layers": "WMS_OrtoExpress",
+            "format": "image/jpeg",
+            "image": "images/terrarium.png"
+        },
+        {
+            "name": "Callejero turístico",
+            "url": "https://idecan3.grafcan.es/ServicioWMS/MTI",
+            "layers": "WMS_MTI",
+            "format": "image/png",
+            "image": "images/terrarium.png"
+        }
+    ]
+}

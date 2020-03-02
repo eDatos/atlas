@@ -23,13 +23,16 @@ import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProvi
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
 
+/* BEGIN CUSTOM */
 /* Add es translation */
 import i18n from 'terriajs/lib/Models/i18n';
 import translationES from "./lib/Language/es/translation.json";
 i18n.addResourceBundle('es', 'translation', translationES);
 
-//import WebMapTileServiceCatalogItem from 'terriajs/lib/Models/WebMapTileServiceCatalogItem';
-//import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
+import WebMapServiceCatalogItem from 'terriajs/lib/Models/WebMapServiceCatalogItem';
+import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
+import customApplicationConfig from './application.json';
+/* END CUSTOM */
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
@@ -61,6 +64,7 @@ if (process.env.NODE_ENV !== "production" && module.hot) {
     document.styleSheets[0].disabled = true;
 }
 
+/* BEGIN CUSTOM */
 const navbarScriptUrl = 'https://estadisticas.arte-consultores.com/navigation-bar-internal';
 function loadScript(dynamicScript) {
     return new Promise((resolve, reject) => {
@@ -85,7 +89,8 @@ loadScript(`${navbarScriptUrl}/js/metamac-navbar.js`)
         // TODO: preguntar qué hacer;
         console.error('Error al obtener el navbar', err);
     })
-        
+/* END CUSTOM */
+
 module.exports = terria.start({
     // If you don't want the user to be able to control catalog loading via the URL, remove the applicationUrl property below
     // as well as the call to "updateApplicationOnHashChange" further down.
@@ -119,28 +124,24 @@ module.exports = terria.start({
         var australiaBaseMaps = createAustraliaBaseMapOptions(terria);
         var globalBaseMaps = createGlobalBaseMapOptions(terria, terria.configParameters.bingMapsKey);
 
-        var aremiBaseMaps = [];
-        /*
-        var osmSimpleLight = new WebMapTileServiceCatalogItem(terria);
-        osmSimpleLight.name = 'ISTAC base';
-        osmSimpleLight.layer = 'Demographics_USA_Population_Density';
-        
-        // Issue: https://github.com/TerriaJS/terriajs/issues/2927
-        //osmSimpleLight.type = 'wmts';
-        //osmSimpleLight.metadataUrl = 'https://api.mapbox.com/styles/v1/istac/cjucn2je5190f1ft71y0c829a/wmts?access_token=pk.eyJ1IjoiaXN0YWMiLCJhIjoiY2p1Y21zenNiMG53MDQ0cGk1OGtzczl1MCJ9.Yp_T9Jf8_bHI2j0FsGXiKw';
-        osmSimpleLight.url = 'https://services.arcgisonline.com/arcgis/rest/services/Demographics/USA_Population_Density/MapServer/WMTS';
-        osmSimpleLight.format = "image/png";
-        
-        //osmSimpleLight.getFeatureInfoFormats = [];
-        
-        osmSimpleLight.opacity = 1.0;
-        aremiBaseMaps.push(new BaseMapViewModel({
-            image: 'images/terrarium.png',
-            catalogItem: osmSimpleLight,
-        }));
+        /* BEGIN CUSTOM */
+        var customBaseMaps = customApplicationConfig.baseMaps.map(function(baseMapconfig) {
+            var customBaseMap = new WebMapServiceCatalogItem(terria);
+            customBaseMap.name = baseMapconfig.name;
+            customBaseMap.layers = baseMapconfig.layers;
+            customBaseMap.url = baseMapconfig.url;
+            customBaseMap.opacity = baseMapconfig.opacity || 1.0;
+            customBaseMap.parameters = {
+                format: baseMapconfig.format || 'image/png'
+            }
+            return new BaseMapViewModel({
+                image: baseMapconfig.image,
+                catalogItem: customBaseMap,
+            });
+        });
 
-        */
-        var allBaseMaps = aremiBaseMaps.concat(australiaBaseMaps).concat(globalBaseMaps);
+        var allBaseMaps = customBaseMaps.concat(australiaBaseMaps).concat(globalBaseMaps);
+        /* END CUSTOM */
         selectBaseMap(terria, allBaseMaps, 'Bing Maps Aerial with Labels', true);
 
         // Show a modal disclaimer before user can do anything else.

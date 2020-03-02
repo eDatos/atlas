@@ -34,7 +34,7 @@ export default function UserInterface(props) {
   return (
     <StandardUserInterface {...props} version={version}>
       <Menu>
-        <OtherButton />
+        {/* BEGIN CUSTOM <OtherButton />*/}
         <RelatedMaps viewState={props.viewState} />
         <MenuItem caption="About" href="about.html" key="about-link" />
       </Menu>
