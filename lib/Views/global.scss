@@ -39,12 +39,51 @@ h1 {
 }
 
 :global {
-  @media print {
-    .nationalmap-print-disclaimer {
-      color: #000;
-      display: block;
+  /* BEGIN TERRIAJS OVERRIDES */
+  .tjs-standard-user-interface__uiInner {
+    &
+      > .tjs-standard-user-interface__showWorkbenchButton
+      .tjs-full_screen_button__full-screen
+      button {
+      border-radius: 16px;
     }
   }
+
+  .tjs-menu-bar__menu {
+    margin-right: 5px;
+  }
+
+  .tjs-menu-bar__menu-item {
+    position: relative;
+    display: block;
+    float: left;
+
+    // Prettier in flex-supported-browsers
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 1px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:first-child > div > button,
+    &:first-child > div > a,
+    &:first-child > button,
+    &:first-child > a {
+      border-radius: 16px 0 0 16px;
+    }
+    &:last-child > div > button,
+    &:last-child > div > a,
+    &:last-child > button,
+    &:last-child > a {
+      border-radius: 0 16px 16px 0;
+    }
+  }
+  /* END TERRIAJS OVERRIDES */
 
   .app-header {
     height: $appHeaderHeight;

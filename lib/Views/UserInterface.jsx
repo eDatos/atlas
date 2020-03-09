@@ -36,7 +36,6 @@ export default function UserInterface(props) {
       <Menu>
         {/* BEGIN CUSTOM <OtherButton />*/}
         <RelatedMaps viewState={props.viewState} />
-        <MenuItem caption="About" href="about.html" key="about-link" />
       </Menu>
       <Nav>
         <MeasureTool terria={props.viewState.terria} key="measure-tool" />
