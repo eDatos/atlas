@@ -65,30 +65,24 @@ if (process.env.NODE_ENV !== "production" && module.hot) {
 }
 
 /* BEGIN CUSTOM */
-const navbarScriptUrl = 'https://estadisticas.arte-consultores.com/navigation-bar-internal';
-function loadScript(dynamicScript) {
-    return new Promise((resolve, reject) => {
-        const scriptEle = document.createElement('script');
-        scriptEle.onload = resolve;
-        scriptEle.onerror = reject;
-        scriptEle.src = dynamicScript;
-        scriptEle.type = 'text/javascript';
-        scriptEle.async = false;
-        scriptEle.charset = 'utf-8';
-        document.getElementsByTagName('head')[0].appendChild(scriptEle);
-    })
-}
-loadScript(`${navbarScriptUrl}/js/metamac-navbar.js`)
-    .then(
-    _ => {
-        MetamacNavBar.loadNavbar({
-            element: 'metamac-navbar'
-        });
-    },
-    (err) => {
-        // TODO: preguntar qué hacer;
-        console.error('Error al obtener el navbar', err);
-    })
+// TODO: cargar de forma dinámica
+fetch('https://estadisticas.arte-consultores.com/cmetadata/v1.0/properties/sie.style.header.url?_type=json')
+.then(res => res.json())
+.then(jsonResponse => fetch(jsonResponse.value))
+.then(res => res.text())
+.then(resText => {
+    document.querySelector('#istac-navbar-container').innerHTML = resText;
+})
+.catch(console.error);
+
+fetch('https://estadisticas.arte-consultores.com/cmetadata/v1.0/properties/sie.style.footer.url?_type=json')
+.then(res => res.json())
+.then(jsonResponse => fetch(jsonResponse.value))
+.then(res => res.text())
+.then(resText => {
+    document.querySelector('#istac-footer-container').innerHTML = resText;
+})
+.catch(console.error);
 /* END CUSTOM */
 
 module.exports = terria.start({
