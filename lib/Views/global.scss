@@ -1,7 +1,7 @@
 @import "~terriajs-variables";
 @import "~terriajs/lib/Sass/global/global";
 
-$istacNavbarHeight: 70px;
+$istacNavbarHeight: 50px;
 $appNavbarHeight: 55px;
 $appFooterHeight: 47px;
 $appHeaderHeight: $istacNavbarHeight + $appNavbarHeight;
@@ -14,6 +14,30 @@ h1 {
   margin: 0;
 }
 
+@mixin calc-height-content($appHeaderHeight) {
+  .app-header {
+    height: $appHeaderHeight;
+  }
+
+  /* BEGIN TERRIAJS OVERRIDES */
+  .tjs-standard-user-interface__story-wrapper {
+    height: calc(100vh - #{$appHeaderHeight + $appFooterHeight});
+  }
+
+  .tjs-standard-user-interface__showWorkbenchButton {
+    top: $appHeaderHeight + 16px;
+  }
+
+  .tjs-side-panel__workBench {
+    .tjs-workbench-list__workbench-content {
+      height: calc(
+        100vh - #{$appHeaderHeight + $workbench-header + $appFooterHeight + 10}
+      );
+    }
+  }
+  /* END TERRIAJS OVERRIDES */
+}
+
 :global {
   @media print {
     .nationalmap-print-disclaimer {
@@ -22,35 +46,9 @@ h1 {
     }
   }
 
-  /* BEGIN TERRIAJS OVERRIDES */
-  .tjs-standard-user-interface__story-wrapper {
-    height: calc(100vh - #{$appHeaderHeight + $appFooterHeight});
-    .tjs-standard-user-interface__ui,
-    .tjs-standard-user-interface__uiInner,
-    .tjs-standard-user-interface__map {
-      height: 100%;
-    }
-  }
-
-  .tjs-standard-user-interface__showWorkbenchButton {
-    top: $appHeaderHeight + 16px;
-  }
-
-  .tjs-branding__branding {
-    display: none;
-  }
-  .tjs-side-panel__workBench {
-    padding-top: 10px; // se oculta branding y se añade un padding-top
-    .tjs-workbench-list__workbench-content {
-      height: calc(
-        100vh - #{$appHeaderHeight + $workbench-header + $appFooterHeight + 10}
-      );
-    }
-  }
-  /* END TERRIAJS OVERRIDES */
-
   .app-header {
     height: $appHeaderHeight;
+    display: none;
     .app-navbar {
       font-size: 14px;
       height: $appNavbarHeight;
@@ -85,6 +83,9 @@ h1 {
       }
     }
   }
+  .istac-footer-container {
+    display: none;
+  }
 
   /* BEGIN ISTAC NAVBAR OVERRIDES */
   body {
@@ -98,5 +99,39 @@ h1 {
   /* END ISTAC NAVBAR OVERRIDES */
 
   @media (min-width: 768px) {
+    $istacNavbarHeight: 50px;
+    $appHeaderHeight: $istacNavbarHeight + $appNavbarHeight;
+
+    .app-header,
+    .istac-footer-container {
+      display: block;
+    }
+
+    /* BEGIN TERRIAJS OVERRIDES */
+    .tjs-standard-user-interface__story-wrapper {
+      .tjs-standard-user-interface__ui,
+      .tjs-standard-user-interface__uiInner,
+      .tjs-standard-user-interface__map {
+        height: 100%;
+      }
+    }
+
+    .tjs-branding__branding {
+      display: none;
+    }
+
+    .tjs-side-panel__workBench {
+      padding-top: 10px; // se oculta branding y se añade un padding-top
+    }
+    /* END TERRIAJS OVERRIDES */
+
+    @include calc-height-content($appHeaderHeight);
+  }
+
+  @media (min-width: 1200px) {
+    $istacNavbarHeight: 70px;
+    $appHeaderHeight: $istacNavbarHeight + $appNavbarHeight;
+
+    @include calc-height-content($appHeaderHeight);
   }
 }
