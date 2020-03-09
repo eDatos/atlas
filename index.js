@@ -31,7 +31,7 @@ i18n.addResourceBundle('es', 'translation', translationES);
 
 import WebMapServiceCatalogItem from 'terriajs/lib/Models/WebMapServiceCatalogItem';
 import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
-import customApplicationConfig from './application.json';
+import applicationConfig from './application.json';
 /* END CUSTOM */
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
@@ -65,24 +65,27 @@ if (process.env.NODE_ENV !== "production" && module.hot) {
 }
 
 /* BEGIN CUSTOM */
-// TODO: cargar de forma dinámica
-fetch('https://estadisticas.arte-consultores.com/cmetadata/v1.0/properties/sie.style.header.url?_type=json')
-.then(res => res.json())
-.then(jsonResponse => fetch(jsonResponse.value))
-.then(res => res.text())
-.then(resText => {
-    document.querySelector('#istac-navbar-container').innerHTML = resText;
-})
-.catch(console.error);
+function getMetadataValue(metadataValueKey) {
+    var metadataEndpoint = applicationConfig.metadata.endpoint;
+    return fetch(`${metadataEndpoint}/properties/${metadataValueKey}?_type=json`)
+        .then(res => res.json())
+        .then(jsonResponse => jsonResponse.value);
+}
+getMetadataValue(applicationConfig.metadata.navbarPathKey)
+    .then(value => fetch(value))
+    .then(res => res.text())
+    .then(resText => {
+        document.querySelector('#istac-navbar-container').innerHTML = resText;
+    })
+    .catch(console.error);
 
-fetch('https://estadisticas.arte-consultores.com/cmetadata/v1.0/properties/sie.style.footer.url?_type=json')
-.then(res => res.json())
-.then(jsonResponse => fetch(jsonResponse.value))
-.then(res => res.text())
-.then(resText => {
-    document.querySelector('#istac-footer-container').innerHTML = resText;
-})
-.catch(console.error);
+getMetadataValue(applicationConfig.metadata.footerPathKey)
+    .then(value => fetch(value))
+    .then(res => res.text())
+    .then(resText => {
+        document.querySelector('#istac-footer-container').innerHTML = resText;
+    })
+    .catch(console.error);
 /* END CUSTOM */
 
 module.exports = terria.start({
@@ -119,7 +122,7 @@ module.exports = terria.start({
         var globalBaseMaps = createGlobalBaseMapOptions(terria, terria.configParameters.bingMapsKey);
 
         /* BEGIN CUSTOM */
-        var customBaseMaps = customApplicationConfig.baseMaps.map(function(baseMapconfig) {
+        var customBaseMaps = applicationConfig.baseMaps.map(function(baseMapconfig) {
             var customBaseMap = new WebMapServiceCatalogItem(terria);
             customBaseMap.name = baseMapconfig.name;
             customBaseMap.layers = baseMapconfig.layers;
