@@ -26,8 +26,11 @@ import render from './lib/Views/render';
 /* BEGIN CUSTOM */
 /* Add es translation */
 import i18n from 'terriajs/lib/Models/i18n';
-import translationES from "./lib/Language/es/translation.json";
-i18n.addResourceBundle('es', 'translation', translationES);
+import translationES from "./lib/Language/es.json";
+import translationEN  from './lib/Language/en.json';
+i18n.addResourceBundle('es', 'translation', translationES.translation);
+i18n.addResourceBundle('es', 'app', translationES.app);
+i18n.addResourceBundle('en', 'app', translationEN.app);
 
 import WebMapServiceCatalogItem from 'terriajs/lib/Models/WebMapServiceCatalogItem';
 import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
