@@ -10,7 +10,7 @@ stages:
 
 build:
     stage: build
-    tags: ["docker"]
+    tags: ["build"]
     script:
         - npm install
         - npm run gulp -- release
