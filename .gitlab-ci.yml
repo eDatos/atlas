@@ -16,6 +16,9 @@ build:
         - npm run gulp -- release
     only:
         - EDATOS-3126_MapasTematicosBasadoTerria
+    artifacts:
+        paths:
+            - wwwroot/build
 
 deploy:
     stage: deploy
