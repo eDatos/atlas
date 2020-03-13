@@ -15,7 +15,7 @@ build:
         - npm install
         - npm run gulp -- release
     only:
-        - EDATOS-3126_MapasTematicosBasadoTerria
+        - master
     artifacts:
         paths:
             - wwwroot/build
@@ -29,4 +29,4 @@ deploy:
         - scp -r ./wwwroot deploy@estadisticas.arte-consultores.com:$TRANSFER_PATH
         - ssh deploy@estadisticas.arte-consultores.com "sudo rm -Rf $DEPLOY_TARGET_PATH/* && sudo mv $TRANSFER_PATH/* $DEPLOY_TARGET_PATH && sudo chown -R www-data:www-data $DEPLOY_TARGET_PATH && rm -rf $TRANSFER_PATH"
     only:
-        - EDATOS-3126_MapasTematicosBasadoTerria
+        - master
