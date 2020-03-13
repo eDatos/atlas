@@ -145,8 +145,41 @@ module.exports = terria.start({
                 catalogItem: customBaseMap,
             });
         });
+        
+        var allBaseMaps = customBaseMaps.concat(globalBaseMaps);
+        var excludedBasesMapNames = ['Australian Topography', 'Natural Earth II', 'NASA Black Marble'];
+        var baseMapsCustomData = [
+            {
+                name: 'Bing Maps Aerial with Labels',
+                image: 'images/bing-maps-aerial-labels.png'
+            },
+            {
+                name: 'Bing Maps Aerial',
+                image: 'images/bing-maps-aerial.png'
+            },
+            {
+                name: 'Bing Maps Roads',
+                image: 'images/bing-maps-roads.png'
+            },
+            {
+                name: 'Positron (Light)',
+                image: 'images/positron-light.png'
+            },
+            {
+                name: 'Dark Matter',
+                image: 'images/dark-matter.png'
+            }
+        ]
+        allBaseMaps = allBaseMaps
+            .filter(baseMap => !excludedBasesMapNames.some(excludedBasesMapName => baseMap.catalogItem.name == excludedBasesMapName))
+            .map(baseMap => {
+                var data = baseMapsCustomData.find(baseMapData => baseMapData.name == baseMap.catalogItem.name);
+                if (data && data.image) {
+                    baseMap.image = data.image;
+                }
+                return baseMap;
+            });
 
-        var allBaseMaps = customBaseMaps.concat(australiaBaseMaps).concat(globalBaseMaps);
         /* END CUSTOM */
         selectBaseMap(terria, allBaseMaps, 'Bing Maps Aerial with Labels', true);
 
