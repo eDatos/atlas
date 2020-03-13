@@ -1,0 +1,8 @@
+{
+    "metadata": {
+        "endpoint": "https://estadisticas.arte-consultores.com/cmetadata/v1.0",
+        "navbarPathKey": "sie.style.header.url",
+        "footerPathKey": "sie.style.footer.url"
+    },
+    "baseMaps": []
+}

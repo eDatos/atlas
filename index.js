@@ -23,6 +23,26 @@ import GnafSearchProviderViewModel from 'terriajs/lib/ViewModels/GnafSearchProvi
 import defined from 'terriajs-cesium/Source/Core/defined';
 import render from './lib/Views/render';
 
+/* BEGIN CUSTOM */
+/* Add es translation */
+import i18n from 'terriajs/lib/Models/i18n';
+import translationES from "./lib/Language/es.json";
+import translationEN  from './lib/Language/en.json';
+
+const defaultLanguage = 'es';
+i18n.init({
+    fallbackLng: defaultLanguage,
+    lng: defaultLanguage
+});
+i18n.addResourceBundle('es', 'translation', translationES.translation);
+i18n.addResourceBundle('es', 'app', translationES.app);
+i18n.addResourceBundle('en', 'app', translationEN.app);
+
+import WebMapServiceCatalogItem from 'terriajs/lib/Models/WebMapServiceCatalogItem';
+import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
+import applicationConfig from './application.json';
+/* END CUSTOM */
+
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
 // the code in the registerCatalogMembers function here instead.
@@ -52,6 +72,30 @@ if (process.env.NODE_ENV === "development") {
 if (process.env.NODE_ENV !== "production" && module.hot) {
     document.styleSheets[0].disabled = true;
 }
+
+/* BEGIN CUSTOM */
+function getMetadataValue(metadataValueKey) {
+    var metadataEndpoint = applicationConfig.metadata.endpoint;
+    return fetch(`${metadataEndpoint}/properties/${metadataValueKey}?_type=json`)
+        .then(res => res.json())
+        .then(jsonResponse => jsonResponse.value);
+}
+getMetadataValue(applicationConfig.metadata.navbarPathKey)
+    .then(value => fetch(value))
+    .then(res => res.text())
+    .then(resText => {
+        document.querySelector('#istac-navbar-container').innerHTML = resText;
+    })
+    .catch(console.error);
+
+getMetadataValue(applicationConfig.metadata.footerPathKey)
+    .then(value => fetch(value))
+    .then(res => res.text())
+    .then(resText => {
+        document.querySelector('#istac-footer-container').innerHTML = resText;
+    })
+    .catch(console.error);
+/* END CUSTOM */
 
 module.exports = terria.start({
     // If you don't want the user to be able to control catalog loading via the URL, remove the applicationUrl property below
@@ -86,7 +130,57 @@ module.exports = terria.start({
         var australiaBaseMaps = createAustraliaBaseMapOptions(terria);
         var globalBaseMaps = createGlobalBaseMapOptions(terria, terria.configParameters.bingMapsKey);
 
-        var allBaseMaps = australiaBaseMaps.concat(globalBaseMaps);
+        /* BEGIN CUSTOM */
+        var customBaseMaps = applicationConfig.baseMaps.map(function(baseMapconfig) {
+            var customBaseMap = new WebMapServiceCatalogItem(terria);
+            customBaseMap.name = baseMapconfig.name;
+            customBaseMap.layers = baseMapconfig.layers;
+            customBaseMap.url = baseMapconfig.url;
+            customBaseMap.opacity = baseMapconfig.opacity || 1.0;
+            customBaseMap.parameters = {
+                format: baseMapconfig.format || 'image/png'
+            }
+            return new BaseMapViewModel({
+                image: baseMapconfig.image,
+                catalogItem: customBaseMap,
+            });
+        });
+        
+        var allBaseMaps = customBaseMaps.concat(globalBaseMaps);
+        var excludedBasesMapNames = ['Australian Topography', 'Natural Earth II', 'NASA Black Marble'];
+        var baseMapsCustomData = [
+            {
+                name: 'Bing Maps Aerial with Labels',
+                image: 'images/bing-maps-aerial-labels.png'
+            },
+            {
+                name: 'Bing Maps Aerial',
+                image: 'images/bing-maps-aerial.png'
+            },
+            {
+                name: 'Bing Maps Roads',
+                image: 'images/bing-maps-roads.png'
+            },
+            {
+                name: 'Positron (Light)',
+                image: 'images/positron-light.png'
+            },
+            {
+                name: 'Dark Matter',
+                image: 'images/dark-matter.png'
+            }
+        ]
+        allBaseMaps = allBaseMaps
+            .filter(baseMap => !excludedBasesMapNames.some(excludedBasesMapName => baseMap.catalogItem.name == excludedBasesMapName))
+            .map(baseMap => {
+                var data = baseMapsCustomData.find(baseMapData => baseMapData.name == baseMap.catalogItem.name);
+                if (data && data.image) {
+                    baseMap.image = data.image;
+                }
+                return baseMap;
+            });
+
+        /* END CUSTOM */
         selectBaseMap(terria, allBaseMaps, 'Bing Maps Aerial with Labels', true);
 
         // Show a modal disclaimer before user can do anything else.

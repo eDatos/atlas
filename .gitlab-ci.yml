@@ -1,0 +1,32 @@
+image: node:8.16.0
+
+cache:
+    paths:
+        - node_modules/
+
+stages:
+    - build
+    - deploy
+
+build:
+    stage: build
+    tags: ["build"]
+    script:
+        - npm install
+        - npm run gulp -- release
+    only:
+        - EDATOS-3126_MapasTematicosBasadoTerria
+    artifacts:
+        paths:
+            - wwwroot/build
+
+deploy:
+    stage: deploy
+    variables:
+        TRANSFER_PATH: ~/estadisticas/tmp/terria
+        DEPLOY_TARGET_PATH: /servers/estadisticas/terria
+    script:
+        - scp -r ./wwwroot deploy@estadisticas.arte-consultores.com:$TRANSFER_PATH
+        - ssh deploy@estadisticas.arte-consultores.com "sudo rm -Rf $DEPLOY_TARGET_PATH/* && sudo mv $TRANSFER_PATH/* $DEPLOY_TARGET_PATH && sudo chown -R www-data:www-data $DEPLOY_TARGET_PATH && rm -rf $TRANSFER_PATH"
+    only:
+        - EDATOS-3126_MapasTematicosBasadoTerria

@@ -1,155 +1,245 @@
 @import "~terriajs-variables";
 @import "~terriajs/lib/Sass/global/global";
 
+$istacNavbarHeight: 50px;
+$appNavbarHeight: 55px;
+$appFooterHeight: 47px;
+$appHeaderHeight: $istacNavbarHeight + $appNavbarHeight;
+
 body {
   margin: 0;
   overflow: hidden;
 }
+h1 {
+  margin: 0;
+}
+
+@mixin calc-height-content($appHeaderHeight) {
+  .app-header {
+    height: $appHeaderHeight;
+  }
+
+  /* BEGIN TERRIAJS OVERRIDES */
+  .tjs-standard-user-interface__story-wrapper {
+    height: calc(100vh - #{$appHeaderHeight + $appFooterHeight});
+  }
+
+  .tjs-standard-user-interface__showWorkbenchButton {
+    top: $appHeaderHeight + 16px;
+  }
+
+  .tjs-side-panel__workBench {
+    .tjs-workbench-list__workbench-content {
+      height: calc(
+        100vh - #{$appHeaderHeight + $workbench-header + $appFooterHeight + 10}
+      );
+    }
+  }
+  /* END TERRIAJS OVERRIDES */
+}
 
 :global {
-  @media print {
-    .nationalmap-print-disclaimer {
-      color: #000;
-      display: block;
+  /* BEGIN TERRIAJS OVERRIDES */
+  .tjs-standard-user-interface__uiInner {
+    &
+      > .tjs-standard-user-interface__showWorkbenchButton
+      .tjs-full_screen_button__full-screen
+      button {
+      border-radius: 16px;
     }
   }
 
-  // To customise the look of your Terria Map, uncomment this section and make changes to your heart's content
-  // You will also want to uncomment and change values in lib/Styles/variables.scss
-  /*
-    // Import any custom fonts here
-    //@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700);
+  .tjs-menu-bar__menu {
+    margin-right: 5px;
+  }
 
-    html {
-        font-family: $font-base;
+  .tjs-menu-bar__menu-item {
+    position: relative;
+    display: block;
+    float: left;
+
+    // Prettier in flex-supported-browsers
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 1px;
+
+    &:last-child {
+      margin-right: 0;
     }
 
-    // Logo area in top left
+    &:first-child > div > button,
+    &:first-child > div > a,
+    &:first-child > button,
+    &:first-child > a {
+      border-radius: 16px 0 0 16px;
+    }
+    &:last-child > div > button,
+    &:last-child > div > a,
+    &:last-child > button,
+    &:last-child > a {
+      border-radius: 0 16px 16px 0;
+    }
+  }
+  /* END TERRIAJS OVERRIDES */
+
+  .app-header {
+    height: $appHeaderHeight;
+    display: none;
+    .app-navbar {
+      font-size: 14px;
+      height: $appNavbarHeight;
+      padding: 0 36px;
+      border-bottom: 2px solid #59656e;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      .app-title {
+        color: #59656e;
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 0;
+        .title-icon {
+          border-radius: 50%;
+          border: 1px solid;
+          border-color: inherit;
+          font-size: 0.8em;
+          width: 20px;
+          height: 20px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 5px;
+          vertical-align: middle;
+        }
+        .app-title-text {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .istac-footer-container {
+    display: none;
+  }
+
+  /* BEGIN ISTAC NAVBAR OVERRIDES */
+  body {
+    padding-top: 0px !important;
+  }
+  #istac-navbar-container {
+    .istac-navbar .fixed-top {
+      position: relative;
+    }
+  }
+  /* END ISTAC NAVBAR OVERRIDES */
+
+  @media (min-width: 768px) {
+    $istacNavbarHeight: 50px;
+    $appHeaderHeight: $istacNavbarHeight + $appNavbarHeight;
+
+    .app-header,
+    .istac-footer-container {
+      display: block;
+    }
+
+    /* BEGIN TERRIAJS OVERRIDES */
+    .tjs-standard-user-interface__story-wrapper {
+      .tjs-standard-user-interface__ui,
+      .tjs-standard-user-interface__uiInner,
+      .tjs-standard-user-interface__map {
+        height: 100%;
+      }
+    }
+
     .tjs-branding__branding {
-        a:first-child, a:last-child {
-            display: none;
-
-            @media screen and (min-width: $sm) {
-                display: inline;
-            }
-        }
-        // Different font size for the branding
-        font-weight: 300;
-        color: white;
-        font-size: 26px;
-        padding-top:2px;
-        padding-left:6px;
-
-        // To make the logo clickable, it should be instead set in config.json, at "brandBarElements"
-        // background:$dark url(http://www.public-domain-image.com/backgrounds/slides/abstract-waves-on-a-blue-background.jpg);
-        // background-position: top right;
-        // background-size: 100%;
-        // background-repeat: no-repeat;
-
+      display: none;
     }
-    // Background of whole left panel
-    .tjs-standard-user-interface__sidePanel {
-        background:$dark-darker;
-    }
-    // Individual sections within the left panel
+
     .tjs-side-panel__workBench {
-        font-family:$font-base;
-        font-weight:400;
-        font-size:18px;
-        background:$dark-darker;
+      padding-top: 10px; // se oculta branding y se añade un padding-top
     }
+    /* END TERRIAJS OVERRIDES */
 
-    // All kinds of buttons in various screens
-    .tjs-_buttons__btn {
-        &-primary { 
-            font-family: $font-base; 
-        }
-        &:hover { 
-            color: $color-primary;             
-        }
-    }
+    @include calc-height-content($appHeaderHeight);
+  }
 
-    // Buttons like "Share" within the map area.
-    .tjs-_buttons__btn--map {
-        background: $dark;
-        &:focus, &:hover { color: white; }
-    }
+  @media (min-width: 1200px) {
+    $istacNavbarHeight: 70px;
+    $appHeaderHeight: $istacNavbarHeight + $appNavbarHeight;
 
-    // Lat/lon buttons
-    .tjs-legend__locationBar, .tjs-legend__distanceLegend {
-        
-        background:$dark;
-        color:white;
-        &:hover,&:focus { background: $dark; color: white; }
-    
-    }
+    @include calc-height-content($appHeaderHeight);
+  }
 
-    // Progress bar while datasets are loading
-    .tjs-progress-bar__progress-bar {
-        background: $color-primary;
-    }
-
-    // Flatten and simplify display of timeline controls
-    .tjs-timeline-controls__timeline__control {
-        background:$dark-lighter;
-        border:none;
-    }
-
-    .tjs-timeline__text-cell {
-        font-family: $font-base; 
-    }
-
-    .tjs-timeline__timeline {
-        background:$dark-lighter;
-    }
-
-    .cesium-timeline-bar {
-        background:$dark-with-overlay;
-    }
-
-    // Feature info table
-    .tjs-feature-info-section__content {
-        h1 {
-            color: $color-primary;
-        }
-        table th {
-            // font-family: $font-base; // if you don't want monospaced
-            font-weight:200; // not bold
-            padding-right:0.5em;
-        }
-
-        table td {
-            border:none;
-            // font-family: $font-base; // if you don't want monospaced
-            font-weight:normal; // not bold
-            color:hsl(0,0%,90%);
-
-        }
-        a {
-            color:$color-secondary;
-        }
-    }
-
-    // The Data Catalog ("Add Data") page
-      // expandable catalog groups
-    .tjs-data-catalog-group__btn--catalog {
-        &:hover { background: $color-secondary; color: white; }
-        &:focus { background: $color-primary; color: white;}
-    }
-      // The currently selected item in the list
-    .tjs-data-catalog-item__btn-catalog-item--is-previewed {
-        ,&:focus {color: $color-primary; }
-    }
-      // The tabs at the top 
-    .tjs-tabs__btn--tab {    
-        font-family:$font-base
-    }
-
-    .tjs-tabs__btn--selected {
-        color:$color-primary-dark;
-    }
-    .tjs-tabs__btn--tab:hover {    
-        color:$color-secondary;
-    }
-    */
+  /* Begin Language selector */
+  .dropdown-language {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .dropdown-language .dropwdown-toggle {
+    display: inline-block;
+    background-color: white;
+    cursor: pointer;
+    border: 0;
+    box-shadow: none;
+  }
+  .dropdown-language .dropwdown-toggle:after {
+    content: "";
+    border: solid #222;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+    margin-left: 6px;
+  }
+  .dropdown-language.active .dropwdown-toggle:after {
+    transform: rotate(-135deg);
+  }
+  .dropdown-language .languages-list {
+    position: absolute;
+    max-width: 200px;
+    background-color: white;
+    top: 100%;
+    right: 0;
+    border: 1px solid #dadada;
+    display: none;
+    padding-left: 0;
+    list-style: none;
+    z-index: 999;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .dropdown-language.active .languages-list {
+    display: block;
+  }
+  .dropdown-language .language-item {
+    margin: 10px 15px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .dropdown-language .language-flag {
+    padding-left: 30px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+  }
+  .dropdown-language .dropwdown-toggle.language-flag {
+    padding-left: 25px;
+  }
+  .language-flag {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAA8CAYAAABmdppWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOZSURBVHgB7ZhraBRXFMf/53Z2t9km7dJH+tSuYtwNhfrIl7a00NgWTZHaLjSxKS3xQ2sUDGnpAxE18QmKaHwgflE/iMEHGlB8o4IKEqImqBg1uKuiEjWYxESz2WSO567ZdTXJbpIdv+0PZu6cOzP/OXPuvefOHUJfuEtdcAQng8ypYo0H6O1jN04TAXfFrulSVMm2lv3fPbjW8uKt1EvMU/wrFC0F87DY6ur0e8FYWzns/jdzP587clHJzn4EmeCdsUIO/kpz2PA4GHruOXxpPfphtWylRMTaMKLV3hmrZF+iD5f960PZ2r1oam6Pnr5fdaSzH8Hi5pPnmqRc8MxDz/RpINo44TMP8vNyUDApB6fr/DhxpgFLNhwIXyIxRDyI2ff147rdhFHT3oHhqJY6tz5RMftnlPw+AY1ND5E1cR4etneEb/AXjQ/FEzQyXrv+0cxCrwHD/m1ETKNeUShdsj3saUdMHN3//2FDfEbJVkDSqvvkxfMitQ67gWBnl0SAkO50RD08k9nWnEAQZjC0zRCxMbGVWkzDzFExTWvNBRcSwt+TaZot0t6JXgeKMQC4ywhev2UwU0LBgaC7Ih11jr0lfecDWIBE6bbxxlc51bb0tEmwALOjc48OfiFbR750cHbdXLvlbHdr+8dIAttbLv+H0wtGh4fesfRPp8JUlRgiLO9JIF/uo9qqaLZpKFuz/PVx2bMwBB5daFjtnlP8X+8nMVfw4CmP1eiVYANl63z3D51abIZCbsRB2Yybmb7cWcP/+fNgXEFNDXKcbWmhKd2gPInNNzKsM3sCdUcRjnM3H77XMboyHzu6kSJFihQpUrwk+pykzsHtcsL+g3xL/STmWPR84RK4VorbJnhHNq5uHpDgFWT9YkLp5cX7iE+AYZa/KEzPi3kqzJ6lxUCRabbcg/qyiK0iB/XIWjBYMY1M1/PFkUXPHiBcgrdI4rMJSSDxLsxGfSU99c7jR8zSYoiCjeehhlPryi+KgtdCSXkXwf6e+s3ImJxWkMFOWALRRAVWw2AVjC+llfkTWAa7FSxGBCkAy+CLSv4r1MIqTGowmra17eJG80dYgGOkrYp0ZnkV9noZk+8iOQJeXB6hxiEg62D1N5JEZx5dhltZxuBWKSowdBZG0li024i7pToVYfAsk3vnRYxeCbYn88xH4mRxR66b6cGVqthK6u9qLSzjcoqk+xHieeQ3QkC2kyJ0qA5jtva1TnkC+sS0P0er10cAAAAASUVORK5CYII=");
+  }
+  .language-flag.en {
+    background-position: none;
+  }
+  .language-flag.es {
+    background-position: 0 -40px;
+  }
+  /* End Language selector */
 }

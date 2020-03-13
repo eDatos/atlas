@@ -11,6 +11,7 @@ import RelatedMaps from "./RelatedMaps";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
+import OtherButton from "./OtherButton";
 
 import "./global.scss";
 
@@ -33,8 +34,8 @@ export default function UserInterface(props) {
   return (
     <StandardUserInterface {...props} version={version}>
       <Menu>
+        {/* BEGIN CUSTOM <OtherButton />*/}
         <RelatedMaps viewState={props.viewState} />
-        <MenuItem caption="About" href="about.html" key="about-link" />
       </Menu>
       <Nav>
         <MeasureTool terria={props.viewState.terria} key="measure-tool" />
