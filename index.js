@@ -28,6 +28,12 @@ import render from './lib/Views/render';
 import i18n from 'terriajs/lib/Models/i18n';
 import translationES from "./lib/Language/es.json";
 import translationEN  from './lib/Language/en.json';
+
+const defaultLanguage = 'es';
+i18n.init({
+    fallbackLng: defaultLanguage,
+    lng: defaultLanguage
+});
 i18n.addResourceBundle('es', 'translation', translationES.translation);
 i18n.addResourceBundle('es', 'app', translationES.app);
 i18n.addResourceBundle('en', 'app', translationEN.app);
