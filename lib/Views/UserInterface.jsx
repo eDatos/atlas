@@ -11,7 +11,6 @@ import RelatedMaps from "./RelatedMaps";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
 import version from "../../version";
-import OtherButton from "./OtherButton";
 
 import "./global.scss";
 

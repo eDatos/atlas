@@ -26,17 +26,18 @@ import render from './lib/Views/render';
 /* BEGIN CUSTOM */
 /* Add es translation */
 import i18n from 'terriajs/lib/Models/i18n';
-import translationES from "./lib/Language/es.json";
-import translationEN  from './lib/Language/en.json';
+import translationES from "./lib/Language/es/translation.json";
+import translationAppES from "./lib/Language/es/app.json";
+import translationAppEN  from './lib/Language/en/app.json';
 
 const defaultLanguage = 'es';
 i18n.init({
     fallbackLng: defaultLanguage,
     lng: defaultLanguage
 });
-i18n.addResourceBundle('es', 'translation', translationES.translation);
-i18n.addResourceBundle('es', 'app', translationES.app);
-i18n.addResourceBundle('en', 'app', translationEN.app);
+i18n.addResourceBundle('es', 'translation', translationES);
+i18n.addResourceBundle('es', 'app', translationAppES);
+i18n.addResourceBundle('en', 'app', translationAppEN);
 
 import WebMapServiceCatalogItem from 'terriajs/lib/Models/WebMapServiceCatalogItem';
 import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
