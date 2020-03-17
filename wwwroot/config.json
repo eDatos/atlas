@@ -19,6 +19,7 @@
             ""
         ],
         "mobileDefaultViewerMode": "2d",
-        "experimentalFeatures": true
+        "experimentalFeatures": true,
+        "bingMapsKey": "ApzG8h1sQqyEW-bdAWhNQ8g3ZVfxX_q5HsepUWacOJXXQmCYzkm2Np3ydSQrqrtO"
     }
 }
