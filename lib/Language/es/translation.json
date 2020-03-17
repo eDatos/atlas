@@ -1,0 +1,1101 @@
+
+{
+  "general": {
+    "close": "Cerrar",
+    "open": "Abrir",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "skip": "Omitir"
+  },
+  "measure": {
+    "measureTool": "Herramienta de medida",
+    "measureDistance": "Medir la distancia entre ubicaciones"
+  },
+  "location": {
+    "errorGettingLocation": "Error al obtener la ubicación",
+    "browserCannotProvide": "Su navegador no puede proporcionar su ubicación.",
+    "myLocation": "Mi ubicación",
+    "location": "Ubicación",
+    "originError": "Su navegador solo puede proporcionar su ubicación cuando usa https. Es posible que pueda utilizar {{secureUrl}} en su lugar.",
+    "centreMap": "Mapa central en su ubicación actual"
+  },
+  "splitterTool": {
+    "toggleSplitterTool": "Habilite la comparación lado a lado entre dos conjuntos diferentes de datos",
+    "title": "Arrastre hacia la izquierda o hacia la derecha para ajustar las vistas",
+    "workbench": {
+      "goleftTitle": "Mostrar en el lado izquierdo",
+      "goleft": "Izquierda",
+      "bothTitle": "Mostrar en ambos lados",
+      "both": "Ambas",
+      "gorightTitle": "Mostrar en el lado derecho",
+      "goright": "Derecha",
+      "copyName": "{{name}} (copiar)"
+    }
+  },
+  "zoomCotrol": {
+    "zoomIn": "Acercarse",
+    "zoomReset": "Restablecer zoom",
+    "zoomOut": "Disminuir el zoom"
+  },
+  "compass": {
+    "description": "Arrastre el anillo exterior: Rotar vista.\nArrastre el giroscopio interno: órbita libre.\nHaga doble clic: reestablecer vista.\nTIP: También puede liberar la órbita manteniendo presionada la tecla CTRL y arrastrando el mapa.",
+    "title": "Haga clic y arrastre para girar la cámara"
+  },
+  "AR": {
+    "title": "Característica experimental: realidad aumentada",
+    "experimentalFeatureMessage": "El modo de realidad aumentada está actualmente en beta. Este modo solo está diseñado para usarse en los últimos dispositivos móviles de alta gama. <br /><br />ADVERTENCIA: Este modo puede consumir muchos datos, tenga en cuenta los cargos por uso de datos de su proveedor de red. <br /><br />La precisión de este modo depende de la precisión de la brújula interna de sus dispositivos móviles.",
+    "confirmText": "Entendido",
+    "manualAlignmentTitle": "Alineamiento manual",
+    "manualAlignmentMessage": "Alinee su dispositivo móvil para que corresponda con la alineación actual de los mapas, luego haga clic en la brújula parpadeante. Si no hay puntos de referencia para alinear actualmente visibles en el mapa, puede mover el mapa usando acciones de arrastrar y pellizcar hasta que un punto de referencia reconocible sea visible antes de alinear el dispositivo con el mapa. <br /><div>{{img}}</div> <br />Consejo: El sol o la luna son a menudo buenos puntos de referencia para alinearse si se encuentra en un lugar con el que no está familiarizado (tenga cuidado de no mirar al sol, ya que puede dañar sus ojos).",
+    "resetAlignmentTitle": "Restablecer alineación",
+    "resetAlignmentMessage": "Restablecimiento a la alineación de la brújula. Si la alineación no coincide con el mundo real, intente agitar su dispositivo en un movimiento de la figura 8 para recalibrar el dispositivo. Esto puede ser hecho en cualquier momento.<br /> <br /> Evite ubicaciones con campos magnéticos u objetos metálicos, ya que pueden desorientar la brújula del dispositivo",
+    "arTool": "herramienta de realidad aumentada",
+    "btnHover": "alternar altura de desplazamiento",
+    "btnRealign": "alternar la alineación manual",
+    "btnResetRealign": "restablecer la alineación de la brújula"
+  },
+  "legend": {
+    "lat": "Lat",
+    "lon": "Lon",
+    "zone": "ZONA",
+    "e": "E",
+    "n": "N",
+    "elev": "Elevado"
+  },
+  "share": {
+    "browserPrint": "Para obtener mejores resultados impresos, utilice {{appName}}'s Botón Imprimir en lugar de la función de impresión de su navegador web.",
+    "shortLinkShortening": "Acortamiento...",
+    "shortLinkError": "Se produjo un error al intentar acortar la URL. Verifique su conexión a Internet e intente nuevamente.",
+    "localDataNote": "<0><0>Note:</0></0><1>Las siguientes fuentes de datos NO se compartirán porque incluyen datos de este sistema local. Para compartir estas fuentes de datos, publique sus datos en un servidor web y <2>añadirlas usando una url</2>.</1>",
+    "generatingUrl": "Generando compartir URL ...",
+    "printTitle": "Imprimir mapa",
+    "printExplanation": "Abra una versión imprimible de este mapa.",
+    "printButton": "Impresión",
+    "printViewButton": "Mostrar vista de impresión",
+    "creatingPrintView": "Creando vista de impresión ...",
+    "btnAdvanced": "Opciones avanzadas",
+    "embedTitle": "Para incrustar, copie este código para incrustar este mapa en una página HTML:",
+    "shortenUsingService": "Acorte la URL compartida mediante un servicio web",
+    "btnCatalogShareText": "Compartir",
+    "btnMapShareText": "Compartir / Imprimir",
+    "btnCatalogShareTitle": "Comparte tu catálogo con otros",
+    "btnMapShareTitle": "Comparte tu mapa con otros"
+  },
+  "countDatasets": {
+    "btnText": "comenzar",
+    "loadError": "falló al cargar.",
+    "countingMessage": "Contando, por favor espera...",
+    "totals": "<div>El catálogo contiene {{items}} elementos en {{groups}} grupos.</div>",
+    "subTotals": "<div> {{name}}: {{items}} items / {{groups}} groups</div>",
+    "recount": "Recuento",
+    "title": "Contar conjuntos de datos",
+    "btnCount": "Contar conjuntos de datos"
+  },
+  "toolsPanel": {
+    "btnText": "Herramienta",
+    "btnTitle": "Caja de herramientas avanzada"
+  },
+  "settingPanel": {
+    "none": "(ninguno)",
+    "viewerModeLabels": {
+      "CesiumTerrain": "Terreno 3D",
+      "CesiumEllipsoid": "3D liso",
+      "Leaflet": "2D"
+    },
+    "qualityLabels": {
+      "maximumPerformance": "Máximo rendimiento, menor calidad",
+      "balancedPerformance": "Rendimiento y calidad equilibrados",
+      "lowerPerformance": "Máxima calidad, menor rendimiento"
+    },
+    "nativeResolutionLabel": "Presione para dejar de usar{{resolution1}} resolución y comenzar a usar {{resolution2}} resolución",
+    "native": "nativo",
+    "screen": "pantalla",
+    "btnTitle": "Cambiar vista",
+    "btnText": "Mapa",
+    "mapView": "Vista del mapa",
+    "baseMap": "Mapa base",
+    "imageOptimisation": "Optimización de imagen",
+    "nativeResolutionHeader": "Usar resolución de dispositivo nativa",
+    "mapQuality": "Calidad del mapa ráster:",
+    "qualityLabel": "Calidad",
+    "performanceLabel": "Actuación"
+  },
+  "feedback": {
+    "feedbackPreamble": "¡Nos encantaría saber de usted!",
+    "title": "Realimentación",
+    "close": "comentarios cercanos",
+    "yourName": "Tu nombre (opcional)",
+    "email": "Dirección de correo electrónico (opcional)<br/><2>¡No podemos seguir sin él!</2>",
+    "commentQuestion": "Comentario o pregunta",
+    "shareWithDevelopers": "Compartir mi vista de mapa con {{appName}} desarrolladores",
+    "captionText": "Esto nos ayuda a solucionar problemas al permitirnos ver lo que estás viendo",
+    "cancel": "Cancelar",
+    "sending": "Enviando...",
+    "send": "Enviar",
+    "feedbackBtnText": "Dar opinion"
+  },
+  "helpMenu": {
+    "btnText": "Ayuda",
+    "btnTitle": "consigue ayuda",
+    "helpMenuHeader": "Que te gustaría hacer?",
+    "helpMenuOpenWelcome": "Mostrar mensaje de bienvenida",
+    "helpMenuSatelliteGuideTitle": "Ver guía de imágenes satelitales",
+    "helpMenuMoreHelpTitle": "Más ayuda",
+    "done": "Hecho",
+    "next": "Siguiente"
+  },
+  "sui": {
+    "notifications": {
+      "title": "Este mapa contiene una historia.",
+      "message": "¿Te gustaría verlo ahora?",
+      "confirmText": "Si",
+      "denyText": "Quizas mas tarde"
+    },
+    "showWorkbench": "Mostrar banco de trabajo",
+    "hideWorkbench": "Ocultar banco de trabajo"
+  },
+  "featureInfo": {
+    "catalogItem": {
+      "moreThanMax": "Se encontraron más de {{maximum}} {{catalogItemName}} características",
+      "featuresFound": "Se encontraron {{featCount}} {catalogItemName} características.",
+      "featureInfoShown": "Los primeros {{maximum}} se muestran a continuación."
+    },
+    "download": "Descargar esta tabla",
+    "pickLocation": "Elegir ubicación",
+    "clickMap": "Haga clic en el mapa para obtener más información sobre una ubicación.",
+    "noDataAvailable": "No hay datos disponibles aquí. Pruebe con otra ubicación.",
+    "clickToAddData": "Haga clic en '$ t (addData.addDataBtnText)' para agregar datos al mapa.",
+    "userSelection": "Selección de usuario",
+    "panelHeading": "Información de funciones",
+    "btnCloseFeature": "Cerrar panel de datos",
+    "satelliteSuggestionBtn": "Mostrar {{catalogItemName}} en esta ubicación",
+    "locationMarker": "Marcador de ubicación",
+    "noInfoAvailable": "No hay información disponible",
+    "siteData": "Datos del sitio",
+    "latLon": "Lat / Lon "
+  },
+  "welcomeMessage": {
+    "title": "Los datos espaciales son <2> fáciles.</2>",
+    "WelcomeMessage": "Acceda a datos espaciales ricos desde múltiples fuentes de datos, todo desde una ubicación conveniente.",
+    "WelcomeMessagePrimaryBtn": "Explorar datos",
+    "WelcomeMessageSecondaryBtn": "Hacer un recorrido",
+    "WelcomeMessageDissmissText": "No me muestres esto otra vez"
+  },
+  "story": {
+    "viewStory": "ver",
+    "view": "Ver",
+    "editStory": "editar",
+    "edit": "Editar",
+    "recaptureStory": "recapturar",
+    "recapture": "Recapturar",
+    "deleteStory": "borrar",
+    "delete": "Borrar",
+    "untitledScene": "escena sin título",
+    "doesNotExist": "La historia no existe",
+    "message": "<2> Este es su editor de historias </2> <1> Cree y comparta historias interactivas directamente desde su mapa <1> <0> <0> </0> Comenzando </0> </1> </ 1 >",
+    "removeAllStories": "Eliminar todo",
+    "preview": "vista previa de historias",
+    "play": "Reproducir una historia",
+    "captureSceneTitle": "capturar la escena actual",
+    "captureScene": "Capturar escena",
+    "editor": {
+      "placeholder": "Ingrese un título aquí",
+      "cancelBtn": "cancelar",
+      "cancelEditing": "Cancelar",
+      "saveBtn": "guardar",
+      "saveStory": "Guardar"
+    },
+    "locationBtn": "escena central",
+    "exitBtn": "historia de salida",
+    "previousBtn": "ir a la escena anterior",
+    "untitled": "escena sin título",
+    "navBtn": "ir a la historia {{title}}",
+    "nextBtn": "ir a la siguiente escena",
+    "navBtnMobile": "ir a la siguiente escena {{title}}",
+    "promptHtml1": "<0> Puede ver y crear historias en cualquier momento haciendo clic aquí. </0>",
+    "promptHtml2": "<0><0>INTRODUCCIÓN</0> <1> Historias de datos </1> <2> Cree y comparta historias interactivas directamente desde su mapa. </2> </0>",
+    "story": "Historia",
+    "dismissText": "¡Gracias!",
+    "mobileViewStory": "Ver historias {{storiesLength}}"
+  },
+  "satelliteGuidance": {
+    "menuTitle": "Puede acceder a las guías de mapas en cualquier momento mirando el menú de ayuda <0> </0>.",
+    "dismissText": "¡Gracias!",
+    "titleI": "Imágenes satelitales: ¿Cómo puedo ...?",
+    "bodyI": "Una guía súper rápida para aprovechar al máximo las imágenes satelitales históricas.",
+    "prevI": "No, gracias",
+    "nextI": "Ver guía",
+    "titleII": "¿Dónde están mis imágenes satelitales?",
+    "bodyII": "Es posible que deba ajustar su nivel de zoom para que las imágenes de satélite sean visibles en el mapa.",
+    "titleIII": "Cargando imágenes históricas",
+    "bodyIII": "En su banco de trabajo de datos, haga clic en el menú desplegable de la fecha de captura y seleccione entre los tiempos disponibles para cargar imágenes históricas.",
+    "titleIV": "Filtrar imágenes por ubicación",
+    "bodyIV": "Las imágenes satelitales pueden no estar siempre disponibles en su hora y ubicación preferidas. Si solo desea ver imágenes de una ubicación en particular, haga clic en \"filtrar por ubicación\" en su banco de trabajo de datos.",
+    "titleV": "¿Cómo veo imágenes de colores falsos?",
+    "bodyV": "Puede aplicar una variedad de estilos, como el color falso, a las imágenes de satélite haciendo clic en el menú desplegable de estilos en su banco de trabajo de datos."
+  },
+  "addData": {
+    "addDataBtnText": "Agregar datos",
+    "btnHide": "Ocultar",
+    "load": "Cargar datos locales / web",
+    "closeDataPanel": "Cerrar panel de datos",
+    "done": "Hecho",
+    "myData": "Mis datos",
+    "dataCatalogue": "Catálogo de datos",
+    "searchPlaceholderWhole": "Buscar en todo el catálogo",
+    "searchPlaceholder": "Busca en el catálogo",
+    "localAdd": "Agregar archivo local",
+    "localFileType": "<0> Paso 1: </0> Seleccionar tipo de archivo (opcional)",
+    "localFile": "<0> Paso 2: </0> Seleccionar archivo",
+    "webAdd": "Agregar datos web",
+    "webFileType": "<0> Paso 1: </0> Seleccionar tipo de archivo (opcional)",
+    "webFile": "<0> Paso 2: </0> Ingrese la URL del archivo de datos o servicio web",
+    "urlInputBtn": "Añadir",
+    "browse": "Vistazo...",
+    "localTitle": "Agregar datos locales",
+    "webTitle": "Agregar datos web",
+    "dragDrop": "Arrastrar y soltar",
+    "infoText": "<0> Arrastre y suelte un archivo aquí para verlo localmente en el mapa </0> <1> (no se guardará ni cargará en Internet) </1>",
+    "back": "Atrás",
+    "note": "<0> Nota: </0> Los datos agregados de esta manera no se guardan ni se hacen visibles para otros."
+  },
+  "search": {
+    "resultsLabel": "Resultados de la búsqueda",
+    "done": "Hecho",
+    "data": "Datos",
+    "search": "Busque '{{searchText}}' en el Catálogo de datos",
+    "viewLess": "Ver menos resultados de {{name}}",
+    "viewMore": "Ver más resultados de {{name}}",
+    "placeholder": "Buscar ubicaciones",
+    "searchCatalogue": "Busca en el catálogo"
+  },
+  "mobile": {
+    "toggleNavigation": "navegación de palanca"
+  },
+  "preview": {
+    "doesNotContainGeospatialData": "Este archivo no contiene datos geoespaciales.",
+    "selectToPreview": "<0> Seleccione un conjunto de datos para ver una vista previa </0> <1> - O - </1> <2> Ir al mapa </2>",
+    "loading": "VISTA PREVIA DE CARGA ..",
+    "preview": "{{appName}} avance",
+    "noPreviewAvailable": "NO HAY VISTA PREVIA DISPONIBLE",
+    "dataPreviewLoading": "CARGA PREVIA DE DATOS ...",
+    "dataPreview": "VISTA PREVIA DE DATOS",
+    "dataPreviewError": "ERROR DE VISTA PREVIA DE DATOS",
+    "removeFromMap": "Eliminar del mapa",
+    "addToMap": "Agregar al mapa",
+    "disclaimer": "Descargo de responsabilidad",
+    "dataDescription": "Descripción de datos",
+    "datasetDescription": "Descripción del conjunto de datos",
+    "serviceDescription": "Descripción del servicio",
+    "resourceDescription": "Descripción del recurso",
+    "licence": "Licencia",
+    "accessConstraints": "Restricciones de acceso",
+    "author": "Autor",
+    "contact": "Contacto",
+    "created": "Creado",
+    "modified": "Modificado",
+    "updateFrequency": "Frecuencia de actualización",
+    "dataCustodian": "Custodio de datos"
+  },
+  "description": {
+    "name": "Descripción",
+    "dataLocal": "Este archivo solo existe en su navegador. Para compartirlo, debe cargarlo en un servidor web público.",
+    "dataNotLocal": "Este archivo solo existe en su navegador. Para compartirlo, debe cargarlo en un servidor web público.",
+    "wms": "Este es un servicio <0> WMS </0>, que genera imágenes de mapas a pedido. Se puede utilizar en software SIG con esta URL:",
+    "wfs": "Este es un servicio <0> WFS </0>, que transfiere datos espaciales sin procesar a pedido. Se puede utilizar en software SIG con esta URL:",
+    "layerName": "Nombre de la capa",
+    "typeName": "Escribe un nombre",
+    "metadataUrl": "URL de metadatos",
+    "dataUrl": "URL de datos",
+    "useLinkBelow": "Use el siguiente enlace para descargar los datos. Consulte el {{link}} para obtener más información sobre la personalización de los parámetros de consulta de URL.",
+    "downloadInFormat": "Descargue los datos seleccionados actualmente en formato {{format}}",
+    "downloadNotSupported": "Lamentablemente, su navegador no admite la funcionalidad necesaria para descargar estos datos como un archivo. Utilice Chrome, Firefox o Safari para descargar estos datos.",
+    "useTheLinkToDownload": "Utilice el siguiente enlace para descargar los datos directamente.",
+    "downloadData": "Descargar datos",
+    "dataSourceDetails": "Detalles de la fuente de datos",
+    "dataServiceDetails": "Detalles del servicio de datos",
+    "dataCustodian": "Custodia de datos"
+  },
+  "workbench": {
+    "colorScaleRangeTitle": "Rango de escala de color inválido.",
+    "colorScaleRangeMin": "El valor mínimo debe ser un número.",
+    "colorScaleRangeMax": "El valor máximo debe ser un número.",
+    "colorScaleRangeMinSmallerThanMax": "El valor mínimo del rango de escala de color debe ser menor que el valor máximo.",
+    "colorScaleRange": "Rango de escala de color",
+    "rangeMax": "Máximo:",
+    "rangeMin": "Mínimo:",
+    "colorScaleUpdateRange": "Rango de actualización",
+    "displayPercent": "Mostrar como un porcentaje del total regional",
+    "opacity": "Opacidad: {{opacity}}%",
+    "zoomToTitle": "Zoom a extensión",
+    "zoomTo": "Zoom A Extensión",
+    "openFeatureTitle": "Zoom a datos",
+    "openFeature": "Zoom a",
+    "previewItemTitle": "información",
+    "previewItem": "Sobre estos datos",
+    "splitItemTitle": "Duplicar y mostrar divisor",
+    "splitItem": "División",
+    "exportDataTitle": "Exportar datos del mapa",
+    "exportData": "Exportar",
+    "removeFromMapTitle": "Eliminar estos datos",
+    "removeFromMap": "Eliminar",
+    "label": "Conjuntos de datos",
+    "removeAll": "Eliminar todo",
+    "toggleVisibility": "Mostrar / ocultar datos"
+  },
+  "dateTime": {
+    "previous": "Momento anterior",
+    "selectTime": "Momento anterior",
+    "outOfRange": "Actualmente fuera de alcance.",
+    "next": "La próxima vez",
+    "useTimeline": "Usar línea de tiempo",
+    "availableTimeChart": "Mostrar horarios disponibles en el gráfico",
+    "timeline": {
+      "textCell": "Nombre del conjunto de datos cuyo rango de tiempo se muestra",
+      "gotoStart": "Ir al principio",
+      "togglePlay": "Reproducir",
+      "playSlower": "Retroceder",
+      "playFaster": "Avanzar rápido"
+    }
+  },
+  "satellite": {
+    "pickPoint": "Seleccione un punto haciendo clic en el mapa.",
+    "querying": "Posición de consulta ...",
+    "filterByLocation": "Filtrar por ubicación",
+    "infoGroup": "Solo se muestran los tiempos de captura disponibles para:",
+    "removeFilter": "Eliminar filtro",
+    "zoomTo": "Zoom a",
+    "newLocation": "Nueva ubicación"
+  },
+  "timer": {
+    "nextScheduledUpdateTime": "Próxima actualización de datos en {{ScheduledUpdateTime}}",
+    "nextScheduledUpdateCountdown": "Próxima actualización de datos en {{timeCountdown}}"
+  },
+  "concept": {
+    "active": {
+      "edit": "Editar condición",
+      "remove": "Eliminar condición"
+    },
+    "inactive": {
+      "cancel": "Cancelar",
+      "newText": "Nueva condición"
+    },
+    "summary": {
+      "addMoreText": "Agregar una condición",
+      "addFirstText": "Agregar nueva condición"
+    }
+  },
+  "clipboard": {
+    "success": "Copiado al portapapeles",
+    "unsuccessful": "Copia fallida ...",
+    "shareURL": "Compartir URL",
+    "shareExplanation": "Cualquier persona con esta URL podrá acceder a este mapa.",
+    "copy": "Copiar"
+  },
+  "dragDrop": {
+    "text": "<0> Arrastrar y soltar </0> <1> Sus datos en cualquier lugar para ver en el mapa <1>",
+    "not": "<0>bbbb</0>"
+  },
+  "loader": {
+    "loadingMessage": "Cargando"
+  },
+  "emptyWorkbenchMessage": "<0> <0> Su banco de trabajo está vacío </0> <1> <strong> Haga clic en '$ t (addData.addDataBtnText)' arriba para </strong></1><2> <0> Examinar el catálogo de datos </0> <1> Cargue sus propios datos en el mapa </1> </2> <3> <0> </0> <strong> CONSEJO. </strong> <2> Todos sus conjuntos de datos activos estar listado aquí </2> </3> </0>",
+  "dataCatalog": {
+    "groupRemove": "eliminar este grupo",
+    "groupEmpty": "Este grupo esta vacio"
+  },
+  "catalogItem": {
+    "loading": "Cargando...",
+    "remove": "Eliminar",
+    "add": "Añadir",
+    "trash": "Eliminar del catálogo",
+    "removeFromMap": "Eliminar del mapa"
+  },
+  "chart": {
+    "sectionLabel": "Gráficos",
+    "closePanel": "Cerrar panel",
+    "expand": "Expandir",
+    "download": "Descargar"
+  },
+  "viewModels": {
+    "searchNoLocations": "Lo sentimos, ninguna ubicación coincide con su consulta de búsqueda.",
+    "searchErrorOccurred": "Se produjo un error al buscar. Verifique su conexión a Internet o vuelva a intentarlo más tarde.",
+    "searchAddresses": "Direcciones",
+    "searchPlaceNames": "Nombres de lugares oficiales",
+    "searchNoPlaceNames": "Lo sentimos, no hay nombres de lugares oficiales que coincidan con su consulta de búsqueda",
+    "searchLocations": "Localizaciones",
+    "searchCatalogueItem": "Artículos del catálogo",
+    "searchNoCatalogueItem": "Lo sentimos, ningún elemento del catálogo coincide con su consulta de búsqueda.",
+    "inMultipleLocations": "En múltiples ubicaciones, incluyendo:",
+    "inDataCatalogue": "En el catálogo de datos"
+  },
+  "terriaViewer": {
+    "slowWebGLAvailableTitle": "Bajo rendimiento de WebGL",
+    "slowWebGLAvailableMessage": "Su navegador web informa que tiene problemas de rendimiento al mostrar {{appName}} en 3D, por lo que verá una experiencia limitada solo en 2D. Para una experiencia 3D completa, intente usar un navegador web diferente, actualice sus controladores de video o su sistema operativo.",
+    "slowWebGLAvailableMessageII": "{{appName}} funciona mejor con un navegador web compatible con {{webGL}}, incluidas las últimas versiones de {{chrome}}, {{firefox}}, {{safari}} y {{internetExplorer}}. Su navegador web no parece admitir WebGL, por lo que verá una experiencia limitada, solo en 2D..",
+    "internetExplorer": "Internet Explorer 11",
+    "chrome": "Google Chrome",
+    "firefox": "Mozilla Firefox",
+    "safari": "Apple Safari",
+    "webGLNotSupportedTitle": "WebGL no soportado",
+    "webGLNotSupportedOrSlowTitle": "WebGL no es compatible o demasiado lento",
+    "webGLNotSupportedOrSlowMessage": "Su navegador web no puede mostrar el mapa en 3D, ya sea porque no es compatible con WebGL o porque su navegador web ha informado que WebGL será extremadamente lento. Pruebe con un navegador web diferente, como la última versión de {{chrome}}, {{firefox}}, {{safari}}, {{internetExplorer}}. En algunos casos, es posible que deba actualizar el controlador de video de su computadora o sistema operativo para obtener la vista 3D en {{appName}}."
+  },
+  "analytics": {
+    "selectLocation": "Seleccionar ubicación",
+    "point": "Punto (lat/lon)",
+    "polygon": "Polígono",
+    "existingPolygon": "Polígono existente",
+    "nothingSelected": "No se ha seleccionado nada, utilice los botones de arriba para hacer una selección.",
+    "runAnalysis": "Ejecutar análisis",
+    "clickToDrawLine": "Haga clic para dibujar la línea.",
+    "enterValidCoords": "Ingrese coordenadas válidas (por ejemplo, 131.0361, -25.3450).",
+    "selectPoint": "Seleccione un punto haciendo clic en el mapa.",
+    "clickToDrawPolygon": "Haz clic para dibujar un polígono.",
+    "shiftToDrawRectangle": "Presione la tecla MAYÚS y mantenga presionado el botón izquierdo del mouse para dibujar un rectángulo",
+    "clickToDrawRectangle": "Haz clic para dibujar un rectángulo.",
+    "selectedPolygon": "Polígono seleccionado",
+    "regionName": "Nombre de la región",
+    "selectExistingPolygon": "Seleccionar polígono existente"
+  },
+  "core": {
+    "userAddedData": "Datos agregados por el usuario",
+    "chartData": "Datos del gráfico",
+    "dataUri": {
+      "errorTitle": "El navegador no admite la descarga de datos",
+      "errorMessage": "Lamentablemente, los navegadores de Microsoft (incluidas todas las versiones de Internet Explorer y Edge) no admiten la funcionalidad de uri de datos necesaria para descargar los datos como un archivo. Para descargar, copie la siguiente uri en otro navegador como Chrome, Firefox o Safari: {{href}}"
+    },
+    "findIndex": {
+      "nullUndefined": "FindIndex llamado en nulo o indefinido",
+      "array": "findIndex solo funciona en una matriz",
+      "function": "El predicado findIndex debe ser una función"
+    },
+    "dataType": {
+      "auto": "Detección automática (recomendado)",
+      "wms-getCapabilities": "Servidor de servicio de mapas web (WMS)",
+      "wmts-getCapabilities": "Servidor de Web Map Tile Service (WMTS)",
+      "wfs-getCapabilities": "Servidor de servicio de características web (WFS)",
+      "esri-group": "Servidor Esri ArcGIS",
+      "esri-mapServer": "Esri ArcGIS MapServer (capa única)",
+      "esri-featureServer": "Esri ArcGIS FeatureServer (una capa)",
+      "open-street-map": "Servidor de callejero abierto",
+      "geojson": "GeoJSON",
+      "kml": "KML o KMZ",
+      "csv": "CSV",
+      "czml": "CZML",
+      "gpx": "GPX",
+      "json": "JSON",
+      "other": "Otro (use el servicio de conversión)"
+    },
+    "printWindow": {
+      "errorTitle": "Error al imprimir",
+      "errorMessage": "La impresión no comenzó en 10 segundos. ¿Quizás este navegador web no admite la impresión?",
+      "printMediaStart": "inicio de medios impresos",
+      "printMediaEnd": "fin de medios impresos",
+      "onbeforeprint": "onbeforeprint",
+      "onafterprint": "onafterprint"
+    },
+    "googleAnalytics": {
+      "log": "El seguimiento de Google Analytics está deshabilitado porque no se especifica terria.configParameters.googleAnalyticsKey"
+    },
+    "readText": {
+      "fileRequired": "archivo es requerido"
+    },
+    "readXml": {
+      "xmlError": "El archivo no contiene XML válido."
+    },
+    "serverConfig": {
+      "failedToGet": "Error al obtener la configuración del servidor de {{serverConfigUrl}}. Esto significa que servicios como proxy, conversión y acortamiento de URL pueden no funcionar."
+    },
+    "terriaError": {
+      "defaultValue": "Ocurrió un error"
+    }
+  },
+  "map": {
+    "addressGeocoder": {
+      "devError": "bulkConvertAddresses debe implementarse en la clase derivada."
+    },
+    "cesium": {
+      "devError": "Se requiere cesión.",
+      "failedToObtain": "No se pudo obtener el mosaico de la imagen X: {{x}} Y: {{y}} Nivel: {{level}}.",
+      "notWebMercatorTilingScheme": "Este conjunto de datos no se puede mostrar en el mapa 2D porque no admite la proyección Web Mercator (EPSG: 3857).",
+      "unusalTilingScheme": "Este conjunto de datos no se puede mostrar en el mapa 2D porque utiliza un esquema de mosaico inusual que no es compatible."
+    },
+    "computeRingWindingOrder": {
+      "devError": "Puntos esperados de tipo {x: número, y: número}"
+    },
+    "displayVariablesConcept": {
+      "defaultName": "Variable de pantalla"
+    },
+    "drawExtentHelper": {
+      "drawExtent": "Dibujar extensión",
+      "extent": "Grado"
+    },
+    "gmlToGeoJson": {
+      "missingPos": "Al elemento de punto GML le falta un elemento pos.",
+      "missingExteriorRing": "Al polígono GML le falta su anillo exterior.",
+      "missingPosList": "Al anillo exterior del polígono GML le falta una poslista.",
+      "containsUnsupportedFeatureType": "GML contiene un tipo de función no compatible: {{type}}"
+    },
+    "gnafAddressGeocoder": {
+      "noAddresses": "¡Esta tableStructure no tiene direcciones!",
+      "noAddresses2": "A pesar de que table Estructura de información que tiene una columna de dirección, no tiene direcciones",
+      "suburb": "Suburbio",
+      "state": "Estado",
+      "postcode": "Código postal",
+      "matchedAddresses": "Dirección coincidente",
+      "lon": "Lon",
+      "lat": "Lat",
+      "score": "Puntuación",
+      "poBox": "po caja",
+      "postOfficeBox": "apartado de correos"
+    },
+    "imageryProviderHooks": {
+      "devError": "No hay contexto para la recoloración de imágenes."
+    },
+    "leafletVisualizer": {
+      "devError1": "leafletScene es obligatorio.",
+      "devError2": "entityCollection es obligatorio.",
+      "devError3": "hora es obligatorio."
+    },
+    "mapboxVectorTileImageryProvider": {
+      "requireLayerName": "MapboxVectorTileImageryProvider requiere un nombre de capa pasado como options.layerName",
+      "requireStyles": "MapboxVectorTileImageryProvider requiere una función de estilo aprobada como options.styleFunc",
+      "moreThanFourTiles": "El rectángulo y el nivel mínimo del proveedor de imágenes indican que hay {{tileCount}} mosaicos en el nivel mínimo. Los proveedores de imágenes con más de cuatro mosaicos en el nivel mínimo no son compatibles.",
+      "maxLevelError": "Nivel máximo demasiado alto para el conjunto de datos."
+    },
+    "regionProvider": {
+      "csvRegionMappingTitle": "Mapeo de región CSV",
+      "csvRegionMappingMessageZeroFound": "Se encontraron cero nombres de región para el tipo de región {{regionType}}",
+      "csvRegionMappingMessageZeroBoundariesFound": "Se encontraron límites de región cero para la región {{regionName}}",
+      "csvRegionMappingMessageLoadError": "No se cargarán los límites de la región para la región {{regionName}} {{excepción}}"
+    }
+  },
+  "models": {
+    "abs": {
+      "name": "ABS.Stat",
+      "nameGroup": "ABS.Stat Lista de conjunto de datos",
+      "itemNotAvailableTitle": "El artículo no está disponible.",
+      "itemNotAvailableMessage": "Se produjo un error al invocar {{methodName}} en el servidor ABS ITT. <p> Este error puede indicar que el elemento que abrió no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "unexpectedFormatTitle": "Formato de datos inesperado",
+      "unexpectedFormtMessage": "Se produjo un error al invocar GetGenericData en el servidor ABS ITT: el formato de datos ha cambiado. <p> Informe este error enviando un correo electrónico a {{email}}. </p>",
+      "dataMergeErrorTitle": "Los datos no pueden fusionarse",
+      "dataMergeErrorMessage": "Se produjo un error al invocar GetGenericData en el servidor ABS ITT: los archivos de datos individuales no se pueden fusionar. <p> Informe este error enviando un correo electrónico a {{email}}. </p>",
+      "groupNotAvailableTitle": "Group is not available",
+      "groupNotAvailableMessage": "Se produjo un error al invocar GetCodeListValue en el servidor ABS ITT. <p> Este error puede indicar que el grupo que abrió no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>"
+    },
+    "userData": {
+      "addingDataErrorTitle": "No se pudieron agregar datos",
+      "addingDataErrorMessage": "No se pudieron agregar los datos especificados porque no son válidos o no tienen el formato esperado.",
+      "fileApiNotSupportedTitle": "API de archivo no compatible",
+      "fileApiNotSupportedMessage": "Lo sentimos, su navegador web no admite la API de archivos, que {{appName}} requiere para agregar datos de un archivo en su sistema. Por favor, actualiza tu navegador web. Para una mejor experiencia, recomendamos {{internetExplorer}} o la última versión de {{chrome}} o {{firefox}}.",
+      "internetExplorer": "Internet Explorer 11",
+      "chrome": "Google Chrome",
+      "firefox": "Mozilla Firefox"
+    },
+    "arcGisService": {
+      "name": "ArcGIS Service Group",
+      "invalidServerTitle": "Servidor ArcGIS no válido",
+      "invalidServerMessage": "Se produjo un error al invocar el servicio ArcGIS REST. La respuesta del servidor no parece ser un documento REST de ArcGIS válido. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió temporalmente no está disponible o hay un problema con tu conexión a internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "groupNotAvailableTitle": "El grupo no está disponible.",
+      "groupNotAvailableMessage": "Se produjo un error al invocar el servicio ArcGIS REST. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Este error también puede indicar que el servidor no admite {{cors}}. Si este es su servidor, verifique que CORS esté habilitado y actívelo si no lo está. Si no controla el servidor, póngase en contacto con el administrador del servidor y solicite que habiliten CORS. O comuníquese con el equipo de {{appName}} enviando un correo electrónico a {{email}} y solicite que agreguemos este servidor a la lista de servidores que no son compatibles con CORS y que pueden ser representados por {{appName}}. <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>"
+    },
+    "arcGisFeatureServer": {
+      "name": "ArcGIS Feature Server",
+      "nameGroup": "ArcGIS Feature Server Group",
+      "invalidServiceTitle": "Servicio de entidades ArcGIS no válido",
+      "invalidServiceMessage": "Se produjo un error al invocar ArcGIS Feature Service. La respuesta del servidor no parece ser un documento válido de Feature Service. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió temporalmente no está disponible o hay un problema con tu conexión a internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "groupNotAvailableTitle": "El grupo no está disponible.",
+      "groupNotAvailableMessage": "Se produjo un error al invocar ArcGIS Feature Service. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Este error también puede indicar que el servidor no admite {{cors}}. Si este es su servidor, verifique que CORS esté habilitado y actívelo si no lo está. Si no controla el servidor, póngase en contacto con el administrador del servidor y solicite que habiliten CORS. O comuníquese con el equipo de {{appName}} enviando un correo electrónico a {email} y solicite que agreguemos este servidor a la lista de servidores que no son compatibles con CORS y que pueden ser representados por {{appName}}. <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>"
+    },
+    "arcGisMapServerCatalogGroup": {
+      "name": "Grupo de ArcGIS Map Server",
+      "invalidServiceTitle": "Servicio de mapas ArcGIS no válido",
+      "invalidServiceMessage": "Se produjo un error al invocar el servicio de mapas de ArcGIS. La respuesta del servidor no parece ser un documento de servicio de mapas válido. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió temporalmente no está disponible o hay un problema con tu conexión a internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "groupNotAvailableTitle": "El grupo no está disponible.",
+      "groupNotAvailableMessage": "Se produjo un error al invocar el servicio de mapas de ArcGIS. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Este error también puede indicar que el servidor no admite {{cors}}. Si este es su servidor, verifique que CORS esté habilitado y actívelo si no lo está. Si no controla el servidor, póngase en contacto con el administrador del servidor y solicite que habiliten CORS. O comuníquese con el equipo de {{appName}} enviando un correo electrónico a {{email}} y solicite que agreguemos este servidor a la lista de servidores que no son compatibles con CORS y que pueden ser representados por {{appName}}. <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "cors": "CORS"
+    },
+    "arcGisMapServerCatalogItem": {
+      "name": "Esri ArcGIS MapServer",
+      "dataDescription": "Descripción de datos",
+      "serviceDescription": "Descripción del servicio",
+      "copyrightText": "Texto de copyright"
+    },
+    "bing": {
+      "name": "Mapas de Bing"
+    },
+    "wcs": {
+      "asyncResultDescription": "Este es el resultado de exportar datos del servicio {{name}} en {{timestamp}} con los siguientes parámetros de entrada.",
+      "exportFailedTitle": "Exportación de datos fallida",
+      "exportFailedMessage": "El servicio de cobertura web falló",
+      "exportFailedMessageII": "El servicio de cobertura web falló: {{error}}"
+    },
+    "cartoMap": {
+      "name": "Mapa de Carto",
+      "noUrlTitle": "No URL",
+      "noUrlMessage": "No se puede encontrar una URL utilizable para la capa Carto Map."
+    },
+    "cesiumTerrain": {
+      "name": "Terreno de cesio",
+      "name3D": "Azulejos 3D de cesio",
+      "notSupportedErrorTitle": "No es compatible en 2D",
+      "notSupportedErrorMessage": "\"{{name}} \" no se puede mostrar en la vista 2D. Cambie a 3D e intente nuevamente.",
+      "errorRenderingTitle": "Error al renderizar en 3D",
+      "errorRenderingMessage": "<p> Se produjo un error al renderizar en 3D. Esto probablemente indica un error en {{appName}} o una incompatibilidad con su sistema o navegador web. Ahora lo cambiaremos a 2D para que pueda continuar su trabajo. Le agradeceríamos que informara este error enviando un correo electrónico a {{email}} con los detalles técnicos a continuación. ¡Gracias! </p>"
+    },
+    "ckan": {
+      "nameServer": "ckanServer",
+      "errorLoadingTitle": "Error al cargar el catálogo de CKAN",
+      "errorLoadingMessage": "La definición para este catálogo de CKAN no tiene una consulta de filtro válida.",
+      "corsErrorMessage": "No se pudieron recuperar los paquetes de este servidor CKAN. <br/> <br/> Si ingresó la URL manualmente, verifíquela nuevamente. <br/> <br/> Si es su servidor, asegúrese de {{corsLink} } está habilitado. <br/> <br/> De lo contrario, si la recarga no lo soluciona, informe el problema enviando un correo electrónico a {{email}} con los detalles técnicos a continuación. ¡Gracias! <br/> <br/>",
+      "name": "Recurso CKAN",
+      "dataSourceErrorMessage": "Esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "datasetDescription": "Descripción del conjunto de datos",
+      "dataDescription": "Descripción de datos",
+      "resourceDescription": "Descripción del recurso",
+      "licence": "Licencia",
+      "author": "Autor",
+      "contact_point": "Contacto",
+      "metadata_created": "Creado",
+      "metadata_modified": "Modificado",
+      "update_freq": "Frecuencia de actualización",
+      "idsNotSpecifiedTitle": "resourceId o datasetId deben especificarse",
+      "idsNotSpecifiedMessage": "CkanCatalogItem requiere que se especifique resourceId o datasetId.",
+      "errorRetrievingUrlTitle": "Error al recuperar URL de CKAN",
+      "errorRetrievingUrlMessage": "No se pudo recuperar la URL como JSON: {{url}}.",
+      "invalidCkanTitle": "Recurso CKAN no válido JSON",
+      "invalidCkanMessage": "El recurso devuelto por el servidor CKAN no parece tener un package_id.",
+      "notCompatibleTitle": "No se encontraron recursos compatibles",
+      "notCompatibleMessageI": "El conjunto de datos CKAN no tiene un recurso con el ID {{resourceId}} o no tiene un formato compatible.",
+      "notCompatibleMessageII": "El conjunto de datos CKAN no tiene ningún recurso con un formato compatible."
+    },
+    "catalog": {
+      "name": "Artículo sin nombre",
+      "group": "Grupo",
+      "idForMatchingError": "Un miembro del catálogo debe tener un nombre o una identificación para que coincida.",
+      "catalogMemberMustHaveName": "Un miembro del catálogo recién creado debe tener un nombre.",
+      "catalogMemberMustHaveType": "Un miembro del catálogo debe tener un tipo",
+      "userAddedDataGroup": "El grupo de datos que fue agregado por el usuario a través del panel Agregar datos.",
+      "chartDataGroup": "Un grupo para los datos del gráfico.",
+      "dataSourceErrorMessage": "esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "unsupportedTypeTitle": "Tipo de elemento de catálogo no compatible",
+      "unsupportedTypeMessage": "Tipo de elemento de catálogo desconocido: {{type}}. Si está cargando su propio catálogo, verifique que sea correcto. Este error también puede indicar un intento de cargar un archivo de catálogo más nuevo en una versión anterior de {{appName}}.",
+      "unsupportedFileTypeTitle": "Tipo de archivo no soportado",
+      "unsupportedFileTypeMessage": "{{AppName}} no admite este formato de archivo. Los formatos de archivo admitidos incluyen: <ul><li>.geojson</li> <li> .kml, .kmz </li> <li> .csv (en {{link}}) </li> </ul>",
+      "unsupportedFileTypeMessageII": "{{AppName}} no admite este formato de archivo. Los formatos de archivo admitidos directamente incluyen: <ul><li>.geojson</li> <li> .kml, .kmz </li> <li> .csv (en {{link}}) </li> </ ul > Los formatos de archivo compatibles con el servicio de conversión en línea incluyen: <ul> <li> Shapefile (.zip) </li> <li> MapInfo TAB (.zip) </li> <li> Posiblemente otro {{linkII}} < / li> </ul>",
+      "getConfirmationMessage": "{{AppName}} no admite directamente este archivo. \n \n ¿Desea intentar cargarlo en el servicio de conversión {{appName}}? Esto puede funcionar para archivos pequeños y comprimidos Esri Shapefiles o MapInfo TAB.",
+      "readyToUpload": "¿Listo para cargar su archivo al servicio de conversión {{appName}}?",
+      "upload": "Subir",
+      "cancel": "Cancelar",
+      "useConversion": "¿Usar el servicio de conversión?",
+      "mustHaveType": "Cada artículo debe tener un tipo.",
+      "compositesError": "Los compuestos no pueden incluir elementos compuestos."
+    },
+    "createParameter": {
+      "unsupportedErrorTitle": "Tipo de parámetro de función no compatible",
+      "unsupportedErrorMessage": "Tipo de parámetro de función desconocido: {{type}}."
+    },
+    "csv": {
+      "name": "Valores separados por comas (CSV)",
+      "dataSourceErrorMessage": "Esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "unexpectedTypeTitle": "Tipo inesperado de datos CSV",
+      "unexpectedTypeMessage": "Se espera que los datos de CsvCatalogItem sean Blob, File o String, pero no fueron ninguno de estos. Esto puede indicar un error en terriajs o un uso incorrecto de la API de terriajs. Si cree que es un error en {{appName}}, infórmelo por correo electrónico",
+      "unableToLoadTitle": "No se puede cargar el archivo CSV",
+      "unableToLoadMessage": "Consulte la <a href=\"https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au\"> csv-geo-au </a> para conocer los formatos CSV admitidos. \n \n { {mensaje}}",
+      "unableToLoadItemTitle": "No se puede cargar el elemento del catálogo CSV",
+      "unableToLoadItemMessage": "CSV no tenía datos o URL desde donde cargar."
+    },
+    "csw": {
+      "name": "Servicio de catálogo (CSW)",
+      "unknownError": "El servidor CSW informó un error desconocido.",
+      "exceptionMessage": "El servidor CSW informó un error: \n \n {{exceptionText}}",
+      "notUseableTitle": "El servidor CSW informó un error: \n \n {{exceptionText}}",
+      "notUseableMessage": "Se obtuvo una respuesta no válida al invocar GetDomain en el servidor CSW. <p> Este error puede indicar que el servidor de catálogo que especificó no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir de nuevo el servidor de procesamiento y, si el problema persiste, repórtelo enviando un correo electrónico a",
+      "checkCORSDomain": "No se pudo ejecutar GetDomain en este servidor CSW. <br/> <br/> Si ingresó la URL manualmente, verifíquela dos veces. <br/> <br/> Si es su servidor, asegúrese de que <a href = \"http: //enable-cors.org/ \" target = \"_ blank \"> CORS </a> está habilitado. <br/> <br/> De lo contrario, si la recarga no lo soluciona, informe el problema enviando un correo electrónico a {{email}} con los detalles técnicos a continuación. ¡Gracias!",
+      "checkCORSRecords": "No se pudo ejecutar GetRecords en este servidor CSW. <br/> <br/> Si es su servidor, asegúrese de que <a href = \"http: //enable-cors.org/ \" target = \"_ blank \" > CORS </a> está habilitado. <br/> <br/> De lo contrario, si la recarga no lo soluciona, informe el problema enviando un correo electrónico a {{email}} con los detalles técnicos a continuación. ¡Gracias!",
+      "dataResponsibility": "Responsabilidad de datos",
+      "links": "Links",
+      "metadataURL": "URL de registro de metadatos",
+      "checkCORS": "No se pudo ejecutar GetRecords en este servidor CSW. <br/> <br/> Si ingresó la URL manualmente, vuelva a verificarla. <br/> <br/> Si es su servidor, asegúrese de {{cors} } está habilitado. <br/> <br/> De lo contrario, si la recarga no lo soluciona, informe el problema enviando un correo electrónico a {{email}} ",
+      "cors": "CORS"
+    },
+    "czml": {
+      "name": "Lenguaje de cesio (CZML)",
+      "dataSourceErrorMessage": "Esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "errorLoadingTitle": "Error al cargar CZML",
+      "errorLoadingMessage": "Se produjo un error al cargar un archivo CZML. Esto puede indicar que el archivo no es válido o que {{appName}} no lo admite. Si desea asistencia o más información, envíenos un correo electrónico a {{email}}"
+    },
+    "function": {
+      "unknownFormaterTitle": "Formateador desconocido",
+      "unknownFormaterMessage": "El formateador de parámetros de función {{formatter}} es desconocido. \n \n Los formateadores válidos son: \n \n"
+    },
+    "geoJson": {
+      "name": "GeoJSON",
+      "dataSourceErrorMessage": "Esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "errorLoadingTitle": "Error al cargar GeoJSON",
+      "errorParsingMessage": "Se produjo un error al analizar los datos proporcionados como JSON. Esto puede indicar que el archivo no es válido o que {{appName}} no lo admite. Si desea asistencia o más información, envíenos un correo electrónico a {{email}}",
+      "errorLoadingMessage": "Se produjo un error al cargar un archivo GeoJSON. Esto puede indicar que el archivo no es válido o que {{appName}} no lo admite. Si desea asistencia o más información, envíenos un correo electrónico a {{email}}",
+      "couldNotLoadTitle": "No se pudo cargar JSON",
+      "couldNotLoadMessage": "Se produjo un error al recuperar los datos JSON del enlace proporcionado. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Este error también puede indicar que el servidor no admite {{cors}}. Si este es su servidor, verifique que CORS esté habilitado y actívelo si no lo está. Si no controla el servidor, póngase en contacto con el administrador del servidor y solicite que habiliten CORS. O comuníquese con el equipo de '{{appName}}' enviando un correo electrónico a {{email}} y solicite que agreguemos este servidor a la lista de servidores que no son compatibles con CORS y que pueden ser representados por 'appName'. <p> Si no ingresó este enlace manualmente, este error puede indicar que la fuente de datos que está tratando de agregar no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente agregar la fuente de datos nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "unsupportedBrowserTitle": "Navegador web no compatible",
+      "unsupportedBrowserMessage": "Lo sentimos, su navegador web no admite la API de archivos, que {{appName}} requiere para cargar este conjunto de datos. Por favor, actualiza tu navegador web. Para una mejor experiencia, recomendamos las últimas versiones de {{chrome}} o {{firefox}} o {{internetExplorer}}.",
+      "internetExplorer": "Internet Explorer 11",
+      "chrome": "Google Chrome",
+      "firefox": "Mozilla Firefox"
+    },
+    "getToken": {
+      "errorTitle": "Error de token",
+      "invalidToken": "<p> El servidor de tokens respondió con un token no válido. </p> <p> Por favor repórtelo enviando un correo electrónico a {{email}} </p>",
+      "unableToRequest": "<p> No se puede solicitar un token del servidor de tokens. </p> <p> Por favor repórtelo enviando un correo electrónico a {{email}} </p>"
+    },
+    "gltf": {
+      "name": "Formato de transmisión GL (glTF)",
+      "dataSourceErrorMessage": "Esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "notSupportedErrorTitle": "No es compatible en 2D",
+      "notSupportedErrorMessage": "\"{{name}} \"no se puede mostrar en la vista 2D. Cambie a 3D e intente nuevamente.",
+      "error": "Error",
+      "unableToRetrieve": "No se pueden recuperar los detalles de la función de: \n \n {{url}}"
+    },
+    "googleUrlShortener": {
+      "unexpectedResult": "Resultado inesperado de acortamiento de URL",
+      "urlNotLocatedTitle": "La URL de inicio acortada no se encuentra",
+      "urlNotLocatedMessage": "No se encontró la URL del recurso compartido acortada utilizada para iniciar {{appName}}. Esto puede indicar un error en el enlace o que el servicio de acortamiento no está disponible en este momento. Si cree que es un error en {{appName}}, infórmelo enviando un correo electrónico a {{email}}"
+    },
+    "gpx": {
+      "name": "GPX",
+      "dataSourceErrorMessage": "Esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "errorLoadingTitle": "Error al cargar GPX",
+      "errorLoadingMessage": "Se produjo un error al cargar un archivo GPX. Esto puede indicar que el archivo no es válido o que {{appName}} no lo admite. Si desea asistencia o más información, envíenos un correo electrónico a {{email}}"
+    },
+    "imageryLayer": {
+      "intervalSupportErrorTitle": "Intervalos no admitidos",
+      "intervalSupportErrorMessage": "Lo sentimos, los elementos de catálogo {{typeName}} ({{type}}) actualmente no pueden variar en el tiempo especificando la propiedad \"intervalos \".",
+      "resolvingAvailability": "Resolviendo disponibilidad en una ubicación ...",
+      "accessingBaseMapErrorTitle": "Error al acceder al mapa base",
+      "accessingBaseMapErrorMessage": "Se produjo un error al intentar descargar mosaicos para el mapa base: <p> <center> {{name}} </center> </p> Esto puede indicar que hay un problema con su conexión a Internet, que el mapa base está temporalmente no disponible, o que el mapa base no es válido. Seleccione un mapa base diferente con el botón Mapa en la esquina superior derecha. Más detalles técnicos se pueden encontrar a continuación. <br/> <br/>",
+      "accessingCatalogItemErrorTitle": "Error al acceder al elemento del catálogo",
+      "accessingCatalogItemErrorMessage": "Se produjo un error al intentar descargar mosaicos para el elemento del catálogo: <p> <center> {{name}} </center> </p> Esto puede indicar que hay un problema con su conexión a Internet, que el elemento del catálogo está temporalmente no disponible o que el artículo del catálogo no es válido. El elemento del catálogo se ha ocultado del mapa. Puede volver a mostrarlo en el panel de visualización ahora para volver a intentarlo. Más detalles técnicos se pueden encontrar a continuación. <br/> <br/>",
+      "tileErrorTitle": "Error de mosaico",
+      "tileErrorMessage": "El mosaico con la URL: \n {{url}} \n tuvo éxito cuando se cargó con XMLHttpRequest pero falló varias veces cuando se cargó directamente por Cesium o Leaflet. \n Esto puede indicar que el servidor es muy sensible a los encabezados de solicitud proporcionados o es simplemente poco confiable.",
+      "tileErrorMessageII": "Obtuve una respuesta 200 (OK) de URL: \n {{url}} \n pero no se pudo cargar como una imagen.",
+      "unknownTileErrorTitle": "Error de mosaico desconocido",
+      "unknownTileErrorMessage": "Al acceder a la URL: \n {{url}} \nEsto probablemente indica uno de los siguientes: \n * El nombre de host del servidor no se pudo resolver, \n * El servidor no respondió a la solicitud, o \n * El servidor denegó Acceso de intercambio de recursos de origen cruzado (CORS) a esta URL (consulte https://docs.terria.io/guide/connecting-to-data/cross-origin-resource-sharing/).",
+      "unableToDisplayTitle": "No se puede mostrar el conjunto de datos",
+      "unableToDisplayMessage": "{{name}} no se puede mostrar en 2D porque no admite la proyección estándar de Web Mercator (EPSG: 3857). Cambie a 3D si es compatible con su sistema, actualice el conjunto de datos para admitir la proyección o use un conjunto de datos diferente.",
+      "unableToShowLocTitle": "No se puede mostrar en esta ubicación",
+      "unableToShowLocMessage": "{{name}} no se puede mostrar en esta ubicación porque se desconocen los tiempos de captura disponibles. No se encontró la propiedad {{featureTimesProperty}}."
+    },
+    "invokeAnalyticsService": {
+      "invocationFailedTitle": "Invocación de servicio fallida",
+      "invocationFailedMessage": "Se produjo un error en el servidor al calcular {{invocationName}}."
+    },
+    "ionImagery": {
+      "name": "Imágenes de iones de cesio"
+    },
+    "kml": {
+      "name": "KML o KMZ",
+      "dataSourceErrorMessage": "Esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "unexpectedTypeTitle": "Tipo inesperado de datos KML",
+      "unexpectedTypeMessage": "Se espera que KmlCatalogItem.data sea un documento, blob o archivo XML, pero no fue ninguno de estos. Esto puede indicar un error en {{appName}} o un uso incorrecto de la API {{appName}}. Si cree que es un error en {{appName}}, infórmelo enviando un correo electrónico a {{email}}.",
+      "errorLoadingTitle": "Error cargando KML o KMZ",
+      "errorLoadingMessage": "Se produjo un error al cargar un archivo KML o KMZ. Esto puede indicar que el archivo no es válido o que {{appName}} no lo admite. Si desea asistencia o más información, envíenos un correo electrónico a {{email}}."
+    },
+    "magda": {
+      "name": "Distribución MAGDA",
+      "dataSourceErrorMessage": "Esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "distributionDesc": "Descripción de distribución",
+      "idsNotSpecifiedTitle": "Deben especificarse distributionId o datasetId",
+      "idsNotSpecifiedMessage": "MagdaCatalogItem requiere que se especifique distributionId o datasetId.",
+      "retrieveErrorTitle": "Error al recuperar el registro MAGDA",
+      "retrieveErrorMessage": "No se proporciona distribución o ID de conjunto de datos",
+      "notCompatibleTitle": "No se encontraron distribuciones compatibles",
+      "notCompatibleMessageI": "El conjunto de datos MAGDA no tiene una distribución con el ID {{distributionId}} o no tiene un formato compatible.",
+      "notCompatibleMessageII": "El conjunto de datos MAGDA no tiene ninguna distribución con un formato compatible."
+    },
+    "mapboxMap": {
+      "name": "Mapa Mapbox"
+    },
+    "mapboxVectorTile": {
+      "name": "Mapbox Vector Tile"
+    },
+    "ogr": {
+      "name": "Desconocido / convertido a GeoJSON",
+      "dataSourceErrorMessage": "Esta fuente de datos no tiene detalles disponibles.",
+      "serviceErrorMessage": "Este servicio no tiene detalles disponibles.",
+      "legacyBrowserTitle": "Navegador heredado no compatible",
+      "legacyBrowserMessage": "Lo sentimos, su navegador web no admite el tipo \"FormData \", que es requerido por el servicio de conversión '{{appName}}'. Le recomendamos que actualice a la última versión de {{chrome}}, {{firefox}}, {{safari}} o {{internetExplorer}}.",
+      "internetExplorer": "Internet Explorer 11",
+      "chrome": "Google Chrome",
+      "firefox": "Mozilla Firefox",
+      "safari": "Apple Safari",
+      "unsupportedFileTzpe": "Tipo de archivo no soportado",
+      "loadError": "El tamaño del archivo es mayor que el límite de {{maxConversionSizeMB}} MB del servicio de conversión {{appName}}",
+      "invalidFile": "Esto puede indicar que el archivo no es válido o que el servicio de conversión {{appName}} no lo admite.",
+      "errorConvertingToGeoJsonTitle": "Error al convertir el archivo a GeoJson",
+      "errorConvertingToGeoJsonMessage": "Se produjo un error al intentar convertir este archivo a GeoJson.",
+      "emailUs": "Si desea asistencia o más información, envíenos un correo electrónico a {{email}}"
+    },
+    "openStreetMap": {
+      "name": "Abrir callejero"
+    },
+    "placesLikeMe": {
+      "regionsLikeThisName": "Regiones como esta",
+      "regionsLikeThisDescription": "Identifica las regiones que son más parecidas a una región dada de acuerdo con un conjunto dado de características.",
+      "regionTypeName": "Tipo de región",
+      "regionTypeDescription": "El tipo de región a analizar.",
+      "regionName": "Región",
+      "regionDescription": "La región a analizar. El análisis determinará qué regiones son más similares a esta.",
+      "characteristics": "Caracteristicas",
+      "characteristicsDescription": "Las características de la región a incluir en el análisis.",
+      "name": "Lugares como yo",
+      "regioNotSelectedName": "Región no seleccionada",
+      "regioNotSelectedDescription": "Debes seleccionar una Región.",
+      "placesLike": "Lugares como {{regionName}}",
+      "likenessesError": "La lista de semejanzas y la lista de códigos de región no contienen el mismo número de elementos."
+    },
+    "raiseError": {
+      "errorTitle": "Ocurrió un error",
+      "errorMessage": "{{appName}} experimentó un error. Informe esto enviando un correo electrónico a {{email}}. Los detalles del error están a continuación."
+    },
+    "regionMapping": {
+      "noDataForDate": "No hay datos para la fecha seleccionada.",
+      "noDataForRegion": "No hay datos para la región seleccionada.",
+      "outdatedBrowserTitle": "Navegador web desactualizado",
+      "outdatedBrowserMessage": "Está utilizando un navegador web muy antiguo que no puede mostrar conjuntos de datos de \"región asignada\" como este. Actualice a la última versión de Google Chrome, Mozilla Firefox, Microsoft Edge, Microsoft Internet Explorer 11 o Apple Safari lo antes posible. Póngase en contacto con nosotros en {{email}} si tiene alguna inquietud.",
+      "invalidServerTypeTitle": "ServerType no válido {{serverType}} en regionMapping.json",
+      "invalidServerTypeMessage": "Se espera que serverType sea \"WMS \" o \"vector \" pero obtuvo \"{{serverType}} \"",
+      "notRecognised": "Estos nombres de región fueron {{notRecognisedText}}",
+      "notRecognisedText": "No reconocido",
+      "moreThanOneValue": "Estas regiones tenían {{moreThanOneValueText}}",
+      "moreThanOneValueText": "más de un valor",
+      "msg": "Consulte el {{link}} para ver cómo formatear el archivo.",
+      "csvSpecification": "Especificación CSV-geo-au",
+      "issuesLoadingTitle": "Problemas al cargar {{name}}"
+    },
+    "feedback": {
+      "thanksTitle": "¡Gracias por tus comentarios!",
+      "thanksMessage": "Sus comentarios ayudan a mejorar {{appName}}",
+      "unableToSendTitle": "No se pueden enviar comentarios",
+      "unableToSendMessage": "Esto es realmente vergonzoso, pero se produjo un error al intentar enviar sus comentarios. Por favor, envíela por correo electrónico a {{email}} en su lugar."
+    },
+    "resultPending": {
+      "name": "Resultado pendiente"
+    },
+    "sensorObservationService": {
+      "procedure": "Procedimiento",
+      "property": "Propiedad",
+      "sos": "llamada de socorro",
+      "alreadyLoadingTitle": "Datos que ya se están cargando",
+      "alreadyLoadingMessage": "Tus datos aún se están cargando. Podrá cambiar la pantalla una vez que se haya cargado",
+      "unknownError": "El servidor informó un error desconocido.",
+      "exceptionMessage": "El servidor informó un error: \n \n {{exceptionText}}",
+      "missingBody": "El servidor respondió con el cuerpo perdido.",
+      "noFeatures": "No hay características que coincidan con su consulta.",
+      "unknownFormat": "El servidor respondió con un formato de función desconocido.",
+      "noMatchingFeatures": "El servicio de observación del sensor no devolvió ninguna característica que coincida con su consulta."
+    },
+    "time": {
+      "invalidDate": "Fecha invalida",
+      "invalidInitialTimeSource": "InitialTimeSource no válido especificado en el archivo de configuración: {{initialTimeSource}}"
+    },
+    "shareData": {
+      "generateErrorTitle": "No se pudo generar una URL corta.",
+      "generateErrorMessage": "Algo salió mal al intentar usar el servicio de compartir datos para generar una URL corta. Si cree que es un error en {{appName}}, infórmelo enviando un correo electrónico a {{email}}.",
+      "expandErrorTitle": "No se pudo expandir la URL",
+      "expandErrorMessage": "No se encontró el servicio de datos compartidos utilizado para iniciar {{appName}}. Esto puede indicar un error en el enlace o que el servicio no está disponible en este momento. Si cree que es un error en {{appName}}, infórmelo enviando un correo electrónico a {{email}}"
+    },
+    "socrataServer": {
+      "name": "Servidor Socrata",
+      "retrieveErrorMessage": "No se pudieron recuperar los paquetes de este servidor de Socrata. <br/> <br/> Si ingresó la URL manualmente, verifíquelo dos veces. <br/> <br/> De lo contrario, si la recarga no lo soluciona, por favor informe el problema enviando un correo electrónico a {{email}} con los detalles técnicos a continuación. ¡Gracias! <br/> <br/> <pre> {{formatError}} </pre>",
+      "description": "Descripción",
+      "licence": "Licencia",
+      "attributes": "Atributos",
+      "tags": "Etiquetas"
+    },
+    "spatialDetailing": {
+      "name": "Detallado espacial",
+      "description": "Predice las características de las regiones de grano fino aprendiendo y explotando las correlaciones de los datos de grano grueso con las características del censo.",
+      "regionTypeToPredictName": "Tipo de región para predecir",
+      "regionTypeToPredictDescription": "El tipo de región para la cual predecir características.",
+      "coarseDataRegionTypeName": "Tipo de región de datos gruesos",
+      "coarseDataRegionTypeDescription": "El tipo de región con la que están asociadas las características de entrada de grano grueso.",
+      "aggregationName": "Agregación",
+      "aggregationDescription": "Especifica cómo se agregaron los valores de región gruesa. Verdadero si el valor es la media de los valores en toda la región, o Falso si el valor es la suma de los valores en toda la región.",
+      "aggregationTrueName": "Agregación media",
+      "aggregationTrueDescription": "Los valores de región gruesa son la media de las muestras en la región. Por ejemplo, el ingreso familiar promedio.",
+      "aggregationFalseName": "Suma agregación",
+      "aggregationFalseDescription": "Los valores de región gruesa son la suma de muestras en la región. Por ejemplo, población total.",
+      "characteristicToPredictName": "Característico para predecir",
+      "characteristicToPredictDescription": "La característica a predecir para cada región.",
+      "spatialDetailingOf": "Detalles espaciales de {{of}} en {{at}}",
+      "wrongNumberOfElements": "La lista de valores y la lista de códigos de región no contienen el mismo número de elementos."
+    },
+    "tableData": {
+      "unsupportedCharactersTitle": "Caracteres inválidos en columnas de latitud y longitud",
+      "unsupportedCharactersMessage": "No se pudo interpretar el par de latitud y longitud {{longitud}}, {{latitud}}",
+      "bulkGeocoderInfoTitle": "Información de geocodificador a granel",
+      "bulkGeocoderInfoMessage": "El CSV contiene direcciones, pero {{number}} no se puede ubicar en el mapa:",
+      "bulkGeocoderInfo2Message": "Faltan direcciones {{nullAddresses}} del CSV.",
+      "bulkGeocoderErrorTitle": "Error de geocodificador masivo",
+      "bulkGeocoderErrorMessage": "No se pueden asignar direcciones a coordenadas de longitud larga, ya que se produjo un error al recuperar las coordenadas de dirección. Verifique su conexión a Internet o vuelva a intentarlo más tarde."
+    },
+    "terrainCatalog": {
+      "notSupportedErrorTitle": "No es compatible en 2D",
+      "notSupportedErrorMessage": "{{name}} no se puede mostrar en la vista 2D. Cambie a 3D e intente nuevamente"
+    },
+    "terria": {
+      "initErrorTitle": "Error al inicializar servicios",
+      "initErrorMessage": "Se produjo un problema con el servidor de Terria. Esto puede causar que algunas capas o el servicio de conversión no estén disponibles.",
+      "urlLoadErrorTitle": "Problema al cargar la URL",
+      "urlLoadErrorMessage": "Se produjo un problema al inicializar Terria con parámetros de URL.",
+      "loadingInitSourceErrorTitle": "Error al cargar la fuente de inicialización",
+      "loadingInitSourceErrorMessage": "No se pudo cargar la información de inicialización desde {{fragment}} porque no se definieron initFragmentPaths.",
+      "loadingInitSourceError2Message": "Se produjo un error al cargar la información de inicialización desde {{loadSource}}. Esto puede indicar que siguió un enlace no válido o que hay un problema con su conexión a Internet.",
+      "disclaimer": "Descargo de responsabilidad",
+      "buttonTitleConfirm": "Estoy de acuerdo"
+    },
+    "terriaJSONcatalog": {
+      "name": "Función de catálogo Terria JSON",
+      "misconfiguredErrorTitle": "Archivo de inicio mal configurado",
+      "misconfiguredErrorMessage": "Servicio no configurado para TerriaJsonCatalogFunction HTTP 202.",
+      "misconfiguredError2Message": "La configuración HTTP 202 {{url}} no está presente en la respuesta {{xhr}}",
+      "serviceResponseErrorTitle": "La respuesta del servicio no es una cadena JSON",
+      "serviceResponseErrorMessage": "Se suponía que TerriaJsonCatalogFunction recibiría una cadena JSON, recibida {{xhr}}",
+      "requestFailedTitle": "Solicitud fallida",
+      "requestFailedMessage": "La solicitud falló con el código de estado {{status}}.",
+      "asyncResultDescription": "Este es el resultado de invocar el proceso o servicio {{name}} en {{timestamp}} con los siguientes parámetros de entrada.",
+      "loadingInitSourceErrorTitle": "Error al cargar la fuente de inicialización",
+      "loadingInitSourceErrorMessage": "Error al cargar la fuente de inicialización {{fragment}} porque no se definieron initFragmentPaths.",
+      "loadingInitSourceError2Message": "Se produjo un error al cargar la información de inicialización desde {{loadSource}}. Esto puede indicar que siguió un enlace no válido o que hay un problema con su conexión a Internet.",
+      "disclaimer": "Descargo de responsabilidad",
+      "buttonTitleConfirm": "Estoy de acuerdo"
+    },
+    "urlTemplateMapServer": {
+      "name": "Servidor de mapas de plantillas de URL"
+    },
+    "userDrawing": {
+      "devError": "Se requiere una instancia de Terria.",
+      "messageHeader": "Dibujar en el mapa",
+      "pointEntities": "Puntos",
+      "otherEntities": "Líneas y polígonos",
+      "line": "Línea",
+      "firstPoint": "Primer punto",
+      "btnCancel": "Cancelar",
+      "btnDone": "Hecho",
+      "clickToAddFirstPoint": "Haga clic para agregar un punto",
+      "clickToAddAnotherPoint": "Haga clic para agregar otro punto",
+      "anotherPoint": "Otro punto",
+      "userPolygon": "Polígono de usuario"
+    },
+    "webFeatureServiceCatalogGroup": {
+      "wfsServer": "Servidor de servicio de características web (WFS)",
+      "invalidWFSServerTitle": "Servidor WFS no válido",
+      "invalidWFSServerMessage": "Se produjo un error al invocar GetCapabilities en el servidor WFS. La respuesta del servidor no parece ser un documento válido de GetCapabilities. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió temporalmente no está disponible o hay un problema con tu conexión a internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "groupNotAvailableTitle": "El grupo no está disponible.",
+      "groupNotAvailableMessage": "Se produjo un error al invocar GetCapabilities en el servidor WFS. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Este error también puede indicar que el servidor no admite <a href = \"http: // enable-cors. org / \"target = \" _ blank \"> CORS </a>. Si este es su servidor, verifique que CORS esté habilitado y actívelo si no lo está. Si no controla el servidor, póngase en contacto con el administrador del servidor y solicite que habiliten CORS. O bien, comuníquese con el equipo del mapa '{{appName}}' enviando un correo electrónico a {{email}} y solicite que agreguemos este servidor a la lista de servidores que no son compatibles con CORS que pueden ser representados por el propio '{{appName}}' . </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>"
+    },
+    "webFeatureServiceCatalogItem": {
+      "wfs": "Servicio de características web (WFS)"
+    },
+    "webMapServiceCatalogGroup": {
+      "wmsServer": "Servidor de servicio de mapas web (WMS)",
+      "invalidWMSServerTitle": "Servidor WMS no válido",
+      "invalidWMSServerMessage": "Se produjo un error al invocar GetCapabilities en el servidor WMS. La respuesta del servidor no parece ser un documento válido de GetCapabilities. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió temporalmente no está disponible o hay un problema con tu conexión a internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "groupNotAvailableTitle": "El grupo no está disponible.",
+      "groupNotAvailableMessage": "Se produjo un error al invocar GetCapabilities en el servidor WMS. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Este error también puede indicar que el servidor no admite <a href = \"http: // enable-cors. org / \"target = \" _ blank \"> CORS </a>. Si este es su servidor, verifique que CORS esté habilitado y actívelo si no lo está. Si no controla el servidor, póngase en contacto con el administrador del servidor y solicite que habiliten CORS. O bien, comuníquese con el equipo del mapa '{{appName}}' enviando un correo electrónico a {{email}} y solicite que agreguemos este servidor a la lista de servidores que no son compatibles con CORS que pueden ser representados por el propio '{{appName}}' . </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>"
+    },
+    "webMapServiceCatalogItem": {
+      "wms": "Servicio de mapas web (WMS)",
+      "dataDescription": "Descripción de datos",
+      "serviceDescription": "Descripción del servicio",
+      "metadataUrls": "Enlaces de metadatos",
+      "accessConstraints": "Enlaces de metadatos",
+      "serviceContact": "Contacto de servicio",
+      "getCapabilitiesUrl": "URL de GetCapabilities",
+      "noLayerFoundTitle": "No se encontró capa",
+      "noLayerFoundMessage": "El conjunto de datos WMS '{{name}}' no tiene capas que coincidan con '{{layers}}'. {{sugerido}} {{línea}} {{línea}} O bien el archivo de catálogo se ha configurado incorrectamente o el servidor WMS ha cambiado. {{línea}} {{línea}} Informe este error enviando un correo electrónico al correo electrónico}}.",
+      "datasetScaleErrorTitle": "El conjunto de datos no se mostrará a esta escala",
+      "datasetScaleErrorMessage": "El conjunto de datos {{name}} no se mostrará cuando se acerque a esta distancia del mapa porque el custodio de datos ha indicado que los datos no están destinados o no son adecuados para su visualización a esta escala. Haga clic en el botón Información del conjunto de datos en la pestaña Visualización ahora para obtener más información sobre el conjunto de datos y el custodio de datos.",
+      "badlyFormatedTitle": "El conjunto de datos no se mostrará a esta escala",
+      "badlyFormatedMessage": "El conjunto de datos '{{name}}' tiene una periodicidad mal formada, '{{isoSegments}}'. Haga clic en el botón Información del conjunto de datos para obtener más información sobre el conjunto de datos y el custodio de datos.",
+      "missingDataTitle": "Datos perdidos",
+      "missingDataMessage": "El conjunto de datos WMS '{{name}}' no devolvió ningún dato. {{Line}} {{line}} O el archivo del catálogo se configuró incorrectamente o la dirección del servidor cambió. {{Line}} {{ línea}} Informe este error enviando un correo electrónico {{email}}."
+    },
+    "webMapTileServiceCatalogGroup": {
+      "wmtsServer": "Servidor de Web Map Tile Service (WMTS)",
+      "invalidWMTSServerTitle": "Servidor WMTS no válido",
+      "invalidWMTSServerMessage": "Se produjo un error al invocar GetCapabilities en el servidor WMS. La respuesta del servidor no parece ser un documento válido de GetCapabilities. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió temporalmente no está disponible o hay un problema con tu conexión a internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "groupNotAvailableTitle": "El grupo no está disponible.",
+      "groupNotAvailableMessage": "Se produjo un error al invocar GetCapabilities en el servidor WMTS. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Este error también puede indicar que el servidor no admite <a href = \"http: // enable-cors. org / \"target = \" _ blank \"> CORS </a>. Si este es su servidor, verifique que CORS esté habilitado y actívelo si no lo está. Si no controla el servidor, póngase en contacto con el administrador del servidor y solicite que habiliten CORS. O bien, comuníquese con el equipo del mapa '{{appName}}' enviando un correo electrónico a {{email}} y solicite que agreguemos este servidor a la lista de servidores que no son compatibles con CORS que pueden ser representados por el propio '{{appName}}' . </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>"
+    },
+    "webMapTileServiceCatalogItem": {
+      "wmts": "Servicio de mosaico de mapas web (WMTS)",
+      "dataDescription": "Descripción de datos",
+      "serviceDescription": "Descripción del servicio",
+      "accessConstraints": "Restricciones de acceso"
+    },
+    "webProcessingService": {
+      "wps": "Servicio de procesamiento web (WPS)",
+      "invalidWPSServerTitle": "Servidor WPS no válido",
+      "invalidWPSServerMessage": "Se produjo un error al invocar DescribeProcess en el servidor WPS para el nombre del proceso {{name}}. La respuesta del servidor no parece ser un documento DescribeProcess válido. <p> Este error también puede indicar que el servidor de procesamiento que especificó no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir nuevamente el servidor de procesamiento y, si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "processDescriptionErrorTitle": "El proceso no tiene una descripción del proceso",
+      "processDescriptionErrorMessage": "El WPS DescribeProcess para este proceso no incluye una ProcessDescription.",
+      "processInputErrorTitle": "El proceso no tiene ninguna entrada",
+      "processInputErrorMessage": "Este proceso WPS no especifica ninguna entrada.",
+      "unsupportedParameterErrorTitle": "Tipo de parámetro no compatible",
+      "unsupportedParameterErrorMessage": "El parámetro {{identificador}} no es un tipo de parámetro compatible.",
+      "invalidResponseErrorTitle": "Respuesta inválida del servidor WPS",
+      "invalidResponseErrorMessage": "Se produjo un error al acceder a la ubicación de estado en el servidor WPS para el nombre del proceso {{name}}. La respuesta del servidor no parece ser un documento ExecuteResponse válido. <p> Este error también puede indicar que el servidor de procesamiento que especificó no está disponible temporalmente o que hay un problema con su conexión a Internet. Si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "invalidResponseError2Title": "Respuesta no válida del servidor WPS",
+      "invalidResponseError2Message": "La respuesta del servidor WPS no incluye un elemento de estado.",
+      "failureReasonUnknowError": "La razón del fracaso es desconocida.",
+      "asyncShortReportFailed": "La invocación del servicio de procesamiento web ha fallado. Más detalles están disponibles en el panel de información.",
+      "errorDetails": "Error de detalles",
+      "resultPendingDescription": "Este es el resultado de invocar el proceso o servicio {{name}} en {{timestamp}} con los siguientes parámetros de entrada.",
+      "regionTypeDescription": "El tipo de región a analizar.",
+      "regionTypeName": "Tipo de región",
+      "regionParameterName": "Parámetro de región",
+      "wpsServer": "Servidor de servicio de procesamiento web (WPS)",
+      "wpsResult": "Resultado del servicio de procesamiento web"
+    },
+    "wfsFeatures": {
+      "featuresGroup": "Grupo de características en un servidor de servicio de características web (WFS)",
+      "queryErrorTitle": "Error al consultar el servidor WFS",
+      "queryErrorMessage": "Se produjo un error al invocar GetFeature en el servidor WFS. La respuesta del servidor no parece ser un documento GeoJSON válido. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió temporalmente no está disponible o hay un problema con tu conexión a internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>",
+      "groupNotAvailableTitle": "El grupo no está disponible.",
+      "groupNotAvailableMessage": "Se produjo un error al invocar GetFeature en el servidor WFS. <p> Si ingresó el enlace manualmente, verifique que el enlace sea correcto. </p> <p> Este error también puede indicar que el servidor no admite <a href = \"http: // enable-cors. org / \"target = \" _ blank \"> CORS </a>. Si este es su servidor, verifique que CORS esté habilitado y actívelo si no lo está. Si no controla el servidor, póngase en contacto con el administrador del servidor y solicite que habiliten CORS. O bien, comuníquese con el equipo del mapa '{{appName}}' enviando un correo electrónico a {{email}} y solicite que agreguemos este servidor a la lista de servidores que no son compatibles con CORS que pueden ser representados por el propio '{{appName}}' . </p> <p> Si no ingresó este enlace manualmente, este error puede indicar que el grupo que abrió no está disponible temporalmente o que hay un problema con su conexión a Internet. Intente abrir el grupo nuevamente, y si el problema persiste, infórmelo enviando un correo electrónico a {{email}}. </p>"
+    }
+  },
+  "deltaTool": {
+    "titlePrefix": "Detección de cambio",
+    "description": "Esta herramienta visualiza la diferencia entre las imágenes capturadas en dos puntos discretos en el tiempo.",
+    "pickLocation": "Para ver las imágenes disponibles, seleccione su ubicación de interés en el mapa opuesto.",
+    "cancelBtn": "Cancelar",
+    "generateDeltaBtn": "Generar mapa de diferencia",
+    "selectedLocation": "Lugar Seleccionado",
+    "primaryImage": "Imagen primaria",
+    "secondaryImage": "Imagen secundaria",
+    "pickerMessage": {
+      "pickFirst": "Seleccione un punto haciendo clic en el mapa",
+      "pickAnother": "Haga clic en otro punto para cambiar la selección.",
+      "pickError": "¡Error al intentar resolver imágenes en la ubicación! Seleccione un punto nuevamente haciendo clic en el mapa."
+    },
+    "catalogItem": {
+      "description": "Esta capa visualiza la diferencia entre las imágenes capturadas en dos puntos discretos en el tiempo."
+    },
+    "loadingError": {
+      "title": "Error al cargar la herramienta Delta",
+      "message": "Se produjo un error al intentar cargar la herramienta delta desde el servidor. Inténtalo de nuevo."
+    }
+  }
+}
