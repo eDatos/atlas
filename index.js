@@ -115,8 +115,10 @@ module.exports = terria.start({
                 terria: terria,
                 key: terria.configParameters.bingMapsKey
             }),
-            new GazetteerSearchProviderViewModel({terria}),
-            new GnafSearchProviderViewModel({terria})
+            /* BEGIN CUSTOM */
+            //new GazetteerSearchProviderViewModel({terria}),
+            //new GnafSearchProviderViewModel({terria})
+            /* END CUSTOM */
         ];
 
         // Automatically update Terria (load new catalogs, etc.) when the hash part of the URL changes.
