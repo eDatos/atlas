@@ -1,4 +1,3 @@
-
 {
   "general": {
     "close": "Cerrar",
@@ -327,8 +326,8 @@
     "colorScaleUpdateRange": "Rango de actualización",
     "displayPercent": "Mostrar como un porcentaje del total regional",
     "opacity": "Opacidad: {{opacity}}%",
-    "zoomToTitle": "Zoom a extensión",
-    "zoomTo": "Zoom A Extensión",
+    "zoomToTitle": "Centrar",
+    "zoomTo": "Centrar",
     "openFeatureTitle": "Zoom a datos",
     "openFeature": "Zoom a",
     "previewItemTitle": "información",
