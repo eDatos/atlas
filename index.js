@@ -108,7 +108,13 @@ module.exports = terria.start({
             }
 
             return Promise.all([
-                renderMetadataHtml(applicationConfig.metadata.navbarPathKey, '#istac-navbar-container'), 
+                getMetadataValue(applicationConfig.metadata.navbarPathKey)
+                    .then(value => fetch(`${value}?appName=Estadística geoespacial`))
+                    .then(res => res.text())
+                    .then(html => {
+                        document.querySelector('#istac-navbar-container').innerHTML = html;
+                        document.querySelector('#istac-app-header-content').innerHTML = `<div id="dropdown-language-container"></div>`;
+                    }), 
                 renderMetadataHtml(applicationConfig.metadata.footerPathKey, '#istac-footer-container')
             ])
             .then(_ => applicationConfig)
