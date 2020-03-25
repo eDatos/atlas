@@ -41,7 +41,6 @@ i18n.addResourceBundle('en', 'app', translationAppEN);
 
 import WebMapServiceCatalogItem from 'terriajs/lib/Models/WebMapServiceCatalogItem';
 import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
-import applicationConfig from './application.json';
 /* END CUSTOM */
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
@@ -74,30 +73,6 @@ if (process.env.NODE_ENV !== "production" && module.hot) {
     document.styleSheets[0].disabled = true;
 }
 
-/* BEGIN CUSTOM */
-function getMetadataValue(metadataValueKey) {
-    var metadataEndpoint = applicationConfig.metadata.endpoint;
-    return fetch(`${metadataEndpoint}/properties/${metadataValueKey}?_type=json`)
-        .then(res => res.json())
-        .then(jsonResponse => jsonResponse.value);
-}
-getMetadataValue(applicationConfig.metadata.navbarPathKey)
-    .then(value => fetch(value))
-    .then(res => res.text())
-    .then(resText => {
-        document.querySelector('#istac-navbar-container').innerHTML = resText;
-    })
-    .catch(console.error);
-
-getMetadataValue(applicationConfig.metadata.footerPathKey)
-    .then(value => fetch(value))
-    .then(res => res.text())
-    .then(resText => {
-        document.querySelector('#istac-footer-container').innerHTML = resText;
-    })
-    .catch(console.error);
-/* END CUSTOM */
-
 module.exports = terria.start({
     // If you don't want the user to be able to control catalog loading via the URL, remove the applicationUrl property below
     // as well as the call to "updateApplicationOnHashChange" further down.
@@ -108,7 +83,44 @@ module.exports = terria.start({
     })
 }).otherwise(function(e) {
     raiseErrorToUser(terria, e);
-}).always(function() {
+})
+/* BEGIN CUSTOM */
+.then(function() {
+    return fetch('application.json')
+        .then(res => res.json())
+        .then(application => {
+            var applicationConfig = application;
+            
+            function getMetadataValue(metadataValueKey) {
+                var metadataEndpoint = applicationConfig.metadata.endpoint;
+                return fetch(`${metadataEndpoint}/properties/${metadataValueKey}?_type=json`)
+                    .then(res => res.json())
+                    .then(jsonResponse => jsonResponse.value);
+            }
+
+            function renderMetadataHtml(metadataValueKey, querySelectorId) {
+                return getMetadataValue(metadataValueKey)
+                    .then(value => fetch(value))
+                    .then(res => res.text())
+                    .then(html => {
+                        document.querySelector(querySelectorId).innerHTML = html;
+                    })
+            }
+
+            return Promise.all([
+                renderMetadataHtml(applicationConfig.metadata.navbarPathKey, '#istac-navbar-container'), 
+                renderMetadataHtml(applicationConfig.metadata.footerPathKey, '#istac-footer-container')
+            ])
+            .then(_ => applicationConfig)
+            .catch(console.error);
+        })
+        .catch(err => {
+            console.log('errr', err);
+        })
+
+})
+/* END CUSTOM */
+.always(function(applicationConfig) {
     try {
         viewState.searchState.locationSearchProviders = [
             new BingMapsSearchProviderViewModel({
@@ -134,20 +146,24 @@ module.exports = terria.start({
         var globalBaseMaps = createGlobalBaseMapOptions(terria, terria.configParameters.bingMapsKey);
 
         /* BEGIN CUSTOM */
-        var customBaseMaps = applicationConfig.baseMaps.map(function(baseMapconfig) {
-            var customBaseMap = new WebMapServiceCatalogItem(terria);
-            customBaseMap.name = baseMapconfig.name;
-            customBaseMap.layers = baseMapconfig.layers;
-            customBaseMap.url = baseMapconfig.url;
-            customBaseMap.opacity = baseMapconfig.opacity || 1.0;
-            customBaseMap.parameters = {
-                format: baseMapconfig.format || 'image/png'
-            }
-            return new BaseMapViewModel({
-                image: baseMapconfig.image,
-                catalogItem: customBaseMap,
+        var customBaseMaps = [];
+        
+        if (applicationConfig) {
+            customBaseMaps = applicationConfig.baseMaps.map(function(baseMapconfig) {
+                var customBaseMap = new WebMapServiceCatalogItem(terria);
+                customBaseMap.name = baseMapconfig.name;
+                customBaseMap.layers = baseMapconfig.layers;
+                customBaseMap.url = baseMapconfig.url;
+                customBaseMap.opacity = baseMapconfig.opacity || 1.0;
+                customBaseMap.parameters = {
+                    format: baseMapconfig.format || 'image/png'
+                }
+                return new BaseMapViewModel({
+                    image: baseMapconfig.image,
+                    catalogItem: customBaseMap,
+                });
             });
-        });
+        }
         
         var allBaseMaps = customBaseMaps.concat(globalBaseMaps);
         var excludedBasesMapNames = ['Australian Topography', 'Natural Earth II', 'NASA Black Marble'];
