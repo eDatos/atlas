@@ -39,8 +39,8 @@ i18n.addResourceBundle('es', 'translation', translationES);
 i18n.addResourceBundle('es', 'app', translationAppES);
 i18n.addResourceBundle('en', 'app', translationAppEN);
 
-import WebMapServiceCatalogItem from 'terriajs/lib/Models/WebMapServiceCatalogItem';
 import BaseMapViewModel from 'terriajs/lib/ViewModels/BaseMapViewModel';
+import createCatalogMemberFromType from 'terriajs/lib/Models/createCatalogMemberFromType';
 /* END CUSTOM */
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
@@ -156,21 +156,14 @@ module.exports = terria.start({
         
         if (applicationConfig) {
             customBaseMaps = applicationConfig.baseMaps.map(function(baseMapconfig) {
-                var customBaseMap = new WebMapServiceCatalogItem(terria);
-                customBaseMap.name = baseMapconfig.name;
-                customBaseMap.layers = baseMapconfig.layers;
-                customBaseMap.url = baseMapconfig.url;
-                customBaseMap.opacity = baseMapconfig.opacity || 1.0;
-                customBaseMap.parameters = {
-                    format: baseMapconfig.format || 'image/png'
-                }
+                var customBaseMap = createCatalogMemberFromType(baseMapconfig.type, terria);
+                customBaseMap.updateFromJson(baseMapconfig);
                 return new BaseMapViewModel({
                     image: baseMapconfig.image,
                     catalogItem: customBaseMap,
                 });
             });
         }
-        
         var allBaseMaps = customBaseMaps.concat(globalBaseMaps);
         var excludedBasesMapNames = ['Australian Topography', 'Natural Earth II', 'NASA Black Marble'];
         var baseMapsCustomData = [
