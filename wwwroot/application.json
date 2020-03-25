@@ -4,5 +4,13 @@
         "navbarPathKey": "sie.style.header.url",
         "footerPathKey": "sie.style.footer.url"
     },
-    "baseMaps": []
+    "baseMaps": [
+        {
+            "name": "ISTAC Base",
+            "url": "https://api.mapbox.com/styles/v1/istac/cjucn2je5190f1ft71y0c829a/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiaXN0YWMiLCJhIjoiY2p1Y21zenNiMG53MDQ0cGk1OGtzczl1MCJ9.Yp_T9Jf8_bHI2j0FsGXiKw",
+            "opacity": 1,
+            "type": "url-template",
+            "image": "images/istac-base.png"
+        }
+    ]
 }
