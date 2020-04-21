@@ -26,7 +26,7 @@ deploy:
         TRANSFER_PATH: ~/estadisticas/tmp/terria
         DEPLOY_TARGET_PATH: /servers/estadisticas/terria
     script:
-        - scp -r ./wwwroot deploy@estadisticas.arte-consultores.com:$TRANSFER_PATH
-        - ssh deploy@estadisticas.arte-consultores.com "sudo rm -Rf $DEPLOY_TARGET_PATH/* && sudo mv $TRANSFER_PATH/* $DEPLOY_TARGET_PATH && sudo chown -R www-data:www-data $DEPLOY_TARGET_PATH && rm -rf $TRANSFER_PATH"
+        - scp -o ProxyCommand="ssh -W %h:%p deploy@estadisticas.arte-consultores.com" -r ./wwwroot deploy@192.168.10.16:$TRANSFER_PATH
+        - ssh -o ProxyCommand="ssh -W %h:%p deploy@estadisticas.arte-consultores.com" deploy@192.168.10.16 "sudo rm -Rf $DEPLOY_TARGET_PATH/* && sudo mv $TRANSFER_PATH/* $DEPLOY_TARGET_PATH && sudo chown -R www-data:www-data $DEPLOY_TARGET_PATH && rm -rf $TRANSFER_PATH"
     only:
         - master
