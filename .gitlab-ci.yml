@@ -23,7 +23,7 @@ build:
 deploy:
     stage: deploy
     variables:
-        TRANSFER_PATH: ~/estadisticas/tmp/terria
+        TRANSFER_PATH: ~/terria/tmp
         DEPLOY_TARGET_PATH: /servers/estadisticas/terria
     script:
         - scp -o ProxyCommand="ssh -W %h:%p deploy@estadisticas.arte-consultores.com" -r ./wwwroot/* deploy@192.168.10.16:$TRANSFER_PATH
