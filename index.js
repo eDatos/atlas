@@ -114,7 +114,8 @@ module.exports = terria.start({
                     .then(html => {
                         document.querySelector('#istac-navbar-container').innerHTML = html;
                         document.querySelector('#istac-app-header-content').innerHTML = `<div id="dropdown-language-container"></div>`;
-                    }), 
+                    })
+                    .then(terria),
                 renderMetadataHtml(applicationConfig.metadata.footerPathKey, '#istac-footer-container')
             ])
             .then(_ => applicationConfig)
