@@ -35,6 +35,11 @@ h1 {
       );
     }
   }
+  
+  .tjs-map-interaction-window__window {
+    top: 50px + $appHeaderHeight;
+  }
+  
   /* END TERRIAJS OVERRIDES */
 }
 
