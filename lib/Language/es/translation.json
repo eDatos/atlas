@@ -117,7 +117,7 @@
     "nativeResolutionHeader": "Usar resolución de dispositivo nativa",
     "mapQuality": "Calidad del mapa ráster:",
     "qualityLabel": "Calidad",
-    "performanceLabel": "Actuación"
+    "performanceLabel": "Rendimiento"
   },
   "feedback": {
     "feedbackPreamble": "¡Nos encantaría saber de usted!",
@@ -249,7 +249,7 @@
     "webAdd": "Agregar datos web",
     "webFileType": "<0> Paso 1: </0> Seleccionar tipo de archivo (opcional)",
     "webFile": "<0> Paso 2: </0> Ingrese la URL del archivo de datos o servicio web",
-    "urlInputBtn": "Añadir",
+    "urlInputBtn": "Ok",
     "browse": "Vistazo...",
     "localTitle": "Agregar datos locales",
     "webTitle": "Agregar datos web",
