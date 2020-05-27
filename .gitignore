@@ -1,3 +1,13 @@
+.*
+!.editorconfig
+!.eslintrc
+!.gitattributes
+!.gitignore
+!.gitlab-ci.yml
+!.gitmodules
+!.npmignore
+!.prettierignore
+!.travis.yml
 node_modules/
 .idea/
 wwwroot/build/
@@ -21,3 +31,5 @@ wwwroot/privateconfig.json
 deploy/packages/
 deploy/work/
 packages/
+/target/
+/node/
