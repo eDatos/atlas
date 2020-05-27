@@ -1,0 +1,43 @@
+{
+  "homeCamera": {
+    "north": 30,
+    "east": -13,
+    "south": 27,
+    "west": -19
+  },
+  "baseMapName": "Bing Maps Aerial with Labels",
+  "catalog": [
+    {
+      "name": "Referencias",
+      "type": "group",
+      "preserveOrder": true,
+      "isOpen": true,
+      "items": [
+        {
+          "layers": "mapastematicos:MUNICIPIOS",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+          "type": "wms",
+          "name": "Límites municipales",
+          "format": "image/png",
+          "isShown": true,
+          "isLegendVisible": false
+        }
+      ]
+    },
+    {
+      "name": "Datos",
+      "type": "group",
+      "preserveOrder": true,
+      "isOpen": true,
+      "items": [
+        {
+          "layers": "mapastematicos:PMH_2017_GRID250",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+          "type": "wms",
+          "name": "GRID 250",
+          "isShown": true
+        }
+      ]
+    }
+  ]
+}
