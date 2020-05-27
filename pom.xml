@@ -3,7 +3,7 @@
 	<groupId>es.gobcan.istac.terria</groupId>
 	<artifactId>terria</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>TERRIA</name>
 	<description>Atlas Estadísticos de Canarias</description>
 
@@ -92,7 +92,7 @@
 		<connection>scm:git:http://git.arte-consultores.com/istac/terria</connection>
 		<developerConnection>scm:git:http://git.arte-consultores.com/istac/terria</developerConnection>
 		<url>http://git.arte-consultores.com/istac/terria</url>
-		<tag>20200527-1531-v1.0.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<issueManagement>
