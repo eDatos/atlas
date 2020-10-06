@@ -1,8 +1,5 @@
 {
-    "port": 3001,
     "allowProxyFor": [
-
         "gobiernodecanarias.org"
-
     ]
 }
