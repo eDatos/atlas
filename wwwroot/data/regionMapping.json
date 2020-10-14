@@ -1,0 +1,17 @@
+{
+    "comments": "Matching takes place in the order defined in this file. Place code matches before name matches, and smaller regions before larger ones.",
+    "regionWmsMap": {
+        "DISTRITOS-FID": {
+            "layerName": "mapastematicos:DISTRITOS",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE",
+            "aliases": [
+                "geocode"
+            ],
+            "digits": 18,
+            "description": "Indicadores Distritos Canarias año 2007",
+            "regionIdsFile": "data/regionId/region_map-DISTRITOS.json"
+        }
+    }
+}
