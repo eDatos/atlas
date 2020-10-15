@@ -19,7 +19,6 @@
           "type": "wms",
           "name": "Límites municipales",
           "format": "image/png",
-          "isShown": true,
           "isLegendVisible": false
         }
       ]
@@ -34,24 +33,21 @@
           "layers": "mapastematicos:PMH_2017_GRID250",
           "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
           "type": "wms",
-          "name": "GRID 250",
-          "isShown": true
+          "name": "GRID 250"
         },
         {
           "name": "Países del mundo en 2013, delimitaciones territoriales para fines estadísticos en Canarias",
           "type": "ckan-resource",
           "url": "https://www3.gobiernodecanarias.org/aplicaciones/catalogoistac",
           "resourceId": "1acbf80b-27ac-4fb7-8992-7f7c71592fa9",
-          "datasetId": "paises-del-mundo-en-2013-delimitaciones-territoriales-para-fines-estadisticos-en-canarias",
-          "isShown": true
+          "datasetId": "paises-del-mundo-en-2013-delimitaciones-territoriales-para-fines-estadisticos-en-canarias"
         },
         {
           "name": "Malla estadística Eurostat adaptada a Canarias, celdas 250 m de lado",
           "type": "ckan-resource",
           "url": "https://www3.gobiernodecanarias.org/aplicaciones/catalogoistac",
           "resourceId": "d57d497b-501d-4867-8369-6db43ff7c807",
-          "datasetId": "malla-estadistica-eurostat-adaptada-a-canarias-celdas-250-m-de-lado",
-          "isShown": true
+          "datasetId": "malla-estadistica-eurostat-adaptada-a-canarias-celdas-250-m-de-lado"
         },
         {
           "name": "Indicadores Distritos de Canarias año 2007",
