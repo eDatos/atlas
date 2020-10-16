@@ -6,6 +6,7 @@
     "west": -19
   },
   "baseMapName": "Bing Maps Aerial with Labels",
+  "viewerMode": "2d",
   "catalog": [
     {
       "name": "Referencias",
