@@ -1,6 +1,6 @@
 {
     "initializationUrls": [
-        "terria"
+        "municipios"
     ],
     "parameters": {
         "proxyableDomainsUrl": "",

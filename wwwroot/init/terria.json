@@ -21,6 +21,22 @@
           "name": "Límites municipales",
           "format": "image/png",
           "isLegendVisible": false
+        },
+        {
+          "layers": "mapastematicos:secciones_20040101_generalizada",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+          "type": "wms",
+          "name": "Secciones 2004",
+          "format": "image/png",
+          "isLegendVisible": false
+        },
+        {
+          "layers": "mapastematicos:GRID_CAN_250M",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+          "type": "wms",
+          "name": "GRIDcito 250m",
+          "format": "image/png",
+          "isLegendVisible": false
         }
       ]
     },
@@ -39,14 +55,14 @@
         {
           "name": "Países del mundo en 2013, delimitaciones territoriales para fines estadísticos en Canarias",
           "type": "ckan-resource",
-          "url": "https://www3.gobiernodecanarias.org/aplicaciones/catalogoistac",
+          "url": "https://datos.canarias.es/catalogos/estadisticas/",
           "resourceId": "1acbf80b-27ac-4fb7-8992-7f7c71592fa9",
           "datasetId": "paises-del-mundo-en-2013-delimitaciones-territoriales-para-fines-estadisticos-en-canarias"
         },
         {
           "name": "Malla estadística Eurostat adaptada a Canarias, celdas 250 m de lado",
           "type": "ckan-resource",
-          "url": "https://www3.gobiernodecanarias.org/aplicaciones/catalogoistac",
+          "url": "https://datos.canarias.es/catalogos/estadisticas/",
           "resourceId": "d57d497b-501d-4867-8369-6db43ff7c807",
           "datasetId": "malla-estadistica-eurostat-adaptada-a-canarias-celdas-250-m-de-lado"
         },
@@ -69,6 +85,108 @@
               },
               "ZIP": {
                 "type": "hidden"
+              }
+            }
+          }
+        },
+        {
+          "name": "Australia - Taxation Statistics 2016-2017",
+          "id": "Root Group/National Data Sets/Social and Economic/Taxation Statistics 2016-2017",
+          "type": "ckan-resource",
+          "url": "https://data.gov.au",
+          "resourceId": "d2804aa6-4c32-453c-9d60-d957e9028952",
+          "itemProperties": {
+            "showWarnings": false,
+            "tableStyle": {
+              "dataVariable": "Average taxable income or loss",
+              "timeColumn": null,
+              "colorPalette": "5-class PuBu",
+              "columns": {
+                "Postcode": {
+                  "name": "postcode_2011"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": " ISTAC - ORIGINAL - Información estadística. Indicadores demográficos",
+          "id": "PARECE QUE DA IGUAL ESTE VALOR",
+          "type": "ckan-resource",
+          "url": "https://pre-datos.canarias.es/catalogos/estadisticas/",
+          "resourceId": "d792de79-ed76-4857-93e7-03c173484202",
+          "itemProperties": {
+            "showWarnings": false,
+            "tableStyle": {
+              "dataVariable": "Average taxable income or loss",
+              "timeColumn": null,
+              "colorPalette": "5-class PuBu",
+              "columns": {
+                "Postcode": {
+                  "name": "poblacion"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": " ISTAC - RETOCADO - Información estadística. Indicadores demográficos",
+          "id": "PARECE QUE DA IGUAL ESTE VALOR PERO ES EL ID DENTRO DE ESTE ARRAY",
+          "type": "ckan-resource",
+          "url": "https://pre-datos.canarias.es/catalogos/estadisticas/",
+          "resourceId": "72ac5ea2-204f-4c3e-b395-848c331435a2",
+          "itemProperties": {
+            "showWarnings": false,
+            "tableStyle": {
+              "dataVariable": "Average taxable income or loss",
+              "timeColumn": null,
+              "colorPalette": "5-class PuBu",
+              "columns": {
+                "Postcode": {
+                  "name": "poblacion"
+                }
+              }
+            }
+          },
+          "csvResourceFormat": "CSV"
+        },
+        {
+          "name": " ISTAC- PRO - Original - GRID 250m Información estadística. Indicadores demográficos. Año 2010",
+          "id": "2 PARECE QUE DA IGUAL ESTE VALOR PERO ES EL ID DENTRO DE ESTE ARRAY",
+          "type": "ckan-resource",
+          "url": "https://datos.canarias.es/catalogos/estadisticas/",
+          "resourceId": "d2275664-fe82-48ff-a340-aaefb5238aee",
+          "itemProperties": {
+            "showWarnings": false,
+            "tableStyle": {
+              "dataVariable": "Average taxable income or loss",
+              "timeColumn": null,
+              "colorPalette": "5-class PuBu",
+              "columns": {
+                "Postcode": {
+                  "name": "poblacion"
+                }
+              }
+            }
+          },
+          "csvResourceFormat": "CSV"
+        },
+        {
+          "name": " ISTAC - PRE - Original - GRID 250m Información estadística. Indicadores demográficos. Año 2010",
+          "id": "3 PARECE QUE DA IGUAL ESTE VALOR PERO ES EL ID DENTRO DE ESTE ARRAY",
+          "type": "ckan-resource",
+          "url": "https://pre-datos.canarias.es/catalogos/estadisticas/",
+          "resourceId": "2f42c769-9d84-4e27-a898-eea5457e5988",
+          "itemProperties": {
+            "showWarnings": false,
+            "tableStyle": {
+              "dataVariable": "Average taxable income or loss",
+              "timeColumn": null,
+              "colorPalette": "5-class PuBu",
+              "columns": {
+                "Postcode": {
+                  "name": "poblacion"
+                }
               }
             }
           }
