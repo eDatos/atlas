@@ -1,30 +1,6 @@
 {
     "comments": "Matching takes place in the order defined in this file. Place code matches before name matches, and smaller regions before larger ones.",
     "regionWmsMap": {
-        "DISTRITOS-FID": {
-            "layerName": "mapastematicos:DISTRITOS",
-            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
-            "uniqueIdProp": "FID",
-            "regionProp": "xxxGEOCODE",
-            "aliases": [
-                "xxxgeocode"
-            ],
-            "digits": 18,
-            "description": "Indicadores Distritos Canarias año 2007",
-            "regionIdsFile": "data/regionId/region_map-DISTRITOS.json"
-        },
-        "GRID-250m-FID": {
-            "layerName": "mapastematicos:GRID_CAN_250M",
-            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
-            "uniqueIdProp": "FID",
-            "regionProp": "COLUMNA",
-            "aliases": [
-                "columna"
-            ],
-            "digits": 18,
-            "description": "Prueba municipios Canarias",
-            "regionIdsFile": "data/regionId/region_map-GRID_CAN_250M.json"
-        },
         "SECCIONES-2020": {
             "layerName": "mapastematicos:secciones_20200101_generalizada",
             "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
@@ -229,18 +205,17 @@
             "description": "Indicadores Secciones de  Canarias año 2004",
             "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2004.json"
         },
-        "MALLAS-2010": {
+        "MALLA-2010": {
             "layerName": "mapastematicos:GRID_CAN_250M",
             "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
             "uniqueIdProp": "FID",
             "regionProp": "GEOCODE_MALLA_2010",
             "aliases": [
-                "geocode_mallas_2010",
-                "geocode"
+                "geocode_malla_2010"
             ],
             "digits": 18,
             "description": "Indicadores a 1 de enero de los años 2020",
-            "regionIdsFile": "data/regionId/region_map-GRID_CAN_250M.json"
+            "regionIdsFile": "data/regionId/mallas/region_map-GRID_CAN_250M.json"
         },
         "MUNICIPIOS_ANTES_2007": {
             "layerName": "mapastematicos:municipios_20170101_antes2007",
@@ -248,9 +223,9 @@
             "uniqueIdProp": "FID",
             "regionProp": "GEOCODE_MUNICIPIOS_ANTES_2007",
             "aliases": [
-                "geocode_municipios_antes_2007", "geocode"
+                "geocode_municipios_antes_2007"
             ],
-            "digits": 18,
+            "digits": 5,
             "description": "Municipios de Canarias antes de 2007",
             "regionIdsFile": "data/regionId/municipios/region_map-MUNICIPIOS-ANTES-2007.json"
         },
@@ -260,9 +235,9 @@
             "uniqueIdProp": "FID",
             "regionProp": "GEOCODE_MUNICIPIOS_DESPUES_2007",
             "aliases": [
-                "geocode_municipios_despues_2007", "geocode"
+                "geocode_municipios_despues_2007"
             ],
-            "digits": 18,
+            "digits": 5,
             "description": "Municipios de Canarias después de 2007",
             "regionIdsFile": "data/regionId/municipios/region_map-MUNICIPIOS-DESPUES-2007.json"
         }
