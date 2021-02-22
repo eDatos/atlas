@@ -1,6 +1,6 @@
 {
     "initializationUrls": [
-        "municipios"
+        "catalogo-datos-estadisticos"
     ],
     "parameters": {
         "proxyableDomainsUrl": "",

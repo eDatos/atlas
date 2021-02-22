@@ -37,6 +37,15 @@
           "name": "GRIDcito 250m",
           "format": "image/png",
           "isLegendVisible": false
+        },
+        {
+          "layers": "mapastematicos:distritos_20190101",
+          "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+          "type": "wms",
+          "name": "Prueba Temporal",
+          "format": "image/png",
+          "populateIntervalsFromTimeDimension": "FECHA",
+          "isLegendVisible": false
         }
       ]
     },

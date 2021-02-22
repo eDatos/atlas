@@ -241,6 +241,30 @@
             "digits": 18,
             "description": "Indicadores a 1 de enero de los años 2020",
             "regionIdsFile": "data/regionId/region_map-GRID_CAN_250M.json"
+        },
+        "MUNICIPIOS_ANTES_2007": {
+            "layerName": "mapastematicos:municipios_20170101_antes2007",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_MUNICIPIOS_ANTES_2007",
+            "aliases": [
+                "geocode_municipios_antes_2007", "geocode"
+            ],
+            "digits": 18,
+            "description": "Municipios de Canarias antes de 2007",
+            "regionIdsFile": "data/regionId/municipios/region_map-MUNICIPIOS-ANTES-2007.json"
+        },
+        "MUNICIPIOS_DESPUES_2007": {
+            "layerName": "mapastematicos:municipios_20170101_despues2007",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_MUNICIPIOS_DESPUES_2007",
+            "aliases": [
+                "geocode_municipios_despues_2007", "geocode"
+            ],
+            "digits": 18,
+            "description": "Municipios de Canarias después de 2007",
+            "regionIdsFile": "data/regionId/municipios/region_map-MUNICIPIOS-DESPUES-2007.json"
         }
     }
 }

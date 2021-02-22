@@ -30,15 +30,15 @@
                             "isOpen": false,
                             "items": [
                                 {
-                                    "name": "Indicadores a 1 de enero de 2020",
+                                    "name": "Indicadores Municipales antes del 2007",
                                     "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_antes_2007.csv",
+                                    "description": "Indicadores Municipales antes del 2007",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
+                                        "regionVariable": "GEOCODE_MUNICIPIOS_ANTES_2007",
+                                        "regionType": "MUNICIPIOS_ANTES_2007",
                                         "colorBins": 5,
                                         "colorPalette": "5-class Oranges",
                                         "colorBinMethod": "ckmeans",
@@ -53,452 +53,16 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2019",
+                                    "name": "Indicadores Municipales después del 2007",
                                     "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_despues_2007.csv",
+                                    "description": "Indicadores Municipales después del 2007",
                                     "opacity": ".8",
+                                    "isShown": true,
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2018",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2017",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2016",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2015",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2014",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2013",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2012",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2011",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2010",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2009",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2008",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2007",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2006",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2005",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2004",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2003",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2002",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2001",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores a 1 de enero de 2000",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores a 1 de enero de 2007",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
+                                        "regionVariable": "GEOCODE_MUNICIPIOS_DESPUES_2007",
+                                        "regionType": "MUNICIPIOS_DESPUES_2007",
                                         "colorBins": 5,
                                         "colorPalette": "5-class Oranges",
                                         "colorBinMethod": "ckmeans",
@@ -522,45 +86,12 @@
                             "isOpen": false,
                             "items": [
                                 {
-                                    "layers": "mapastematicos:secciones_20040101_generalizada",
-                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
-                                    "type": "wms",
-                                    "name": "Secciones 2004",
-                                    "format": "image/png",
-                                    "isLegendVisible": true,
-                                    "isShown": true,
-                                    "style": "default"
-                                },
-                                {
-                                    "name": "Indicadores Distritos de Canarias año 2007",
-                                    "type": "csv",
-                                    "url": "data/csv/20070101_indicadores.csv",
-                                    "description": "Indicadores Distritos de Canarias año 2007",
-                                    "opacity": ".8",
-                                    "isShown": true,
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "DISTRITOS-FID",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans",
-                                        "columns": {
-                                            "format": {
-                                                "maximumFractionDigits": 1
-                                            },
-                                            "ZIP": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    }
-                                },
-                                {
                                     "name": "Indicadores a 1 de enero de 2020",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20200101_indicadores_demograficos_pmh_distysecc.csv",
                                     "description": "Indicadores a 1 de enero de 2019",
                                     "opacity": ".8",
+                                    "isShown": true,
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
@@ -913,7 +444,6 @@
                                     "url": "data/csv/secciones-censales/20040101_indicadores_demograficos_pmh_distysecc.csv",
                                     "description": "Indicadores a 1 de enero de 2004",
                                     "opacity": ".8",
-                                    "isShown": true,
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES_2004",
@@ -946,6 +476,7 @@
                                     "url": "data/csv/mallas/20200101_indicadores_demograficos_pmh.csv",
                                     "description": "Indicadores a 1 de enero de 2020",
                                     "opacity": ".8",
+                                    "isShown": true,
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
