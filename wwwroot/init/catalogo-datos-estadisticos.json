@@ -35,7 +35,6 @@
                                     "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_antes_2007.csv",
                                     "description": "Indicadores Municipales antes del 2007",
                                     "opacity": ".8",
-                                    "isShown": true,
                                     "maxRefreshIntervals": 100,
                                     "initialTimeSource": "start",
                                     "isSampled": true,
