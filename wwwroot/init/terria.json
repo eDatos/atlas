@@ -64,14 +64,14 @@
         {
           "name": "Países del mundo en 2013, delimitaciones territoriales para fines estadísticos en Canarias",
           "type": "ckan-resource",
-          "url": "https://datos.canarias.es/catalogos/estadisticas/",
+          "url": "https://datos.canarias.es/catalogos/estadisticas",
           "resourceId": "1acbf80b-27ac-4fb7-8992-7f7c71592fa9",
           "datasetId": "paises-del-mundo-en-2013-delimitaciones-territoriales-para-fines-estadisticos-en-canarias"
         },
         {
           "name": "Malla estadística Eurostat adaptada a Canarias, celdas 250 m de lado",
           "type": "ckan-resource",
-          "url": "https://datos.canarias.es/catalogos/estadisticas/",
+          "url": "https://datos.canarias.es/catalogos/estadisticas",
           "resourceId": "d57d497b-501d-4867-8369-6db43ff7c807",
           "datasetId": "malla-estadistica-eurostat-adaptada-a-canarias-celdas-250-m-de-lado"
         },
