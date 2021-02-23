@@ -1,0 +1,503 @@
+{
+    "homeCamera": {
+        "north": 30,
+        "east": -13,
+        "south": 27,
+        "west": -19
+    },
+    "baseMapName": "Municipios. Indicadores por Año",
+    "viewerMode": "2d",
+    "catalog": [
+        {
+            "name": "Datos Estadísticos",
+            "description": "Datos Estadísticos",
+            "type": "group",
+            "preserveOrder": true,
+            "isOpen": true,
+            "items": [
+                {
+                    "name": "Estructura de población e indicadores demográficos",
+                    "description": "Estructura de población e indicadores demográficos",
+                    "type": "group",
+                    "preserveOrder": true,
+                    "isOpen": true,
+                    "items": [
+                        {
+                            "name": "Municipios",
+                            "description": "Municipios",
+                            "type": "group",
+                            "preserveOrder": true,
+                            "isOpen": false,
+                            "items": [
+                                {
+                                    "name": "Indicadores Municipales antes del 2007",
+                                    "type": "csv",
+                                    "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_antes_2007.csv",
+                                    "description": "Indicadores Municipales antes del 2007",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_MUNICIPIOS_ANTES_2007",
+                                        "regionType": "MUNICIPIOS_ANTES_2007",
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores Municipales después del 2007",
+                                    "type": "csv",
+                                    "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_despues_2007.csv",
+                                    "description": "Indicadores Municipales después del 2007",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_MUNICIPIOS_DESPUES_2007",
+                                        "regionType": "MUNICIPIOS_DESPUES_2007",
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Secciones censales",
+                            "description": "Secciones censales",
+                            "type": "group",
+                            "preserveOrder": true,
+                            "isOpen": false,
+                            "items": [
+                                {
+                                    "name": "Indicadores a 1 de enero de 2020",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20200101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2020",
+                                        "regionType": "SECCIONES-2020",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2019",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20190101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2019",
+                                        "regionType": "SECCIONES-2019",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2018",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20180101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2018",
+                                        "regionType": "SECCIONES-2018",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2017",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20170101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2017",
+                                        "regionType": "SECCIONES-2017",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2016",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20160101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2016",
+                                        "regionType": "SECCIONES-2016",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2015",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20150101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2015",
+                                        "regionType": "SECCIONES-2015",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2014",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20140101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2014",
+                                        "regionType": "SECCIONES-2014",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2013",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20130101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2013",
+                                        "regionType": "SECCIONES-2013",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2012",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20120101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2012",
+                                        "regionType": "SECCIONES-2012",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2011",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20110101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2011",
+                                        "regionType": "SECCIONES-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2010",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20100101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2010",
+                                        "regionType": "SECCIONES-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2009",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20090101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2009",
+                                        "regionType": "SECCIONES-2009",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2008",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20080101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2008",
+                                        "regionType": "SECCIONES-2008",
+                                        "colorBins": 10,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2007",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20070101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES-2007",
+                                        "regionType": "SECCIONES-2007",
+                                        "colorBins": 15,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2006",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20060101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES_2006",
+                                        "regionType": "SECCIONES-2006",
+                                        "colorBins": 10,
+                                        "colorMap": "rgba(2,102,94,1.0)-rgba(115,195,102,1.0)-rgba(226,197,129,1.0)-rgba(139,81,8,1.0)"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2005",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20050101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2005",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES_2005",
+                                        "regionType": "SECCIONES-2005",
+                                        "colorMap": "yellow-blue-white",
+                                        "colorBins": 16
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de 2004",
+                                    "type": "csv",
+                                    "url": "data/csv/secciones-censales/20040101_indicadores_demograficos_pmh_distysecc.csv",
+                                    "description": "Indicadores a 1 de enero de 2004",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_SECCIONES_2004",
+                                        "regionType": "SECCIONES-2004",
+                                        "colorMap": "yellow-blue-white",
+                                        "colorBins": 16
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Malla de  250m",
+                            "description": "Malla de  250m",
+                            "type": "group",
+                            "preserveOrder": true,
+                            "isOpen": false,
+                            "items": [
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2020",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20200101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2020",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2019",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20190101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2018",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20180101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2018",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2017",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20170101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2017",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2016",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20160101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2016",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2015",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20150101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2015",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2014",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20140101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2014",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2013",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20130101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2013",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2012",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20120101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2012",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2011",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20110101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2011",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_MALLA_2011",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 5,
+                                        "colorPalette": "5-class Oranges",
+                                        "colorBinMethod": "ckmeans"
+                                    }
+                                },
+                                {
+                                    "name": "Indicadores a 1 de enero de los años 2010",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/20100101_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores a 1 de enero de 2010",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_MALLA_2010",
+                                        "regionType": "MALLA-2010",
+                                        "colorBins": 5,
+                                        "colorMap": "yellow-blue-white"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,245 @@
+{
+    "comments": "Matching takes place in the order defined in this file. Place code matches before name matches, and smaller regions before larger ones.",
+    "regionWmsMap": {
+        "SECCIONES-2020": {
+            "layerName": "mapastematicos:secciones_20200101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2020",
+            "aliases": [
+                "geocode_secciones_2020"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2020",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2020.json"
+        },
+        "SECCIONES-2019": {
+            "layerName": "mapastematicos:secciones_20190101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2019",
+            "aliases": [
+                "geocode_secciones_2019"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2019",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2019.json"
+        },
+        "SECCIONES-2018": {
+            "layerName": "mapastematicos:secciones_20180101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2018",
+            "aliases": [
+                "geocode_secciones_2018"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2018",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2018.json"
+        },
+        "SECCIONES-2017": {
+            "layerName": "mapastematicos:secciones_20170101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2017",
+            "aliases": [
+                "geocode_secciones_2017"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2017",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2017.json"
+        },
+        "SECCIONES-2016": {
+            "layerName": "mapastematicos:secciones_20160101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2016",
+            "aliases": [
+                "geocode_secciones_2016"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2016",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2016.json"
+        },
+        "SECCIONES-2015": {
+            "layerName": "mapastematicos:secciones_20150101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2015",
+            "aliases": [
+                "geocode_secciones_2015"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2015",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2015.json"
+        },
+        "SECCIONES-2014": {
+            "layerName": "mapastematicos:secciones_20140101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2014",
+            "aliases": [
+                "geocode_secciones_2014"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2014",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2014.json"
+        },
+        "SECCIONES-2013": {
+            "layerName": "mapastematicos:secciones_20130101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2013",
+            "aliases": [
+                "geocode_secciones_2013"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2013",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2013.json"
+        },
+        "SECCIONES-2012": {
+            "layerName": "mapastematicos:secciones_20120101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2012",
+            "aliases": [
+                "geocode_secciones_2012"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2012",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2012.json"
+        },
+        "SECCIONES-2011": {
+            "layerName": "mapastematicos:secciones_20110101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2011",
+            "aliases": [
+                "geocode_secciones_2011"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2011",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2011.json"
+        },
+        "SECCIONES-2010": {
+            "layerName": "mapastematicos:secciones_20100101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2010",
+            "aliases": [
+                "geocode_secciones_2010"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2010",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2010.json"
+        },
+        "SECCIONES-2009": {
+            "layerName": "mapastematicos:secciones_20090101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2009",
+            "aliases": [
+                "geocode_secciones_2009"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2009",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2009.json"
+        },
+        "SECCIONES-2008": {
+            "layerName": "mapastematicos:secciones_20080101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2008",
+            "aliases": [
+                "geocode_secciones_2008"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2008",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2008.json"
+        },
+        "SECCIONES-2007": {
+            "layerName": "mapastematicos:secciones_20070101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2007",
+            "aliases": [
+                "geocode_secciones_2007"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2007",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2007.json"
+        },
+        "SECCIONES-2006": {
+            "layerName": "mapastematicos:secciones_20060101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2006",
+            "aliases": [
+                "geocode_secciones_2006"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2006",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2006.json"
+        },
+        "SECCIONES-2005": {
+            "layerName": "mapastematicos:secciones_20050101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2005",
+            "aliases": [
+                "geocode_secciones_2005"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2005",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2005.json"
+        },
+        "SECCIONES-2004": {
+            "layerName": "mapastematicos:secciones_20040101_generalizada",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_SECCIONES_2004",
+            "aliases": [
+                "geocode_secciones_2004"
+            ],
+            "digits": 23,
+            "description": "Indicadores Secciones de  Canarias año 2004",
+            "regionIdsFile": "data/regionId/secciones-censales/region_map-secciones-2004.json"
+        },
+        "MALLA-2010": {
+            "layerName": "mapastematicos:GRID_CAN_250M",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_MALLA_2010",
+            "aliases": [
+                "geocode_malla_2010"
+            ],
+            "digits": 18,
+            "description": "Indicadores a 1 de enero de los años 2020",
+            "regionIdsFile": "data/regionId/mallas/region_map-GRID_CAN_250M.json"
+        },
+        "MUNICIPIOS_ANTES_2007": {
+            "layerName": "mapastematicos:municipios_20170101_antes2007",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_MUNICIPIOS_ANTES_2007",
+            "aliases": [
+                "geocode_municipios_antes_2007"
+            ],
+            "digits": 5,
+            "description": "Municipios de Canarias antes de 2007",
+            "regionIdsFile": "data/regionId/municipios/region_map-MUNICIPIOS-ANTES-2007.json"
+        },
+        "MUNICIPIOS_DESPUES_2007": {
+            "layerName": "mapastematicos:municipios_20170101_despues2007",
+            "server": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/ows",
+            "uniqueIdProp": "FID",
+            "regionProp": "GEOCODE_MUNICIPIOS_DESPUES_2007",
+            "aliases": [
+                "geocode_municipios_despues_2007"
+            ],
+            "digits": 5,
+            "description": "Municipios de Canarias después de 2007",
+            "regionIdsFile": "data/regionId/municipios/region_map-MUNICIPIOS-DESPUES-2007.json"
+        }
+    }
+}
