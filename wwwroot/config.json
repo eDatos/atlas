@@ -1,6 +1,6 @@
 {
     "initializationUrls": [
-        "catalogo-datos-estadisticos"
+        "catalogo-datos-estadisticos", "referencias-cartograficas"
     ],
     "parameters": {
         "proxyableDomainsUrl": "",

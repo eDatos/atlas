@@ -5,7 +5,7 @@
         "south": 27,
         "west": -19
     },
-    "baseMapName": "Municipios. Indicadores por Año",
+    "baseMapName": "Catálogo de Datos Estadísticos",
     "viewerMode": "2d",
     "catalog": [
         {
@@ -35,13 +35,16 @@
                                     "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_antes_2007.csv",
                                     "description": "Indicadores Municipales antes del 2007",
                                     "opacity": ".8",
+                                    "isShown": true,
+                                    "maxRefreshIntervals": 100,
+                                    "initialTimeSource": "start",
+                                    "isSampled": true,
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_MUNICIPIOS_ANTES_2007",
                                         "regionType": "MUNICIPIOS_ANTES_2007",
                                         "colorBins": 9,
-                                        "colorPalette": "9-class YlOrRd",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -50,13 +53,14 @@
                                     "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_despues_2007.csv",
                                     "description": "Indicadores Municipales después del 2007",
                                     "opacity": ".8",
+                                    "maxRefreshIntervals": 100,
+                                    "initialTimeSource": "start",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_MUNICIPIOS_DESPUES_2007",
                                         "regionType": "MUNICIPIOS_DESPUES_2007",
                                         "colorBins": 9,
-                                        "colorPalette": "9-class YlOrRd",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 }
                             ]
@@ -78,9 +82,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2020",
                                         "regionType": "SECCIONES-2020",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -93,9 +96,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2019",
                                         "regionType": "SECCIONES-2019",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -108,9 +110,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2018",
                                         "regionType": "SECCIONES-2018",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -123,9 +124,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2017",
                                         "regionType": "SECCIONES-2017",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -138,9 +138,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2016",
                                         "regionType": "SECCIONES-2016",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -153,9 +152,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2015",
                                         "regionType": "SECCIONES-2015",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -168,9 +166,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2014",
                                         "regionType": "SECCIONES-2014",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -183,9 +180,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2013",
                                         "regionType": "SECCIONES-2013",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -198,9 +194,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2012",
                                         "regionType": "SECCIONES-2012",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -213,9 +208,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2011",
                                         "regionType": "SECCIONES-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -228,9 +222,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2010",
                                         "regionType": "SECCIONES-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -243,9 +236,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2009",
                                         "regionType": "SECCIONES-2009",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -258,9 +250,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2008",
                                         "regionType": "SECCIONES-2008",
-                                        "colorBins": 10,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -273,9 +264,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2007",
                                         "regionType": "SECCIONES-2007",
-                                        "colorBins": 15,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -288,8 +278,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES_2006",
                                         "regionType": "SECCIONES-2006",
-                                        "colorBins": 10,
-                                        "colorMap": "rgba(2,102,94,1.0)-rgba(115,195,102,1.0)-rgba(226,197,129,1.0)-rgba(139,81,8,1.0)"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -302,8 +292,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES_2005",
                                         "regionType": "SECCIONES-2005",
-                                        "colorMap": "yellow-blue-white",
-                                        "colorBins": 16
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -316,8 +306,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES_2004",
                                         "regionType": "SECCIONES-2004",
-                                        "colorMap": "yellow-blue-white",
-                                        "colorBins": 16
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 }
                             ]
@@ -330,6 +320,20 @@
                             "isOpen": false,
                             "items": [
                                 {
+                                    "name": "Indicadores desde 1 de enero del año 2010 a 1 de enero del año 2020",
+                                    "type": "csv",
+                                    "url": "data/csv/mallas/2010-2020_indicadores_demograficos_pmh.csv",
+                                    "description": "Indicadores desde 1 de enero del año 2010 a 1 de enero del año 2020",
+                                    "opacity": ".8",
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE",
+                                        "regionType": "MALLAS-2010",
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
+                                    }
+                                },
+                                {
                                     "name": "Indicadores a 1 de enero de los años 2020",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20200101_indicadores_demograficos_pmh.csv",
@@ -339,9 +343,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -354,9 +357,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -369,9 +371,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -384,9 +385,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -399,9 +399,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -414,9 +413,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -429,9 +427,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -444,9 +441,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -459,9 +455,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -472,11 +467,10 @@
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE_MALLA_2011",
+                                        "regionVariable": "GEOCODE",
                                         "regionType": "MALLAS-2010",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 },
                                 {
@@ -487,10 +481,10 @@
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE_MALLA_2010",
+                                        "regionVariable": "GEOCODE",
                                         "regionType": "MALLA-2010",
-                                        "colorBins": 5,
-                                        "colorMap": "yellow-blue-white"
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd"
                                     }
                                 }
                             ]
