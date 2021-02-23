@@ -39,8 +39,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_MUNICIPIOS_ANTES_2007",
                                         "regionType": "MUNICIPIOS_ANTES_2007",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd",
                                         "colorBinMethod": "ckmeans"
                                     }
                                 },
@@ -50,13 +50,12 @@
                                     "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_despues_2007.csv",
                                     "description": "Indicadores Municipales después del 2007",
                                     "opacity": ".8",
-                                    "isShown": false,
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_MUNICIPIOS_DESPUES_2007",
                                         "regionType": "MUNICIPIOS_DESPUES_2007",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd",
                                         "colorBinMethod": "ckmeans"
                                     }
                                 }
@@ -75,7 +74,6 @@
                                     "url": "data/csv/secciones-censales/20200101_indicadores_demograficos_pmh_distysecc.csv",
                                     "description": "Indicadores a 1 de enero de 2019",
                                     "opacity": ".8",
-                                    "isShown": false,
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2020",
@@ -260,7 +258,7 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2008",
                                         "regionType": "SECCIONES-2008",
-                                        "colorBins": 5,
+                                        "colorBins": 10,
                                         "colorPalette": "5-class Oranges",
                                         "colorBinMethod": "ckmeans"
                                     }
@@ -275,7 +273,7 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES-2007",
                                         "regionType": "SECCIONES-2007",
-                                        "colorBins": 5,
+                                        "colorBins": 15,
                                         "colorPalette": "5-class Oranges",
                                         "colorBinMethod": "ckmeans"
                                     }
@@ -290,9 +288,8 @@
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_SECCIONES_2006",
                                         "regionType": "SECCIONES-2006",
-                                        "colorBins": 5,
-                                        "colorPalette": "5-class Oranges",
-                                        "colorBinMethod": "ckmeans"
+                                        "colorBins": 10,
+                                        "colorMap": "rgba(2,102,94,1.0)-rgba(115,195,102,1.0)-rgba(226,197,129,1.0)-rgba(139,81,8,1.0)"
                                     }
                                 },
                                 {
@@ -338,7 +335,6 @@
                                     "url": "data/csv/mallas/20200101_indicadores_demograficos_pmh.csv",
                                     "description": "Indicadores a 1 de enero de 2020",
                                     "opacity": ".8",
-                                    "isShown": false,
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE",
