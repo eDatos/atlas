@@ -6,7 +6,7 @@
         "west": -19
     },
     "baseMapName": "Referencias Cartográficas",
-    "viewerMode": "3d",
+    "viewerMode": "2d",
     "catalog": [
         {
             "name": "Referencias Cartográficas",
@@ -111,160 +111,160 @@
                             "isOpen": false,
                             "items": [
                                 {
-                                    "layers": "Abastecimiento",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:Abastecimiento",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Abastecimiento de Agua",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "Farp",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:Farp",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Alumbrado Público",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "conp",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:conp",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Casas Consistoriales",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "cemp",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:cemp",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Cementerios",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "asip",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:asip",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Centros Asistenciales",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "edup",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:edup",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Centros de Enseñanza",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "sanp",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:sanp",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Centros Sanitarios",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "edip",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:edip",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Edificios de titularidad pública sin uso",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "Carreteras",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:Carreteras",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Infraestructuras Viarias",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "Depp",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:Depp",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Instalaciones Deportivas",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "verp",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:verp",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Instalaciones eliminación/tratamiento residuos urbanos",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "merp",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:merp",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Lonjas, mercados y ferias",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "matp",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:matp",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Mataderos",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "DemograficoM",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:DemograficoM",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Municipios",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "DemograficoN",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:DemograficoN",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Núcleos",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "otrasinstalaciones",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:otrasinstalaciones",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Otras inst. públicas",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "Planeamiento",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:Planeamiento",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Planeamiento Urbanístico",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "otrosequipamientos",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:otrosequipamientos",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Protección Civil",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "Saneamiento",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:Saneamiento",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Saneamiento y depuración",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "tanp",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EIEL?",
+                                    "layers": "mapastematicos:tanp",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Tanatorios",
                                     "format": "image/png",
@@ -280,40 +280,40 @@
                             "isOpen": false,
                             "items": [
                                 {
-                                    "layers": "Centros_Educacion",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/Educacion",
+                                    "layers": "mapastematicos:Centros_Educacion",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Centros de Educación de Canarias",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "Centros_Educacion_Prim",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/Educacion",
+                                    "layers": "mapastematicos:Centros_Educacion_Prim",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Centros de Educación Infantil y Primaria",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "Centros_Educacion_Sec",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/Educacion",
+                                    "layers": "mapastematicos:Centros_Educacion_Sec",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Centros de Educación Secundaria",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "Areas_Influencia_IP",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/Educacion",
+                                    "layers": "mapastematicos:Areas_Influencia_IP",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Áreas de influencia de los Centros de Educación Infantil y Primaria",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "Areas_Influencia_SC",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/Educacion",
+                                    "layers": "mapastematicos:Areas_Influencia_SC",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Áreas de influencia de los Centros de Secundaria",
                                     "format": "image/png",
@@ -329,40 +329,40 @@
                             "isOpen": false,
                             "items": [
                                 {
-                                    "layers": "CVS7_2014_2020",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales",
+                                    "layers": "mapastematicos:CVS7_2014_2020",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Criterios de valoración de la sección 7ª del PDR 2014-2020",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "ZRP_2014_2020",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales",
+                                    "layers": "mapastematicos:ZRP_2014_2020",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Propuesta Delimitaciones Zonas Rurales 2014-2020",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "ZR",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales",
+                                    "layers": "mapastematicos:ZR",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Zona de Accción del PDR 2014-2020",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "ZR_LEADER",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales",
+                                    "layers": "mapastematicos:ZR_LEADER",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Zona de Accción Leader del PDR 2014-2020",
                                     "format": "image/png",
                                     "isLegendVisible": false
                                 },
                                 {
-                                    "layers": "ZR_2010",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales",
+                                    "layers": "mapastematicos:ZR_2010",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Zonas Rurales del PDRS Abril 2010",
                                     "format": "image/png",
@@ -378,8 +378,8 @@
                             "isOpen": false,
                             "items": [
                                 {
-                                    "layers": "EENN",
-                                    "url": "https://idecan2.grafcan.es/ServicioWMS/EspNat",
+                                    "layers": "mapastematicos:EENN",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Espacios Naturales",
                                     "format": "image/png",
