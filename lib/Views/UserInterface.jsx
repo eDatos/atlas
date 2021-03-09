@@ -4,10 +4,12 @@ import {
   ExperimentalMenu
 } from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
 import MeasureTool from "terriajs/lib/ReactViews/Map/Navigation/MeasureTool";
+// import SettingPanel from "terriajs/lib/ReactViews/Map/Panels/SettingPanel";
 import PropTypes from "prop-types";
 import React from "react";
 import SplitPoint from "terriajs/lib/ReactViews/SplitPoint";
-import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
+// import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface.jsx";
+import StandardUserInterface from "../ReactViews/StandardUserInterface/CustomUserInterface";
 import version from "../../version";
 
 import "./global.scss";
