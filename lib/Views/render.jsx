@@ -7,7 +7,7 @@ export default function renderUi(terria, allBaseMaps, viewState) {
     const DropdownLanguage = require("./DropdownLanguage").default;
     var dropdownContainer = document.getElementById("dropdown-language-container");
     if (dropdownContainer) {
-      ReactDOM.render(<DropdownLanguage />,dropdownContainer);
+      ReactDOM.render(<DropdownLanguage />, dropdownContainer);
     }
 
     const UI = require("./UserInterface").default;
