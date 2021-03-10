@@ -320,7 +320,16 @@
                                     "isLegendVisible": false
                                 }
                             ]
-                        },
+                        }
+                    ]
+                },
+                {
+                    "name": "Protección y usos del suelo",
+                    "description": "Protección y usos del suelo",
+                    "type": "group",
+                    "preserveOrder": true,
+                    "isOpen": false,
+                    "items": [
                         {
                             "name": "Zonas Rurales de Canarias",
                             "description": "Zonas Rurales de Canarias",
