@@ -34,7 +34,7 @@
                             "layers": "mapastematicos:comarcas_20170101",
                             "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                             "type": "wms",
-                            "name": "Límites de las grandes comarcas de las Islas Canarias 2017",
+                            "name": "Límites de las comarcas de las Islas Canarias 2017",
                             "format": "image/png",
                             "isLegendVisible": false
                         },
@@ -42,7 +42,7 @@
                             "layers": "mapastematicos:grandes_comarcas_20170101",
                             "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                             "type": "wms",
-                            "name": "Límites territoriales de las Islas Canarias 2017",
+                            "name": "Límites de las grandes comarcas de las Islas Canarias 2017",
                             "format": "image/png",
                             "isLegendVisible": false
                         },
