@@ -43,7 +43,29 @@
                                         "regionVariable": "GEOCODE_MUNICIPIOS_ANTES_2007",
                                         "regionType": "MUNICIPIOS_ANTES_2007",
                                         "colorBins": 9,
-                                        "colorPalette": "9-class YlOrRd"
+                                        "colorPalette": "9-class YlOrRd",
+                                        "columns": {
+                                            "Población. Edad media": {
+                                                "colorMap": [
+                                                    { "color": "rgba(55, 106, 38, 1.0)", "offset": 0 },
+                                                    { "color": "rgba(103, 162, 63, 1.0)", "offset": 0.1666 },
+                                                    {"color": "rgba(154, 196, 125, 1.0)", "offset": 0.3333 },
+                                                    {"color": "rgba(206, 214, 221, 1.0)", "offset": 0.5 },
+                                                    {"color": "rgba(188, 153, 103, 1.0)", "offset": 0.6666 },
+                                                    {"color": "rgba(140, 92, 29, 1.0)", "offset": 0.8333 },
+                                                    {"color": "rgba(104, 68, 21, 1.0)", "offset": 1 }
+                                                ]
+                                            },
+                                            "GEOCODE_MUNICIPIOS_ANTES_2007": {
+                                                "type": "hidden"
+                                            },
+                                            "superficie": {
+                                                "type": "hidden"
+                                            }
+                                        }
+                                    },
+                                    "featureInfoTemplate" : {
+                                        "template": "<h1>{{terria.timeSeries.yName}}</h1><br>{{terria.timeSeries.chart}}"
                                     }
                                 },
                                 {
@@ -54,12 +76,35 @@
                                     "opacity": ".8",
                                     "maxRefreshIntervals": 100,
                                     "initialTimeSource": "start",
+                                    "isSampled": true,
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
                                         "regionVariable": "GEOCODE_MUNICIPIOS_DESPUES_2007",
                                         "regionType": "MUNICIPIOS_DESPUES_2007",
                                         "colorBins": 9,
-                                        "colorPalette": "9-class YlOrRd"
+                                        "colorPalette": "9-class YlOrRd",
+                                        "columns": {
+                                            "Población. Edad media": {
+                                                "colorMap": [
+                                                    { "color": "rgba(55, 106, 38, 1.0)", "offset": 0 },
+                                                    { "color": "rgba(103, 162, 63, 1.0)", "offset": 0.1666 },
+                                                    {"color": "rgba(154, 196, 125, 1.0)", "offset": 0.3333 },
+                                                    {"color": "rgba(206, 214, 221, 1.0)", "offset": 0.5 },
+                                                    {"color": "rgba(188, 153, 103, 1.0)", "offset": 0.6666 },
+                                                    {"color": "rgba(140, 92, 29, 1.0)", "offset": 0.8333 },
+                                                    {"color": "rgba(104, 68, 21, 1.0)", "offset": 1 }
+                                                ]
+                                            },
+                                            "GEOCODE_MUNICIPIOS_DESPUES_2007": {
+                                                "type": "hidden"
+                                            },
+                                            "superficie": {
+                                                "type": "hidden"
+                                            }
+                                        }
+                                    },
+                                    "featureInfoTemplate" : {
+                                        "template": "<h1>{{terria.timeSeries.yName}}</h1><br>{{terria.timeSeries.chart}}"
                                     }
                                 }
                             ]

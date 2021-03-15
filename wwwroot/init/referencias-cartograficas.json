@@ -28,23 +28,23 @@
                             "type": "wms",
                             "name": "Límites territoriales de las Islas Canarias 2017",
                             "format": "image/png",
-                            "isLegendVisible": false
+                            "isLegendVisible": true
                         },
                         {
                             "layers": "mapastematicos:comarcas_20170101",
                             "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                             "type": "wms",
-                            "name": "Límites de las grandes comarcas de las Islas Canarias 2017",
+                            "name": "Límites de las comarcas de las Islas Canarias 2017",
                             "format": "image/png",
-                            "isLegendVisible": false
+                            "isLegendVisible": true
                         },
                         {
                             "layers": "mapastematicos:grandes_comarcas_20170101",
                             "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                             "type": "wms",
-                            "name": "Límites territoriales de las Islas Canarias 2017",
+                            "name": "Límites de las grandes comarcas de las Islas Canarias 2017",
                             "format": "image/png",
-                            "isLegendVisible": false
+                            "isLegendVisible": true
                         },
                         {
                             "layers": "mapastematicos:municipios_20170101_despues2007",
@@ -52,7 +52,7 @@
                             "type": "wms",
                             "name": "Límites municipales de las Islas Canarias después de 2007",
                             "format": "image/png",
-                            "isLegendVisible": false
+                            "isLegendVisible": true
                         },
                         {
                             "layers": "mapastematicos:distritos_20200101",
@@ -60,7 +60,7 @@
                             "type": "wms",
                             "name": "Límites de los distritos de las Islas Canarias 2020",
                             "format": "image/png",
-                            "isLegendVisible": false
+                            "isLegendVisible": true
                         },
                         {
                             "layers": "mapastematicos:secciones_20200101_generalizada",
@@ -68,7 +68,7 @@
                             "type": "wms",
                             "name": "Límites de las secciones censales de las Islas Canarias 2020",
                             "format": "image/png",
-                            "isLegendVisible": false
+                            "isLegendVisible": true
                         },
                         {
                             "layers": "mapastematicos:GRID_CAN_250M",
@@ -76,7 +76,7 @@
                             "type": "wms",
                             "name": "Malla de 250m para las Islas Canarias",
                             "format": "image/png",
-                            "isLegendVisible": false
+                            "isLegendVisible": true
                         },
                         {
                             "layers": "mapastematicos:grid_500_2011",
@@ -84,7 +84,7 @@
                             "type": "wms",
                             "name": "Malla de 500m para las Islas Canarias",
                             "format": "image/png",
-                            "isLegendVisible": false
+                            "isLegendVisible": true
                         },
                         {
                             "layers": "mapastematicos:grid_1000_2011",
@@ -92,7 +92,7 @@
                             "type": "wms",
                             "name": "Malla de 1000m para las Islas Canarias",
                             "format": "image/png",
-                            "isLegendVisible": false
+                            "isLegendVisible": true
                         }
                     ]
                 },
@@ -116,7 +116,8 @@
                                     "type": "wms",
                                     "name": "Abastecimiento de Agua",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Abastecimiento&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:Farp",
@@ -124,7 +125,8 @@
                                     "type": "wms",
                                     "name": "Alumbrado Público",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Farp&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:conp",
@@ -132,7 +134,8 @@
                                     "type": "wms",
                                     "name": "Casas Consistoriales",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=conp&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:cemp",
@@ -140,7 +143,8 @@
                                     "type": "wms",
                                     "name": "Cementerios",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=cemp&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:asip",
@@ -148,7 +152,8 @@
                                     "type": "wms",
                                     "name": "Centros Asistenciales",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=asip&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:edup",
@@ -156,7 +161,8 @@
                                     "type": "wms",
                                     "name": "Centros de Enseñanza",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=edup&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:sanp",
@@ -164,7 +170,8 @@
                                     "type": "wms",
                                     "name": "Centros Sanitarios",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=sanp&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:edip",
@@ -172,7 +179,8 @@
                                     "type": "wms",
                                     "name": "Edificios de titularidad pública sin uso",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=edip&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:Carreteras",
@@ -180,7 +188,8 @@
                                     "type": "wms",
                                     "name": "Infraestructuras Viarias",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Carreteras&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:Depp",
@@ -188,7 +197,8 @@
                                     "type": "wms",
                                     "name": "Instalaciones Deportivas",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Depp&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:verp",
@@ -196,7 +206,8 @@
                                     "type": "wms",
                                     "name": "Instalaciones eliminación/tratamiento residuos urbanos",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=verp&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:merp",
@@ -204,7 +215,8 @@
                                     "type": "wms",
                                     "name": "Lonjas, mercados y ferias",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=merp&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:matp",
@@ -212,23 +224,8 @@
                                     "type": "wms",
                                     "name": "Mataderos",
                                     "format": "image/png",
-                                    "isLegendVisible": false
-                                },
-                                {
-                                    "layers": "mapastematicos:DemograficoM",
-                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
-                                    "type": "wms",
-                                    "name": "Municipios",
-                                    "format": "image/png",
-                                    "isLegendVisible": false
-                                },
-                                {
-                                    "layers": "mapastematicos:DemograficoN",
-                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
-                                    "type": "wms",
-                                    "name": "Núcleos",
-                                    "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=matp&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:otrasinstalaciones",
@@ -236,7 +233,8 @@
                                     "type": "wms",
                                     "name": "Otras inst. públicas",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=otrasinstalaciones&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:Planeamiento",
@@ -244,7 +242,8 @@
                                     "type": "wms",
                                     "name": "Planeamiento Urbanístico",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Planeamiento&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:otrosequipamientos",
@@ -252,7 +251,8 @@
                                     "type": "wms",
                                     "name": "Protección Civil",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=otrosequipamientos&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:Saneamiento",
@@ -260,7 +260,8 @@
                                     "type": "wms",
                                     "name": "Saneamiento y depuración",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Saneamiento&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:tanp",
@@ -268,7 +269,8 @@
                                     "type": "wms",
                                     "name": "Tanatorios",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EIEL?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=tanp&format=image/png&STYLE=default&srs=EPSG:4326"
                                 }
                             ]
                         },
@@ -285,7 +287,8 @@
                                     "type": "wms",
                                     "name": "Centros de Educación de Canarias",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/Educacion?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Centros_Educacion&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:Centros_Educacion_Prim",
@@ -293,7 +296,8 @@
                                     "type": "wms",
                                     "name": "Centros de Educación Infantil y Primaria",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/Educacion?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Centros_Educacion_Prim&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:Centros_Educacion_Sec",
@@ -301,7 +305,8 @@
                                     "type": "wms",
                                     "name": "Centros de Educación Secundaria",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/Educacion?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Centros_Educacion_Sec&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:Areas_Influencia_IP",
@@ -309,7 +314,8 @@
                                     "type": "wms",
                                     "name": "Áreas de influencia de los Centros de Educación Infantil y Primaria",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/Educacion?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Areas_Influencia_IP&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:Areas_Influencia_SC",
@@ -317,7 +323,8 @@
                                     "type": "wms",
                                     "name": "Áreas de influencia de los Centros de Secundaria",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/Educacion?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=Areas_Influencia_SC&format=image/png&STYLE=default&srs=EPSG:4326"
                                 }
                             ]
                         }
@@ -343,7 +350,8 @@
                                     "type": "wms",
                                     "name": "Criterios de valoración de la sección 7ª del PDR 2014-2020",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=CVS7_2014_2020&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:ZRP_2014_2020",
@@ -351,7 +359,8 @@
                                     "type": "wms",
                                     "name": "Propuesta Delimitaciones Zonas Rurales 2014-2020",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ZRP_2014_2020&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:ZR",
@@ -359,7 +368,8 @@
                                     "type": "wms",
                                     "name": "Zona de Accción del PDR 2014-2020",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ZR&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:ZR_LEADER",
@@ -367,7 +377,8 @@
                                     "type": "wms",
                                     "name": "Zona de Accción Leader del PDR 2014-2020",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ZR_LEADER&format=image/png&STYLE=default&srs=EPSG:4326"
                                 },
                                 {
                                     "layers": "mapastematicos:ZR_2010",
@@ -375,7 +386,8 @@
                                     "type": "wms",
                                     "name": "Zonas Rurales del PDRS Abril 2010",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/ZonasRurales?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=ZR_2010&format=image/png&STYLE=default&srs=EPSG:4326"
                                 }
                             ]
                         },
@@ -392,7 +404,8 @@
                                     "type": "wms",
                                     "name": "Espacios Naturales",
                                     "format": "image/png",
-                                    "isLegendVisible": false
+                                    "isLegendVisible": true,
+                                    "legendUrl": "https://idecan2.grafcan.es/ServicioWMS/EspNat?version=1.3.0&service=WMS&request=GetLegendGraphic&sld_version=1.1.0&layer=EENN&format=image/png&STYLE=default&srs=EPSG:3857"
                                 }
                             ]
                         }
