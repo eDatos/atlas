@@ -32,7 +32,7 @@
                                 {
                                     "name": "Indicadores Municipales antes del 2007",
                                     "type": "csv",
-                                    "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_antes_2007.csv",
+                                    "url": "https://estadisticas.arte-consultores.com/catalogo/dataset/e3f84f45-0084-4c73-a93c-a555090f7ad1/resource/9c89908a-02bb-4b8b-b028-eed4d9e18f7b/download/pmh_sd_2000_20aa_indicadores_municipalities_antes_2007.csv",
                                     "description": "Indicadores Municipales antes del 2007",
                                     "opacity": ".8",
                                     "maxRefreshIntervals": 100,
@@ -47,13 +47,13 @@
                                         "columns": {
                                             "Población. Edad media": {
                                                 "colorMap": [
-                                                    { "color": "rgba(55, 106, 38, 1.0)", "offset": 0 },
-                                                    { "color": "rgba(103, 162, 63, 1.0)", "offset": 0.1666 },
-                                                    {"color": "rgba(154, 196, 125, 1.0)", "offset": 0.3333 },
-                                                    {"color": "rgba(206, 214, 221, 1.0)", "offset": 0.5 },
-                                                    {"color": "rgba(188, 153, 103, 1.0)", "offset": 0.6666 },
-                                                    {"color": "rgba(140, 92, 29, 1.0)", "offset": 0.8333 },
-                                                    {"color": "rgba(104, 68, 21, 1.0)", "offset": 1 }
+                                                    { "color": "rgba(55, 106, 38, 1.0)",    "offset": 0 },
+                                                    { "color": "rgba(103, 162, 63, 1.0)",   "offset": 0.1666 },
+                                                    { "color": "rgba(154, 196, 125, 1.0)",  "offset": 0.3333 },
+                                                    { "color": "rgba(206, 214, 221, 1.0)",  "offset": 0.5 },
+                                                    { "color": "rgba(188, 153, 103, 1.0)",  "offset": 0.6666 },
+                                                    { "color": "rgba(140, 92, 29, 1.0)",     "offset": 0.8333 },
+                                                    { "color": "rgba(104, 68, 21, 1.0)",    "offset": 1 }
                                                 ]
                                             },
                                             "GEOCODE_MUNICIPIOS_ANTES_2007": {
@@ -71,7 +71,7 @@
                                 {
                                     "name": "Indicadores Municipales después del 2007",
                                     "type": "csv",
-                                    "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_despues_2007.csv",
+                                    "url": "https://estadisticas.arte-consultores.com/catalogo/dataset/e3f84f45-0084-4c73-a93c-a555090f7ad1/resource/f025b4ce-369d-40a4-bfe8-e9a933a5a18b/download/pmh_sd_2000_20aa_indicadores_municipalities_despues_2007.csv",
                                     "description": "Indicadores Municipales después del 2007",
                                     "opacity": ".8",
                                     "maxRefreshIntervals": 100,
