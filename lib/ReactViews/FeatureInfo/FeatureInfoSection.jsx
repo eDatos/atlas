@@ -258,7 +258,7 @@ export const FeatureInfoSection = createReactClass({
                 className={Styles.rawDataButton}
                 onClick={this.toggleRawData}
               >
-                {this.state.showRawData ? "Show Curated Data" : "Show Raw Data"}
+                {this.state.showRawData ? "Ocultar Datos" : "Mostrar Datos"}
               </button>
             </If>
             <div>
