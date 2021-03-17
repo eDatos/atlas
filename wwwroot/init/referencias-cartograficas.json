@@ -21,7 +21,7 @@
                     "type": "group",
                     "preserveOrder": true,
                     "isOpen": false,
-                    "items": [
+                    "items": [  
                         {
                             "layers": "mapastematicos:islas_20170101",
                             "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
@@ -75,6 +75,151 @@
                                     "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
                                     "name": "Municipios (hasta 2007)",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Distritos censales",
+                            "description": "Distritos censales",
+                            "type": "group",
+                            "preserveOrder": true,
+                            "isOpen": false,
+                            "items": [
+                                {
+                                    "layers": "mapastematicos:distritos_20200101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2020",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20190101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2019",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20180101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2018",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20170101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2017",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20160101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2016",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20150101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2015",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20140101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2014",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20130101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2013",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20120101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2012",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20110101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2011",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20100101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2010",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20090101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2009",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20080101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2008",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20070101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2007",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20060101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2006",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20050101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2005",
+                                    "format": "image/png",
+                                    "isLegendVisible": true
+                                },
+                                {
+                                    "layers": "mapastematicos:distritos_20040101_generalizada",
+                                    "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
+                                    "type": "wms",
+                                    "name": "Distritos a 1 de Enero de 2004",
                                     "format": "image/png",
                                     "isLegendVisible": true
                                 }

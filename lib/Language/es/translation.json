@@ -163,7 +163,7 @@
     "pickLocation": "Elegir ubicación",
     "clickMap": "Haga clic en el mapa para obtener más información sobre una ubicación.",
     "noDataAvailable": "No hay datos disponibles aquí. Pruebe con otra ubicación.",
-    "clickToAddData": "Haga clic en '$ t (addData.addDataBtnText)' para agregar datos al mapa.",
+    "clickToAddData": "Haga clic en '$t(addData.addDataBtnText)' para agregar datos al mapa.",
     "userSelection": "Selección de usuario",
     "panelHeading": "Información de funciones",
     "btnCloseFeature": "Cerrar panel de datos",
@@ -171,7 +171,9 @@
     "locationMarker": "Marcador de ubicación",
     "noInfoAvailable": "No hay información disponible",
     "siteData": "Datos del sitio",
-    "latLon": "Lat / Lon "
+    "latLon": "Lat / Lon ",
+    "showCuratedData": "Ocultar Datos",
+    "showRawData": "Mostrar Datos"
   },
   "welcomeMessage": {
     "title": "Los datos espaciales son <2> fáciles.</2>",
@@ -398,7 +400,7 @@
   "loader": {
     "loadingMessage": "Cargando"
   },
-  "emptyWorkbenchMessage": "<0> <0> Su banco de trabajo está vacío </0> <1> <strong> Haga clic en '$ t (addData.addDataBtnText)' arriba para </strong></1><2> <0> Examinar el catálogo de datos </0> <1> Cargue sus propios datos en el mapa </1> </2> <3> <0> </0> <strong> CONSEJO. </strong> <2> Todos sus conjuntos de datos activos estar listado aquí </2> </3> </0>",
+  "emptyWorkbenchMessage": "<0> <0> Su banco de trabajo está vacío </0> <1> <strong> Haga clic en '$t(addData.addDataBtnText)' arriba para </strong></1><2> <0> Examinar el catálogo de datos </0> <1> Cargue sus propios datos en el mapa </1> </2> <3> <0> </0> <strong> CONSEJO. </strong> <2> Todos sus conjuntos de datos activos estar listado aquí </2> </3> </0>",
   "dataCatalog": {
     "groupRemove": "eliminar este grupo",
     "groupEmpty": "Este grupo esta vacio"

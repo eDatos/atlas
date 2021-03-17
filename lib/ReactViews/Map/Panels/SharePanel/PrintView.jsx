@@ -4,7 +4,7 @@ import { formatDateTime } from "terriajs/lib/ReactViews/BottomDock/Timeline/Date
 import createReactClass from "create-react-class";
 import Description from "terriajs/lib/ReactViews/Preview/Description";
 import DOMPurify from "dompurify/dist/purify";
-import FeatureInfoPanel from "terriajs/lib/ReactViews/FeatureInfo/FeatureInfoPanel";
+import FeatureInfoPanel from "../../../FeatureInfo/FeatureInfoPanel";
 import Legend from "terriajs/lib/ReactViews/Workbench/Controls/Legend";
 import PropTypes from "prop-types";
 import React from "react";

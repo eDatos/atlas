@@ -6,7 +6,7 @@ import Branding from "terriajs/lib/ReactViews/SidePanel/Branding.jsx";
 import DragDropFile from "terriajs/lib/ReactViews/DragDropFile.jsx";
 import DragDropNotification from "terriajs/lib/ReactViews/DragDropNotification.jsx";
 import ExplorerWindow from "terriajs/lib/ReactViews/ExplorerWindow/ExplorerWindow.jsx";
-import FeatureInfoPanel from "terriajs/lib/ReactViews/FeatureInfo/FeatureInfoPanel.jsx";
+import FeatureInfoPanel from "../FeatureInfo/FeatureInfoPanel.jsx";
 import FeedbackForm from "terriajs/lib/ReactViews/Feedback/FeedbackForm.jsx";
 import MapColumn from "terriajs/lib/ReactViews/StandardUserInterface/MapColumn.jsx";
 import MapInteractionWindow from "terriajs/lib/ReactViews/Notification/MapInteractionWindow.jsx";
