@@ -30,6 +30,46 @@
                             "isOpen": false,
                             "items": [
                                 {
+                                    "name": "Indicadores Municipales después del 2007",
+                                    "type": "csv",
+                                    "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_antes_2007.csv",
+                                    "description": "Indicadores Municipales después del 2007",
+                                    "opacity": ".8",
+                                    "maxRefreshIntervals": 100,
+                                    "initialTimeSource": "start",
+                                    "isSampled": true,
+                                    "tableStyle": {
+                                        "dataVariable": "poblacion",
+                                        "regionVariable": "GEOCODE_MUNICIPIOS_DESPUES_2007",
+                                        "regionType": "MUNICIPIOS_DESPUES_2007",
+                                        "colorBins": 9,
+                                        "colorPalette": "9-class YlOrRd",
+                                        "columns": {
+                                            "Población. Edad media": {
+                                                "colorBins": 7,
+                                                "colorMap": [
+                                                    { "color": "rgba(55, 106, 38, 1.0)",     "offset": 0 },
+                                                    { "color": "rgba(103, 162, 63, 1.0)",    "offset": 0.1666 },
+                                                    { "color": "rgba(154, 196, 125, 1.0)",   "offset": 0.3333 },
+                                                    { "color": "rgba(206, 214, 221, 1.0)",   "offset": 0.5 },
+                                                    { "color": "rgba(188, 153, 103, 1.0)",   "offset": 0.6666 },
+                                                    { "color": "rgba(140, 92, 29, 1.0)",     "offset": 0.8333 },
+                                                    { "color": "rgba(104, 68, 21, 1.0)",     "offset": 1 }
+                                                ]
+                                            },
+                                            "GEOCODE_MUNICIPIOS_DESPUES_2007": {
+                                                "type": "hidden"
+                                            },
+                                            "superficie": {
+                                                "type": "hidden"
+                                            }
+                                        }
+                                    },
+                                    "featureInfoTemplate" : {
+                                        "template": "<h1>{{terria.timeSeries.yName}}</h1><br>{{terria.timeSeries.chart}}"
+                                    }
+                                },
+                                {
                                     "name": "Indicadores Municipales antes del 2007",
                                     "type": "csv",
                                     "url": "https://estadisticas.arte-consultores.com/catalogo/dataset/e3f84f45-0084-4c73-a93c-a555090f7ad1/resource/9c89908a-02bb-4b8b-b028-eed4d9e18f7b/download/pmh_sd_2000_20aa_indicadores_municipalities_antes_2007.csv",
@@ -46,56 +86,18 @@
                                         "colorPalette": "9-class YlOrRd",
                                         "columns": {
                                             "Población. Edad media": {
+                                                "colorBins": 7,
                                                 "colorMap": [
                                                     { "color": "rgba(55, 106, 38, 1.0)",    "offset": 0 },
                                                     { "color": "rgba(103, 162, 63, 1.0)",   "offset": 0.1666 },
                                                     { "color": "rgba(154, 196, 125, 1.0)",  "offset": 0.3333 },
                                                     { "color": "rgba(206, 214, 221, 1.0)",  "offset": 0.5 },
                                                     { "color": "rgba(188, 153, 103, 1.0)",  "offset": 0.6666 },
-                                                    { "color": "rgba(140, 92, 29, 1.0)",     "offset": 0.8333 },
+                                                    { "color": "rgba(140, 92, 29, 1.0)",    "offset": 0.8333 },
                                                     { "color": "rgba(104, 68, 21, 1.0)",    "offset": 1 }
                                                 ]
                                             },
                                             "GEOCODE_MUNICIPIOS_ANTES_2007": {
-                                                "type": "hidden"
-                                            },
-                                            "superficie": {
-                                                "type": "hidden"
-                                            }
-                                        }
-                                    },
-                                    "featureInfoTemplate" : {
-                                        "template": "<h1>{{terria.timeSeries.yName}}</h1><br>{{terria.timeSeries.chart}}"
-                                    }
-                                },
-                                {
-                                    "name": "Indicadores Municipales después del 2007",
-                                    "type": "csv",
-                                    "url": "https://estadisticas.arte-consultores.com/catalogo/dataset/e3f84f45-0084-4c73-a93c-a555090f7ad1/resource/f025b4ce-369d-40a4-bfe8-e9a933a5a18b/download/pmh_sd_2000_20aa_indicadores_municipalities_despues_2007.csv",
-                                    "description": "Indicadores Municipales después del 2007",
-                                    "opacity": ".8",
-                                    "maxRefreshIntervals": 100,
-                                    "initialTimeSource": "start",
-                                    "isSampled": true,
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE_MUNICIPIOS_DESPUES_2007",
-                                        "regionType": "MUNICIPIOS_DESPUES_2007",
-                                        "colorBins": 9,
-                                        "colorPalette": "9-class YlOrRd",
-                                        "columns": {
-                                            "Población. Edad media": {
-                                                "colorMap": [
-                                                    { "color": "rgba(55, 106, 38, 1.0)", "offset": 0 },
-                                                    { "color": "rgba(103, 162, 63, 1.0)", "offset": 0.1666 },
-                                                    {"color": "rgba(154, 196, 125, 1.0)", "offset": 0.3333 },
-                                                    {"color": "rgba(206, 214, 221, 1.0)", "offset": 0.5 },
-                                                    {"color": "rgba(188, 153, 103, 1.0)", "offset": 0.6666 },
-                                                    {"color": "rgba(140, 92, 29, 1.0)", "offset": 0.8333 },
-                                                    {"color": "rgba(104, 68, 21, 1.0)", "offset": 1 }
-                                                ]
-                                            },
-                                            "GEOCODE_MUNICIPIOS_DESPUES_2007": {
                                                 "type": "hidden"
                                             },
                                             "superficie": {
@@ -117,10 +119,10 @@
                             "isOpen": false,
                             "items": [
                                 {
-                                    "name": "Indicadores a 1 de enero de 2020",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2020",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20200101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2020",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -131,10 +133,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2019",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2019",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20190101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2019",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -145,10 +147,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2018",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2018",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20180101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2018",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -159,10 +161,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2017",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2017",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20170101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2017",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -173,10 +175,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2016",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2016",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20160101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2016",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -187,10 +189,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2015",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2015",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20150101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2015",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -201,10 +203,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2014",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2014",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20140101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2014",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -215,10 +217,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2013",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2013",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20130101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2013",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -229,10 +231,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2012",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2012",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20120101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2012",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -243,10 +245,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2011",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2011",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20110101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2011",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -257,10 +259,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2010",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2010",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20100101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2010",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -271,10 +273,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2009",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2009",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20090101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2009",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -285,10 +287,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2008",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2008",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20080101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2008",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -299,10 +301,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2007",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2007",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20070101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2007",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -313,10 +315,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2006",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2006",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20060101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2006",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -327,10 +329,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2005",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2005",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20050101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2005",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2005",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -341,10 +343,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de 2004",
+                                    "name": "Indicadores Demográficos. Secciones Censales. 2004",
                                     "type": "csv",
                                     "url": "data/csv/secciones-censales/20040101_indicadores_demograficos_pmh_distysecc.csv",
-                                    "description": "Indicadores a 1 de enero de 2004",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2004",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -378,10 +380,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2020",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2020",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20200101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2020",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2020",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -392,10 +394,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2019",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2019",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20190101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2019",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2019",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -406,10 +408,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2018",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2018",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20180101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2018",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2018",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -420,10 +422,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2017",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2017",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20170101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2017",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2017",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -434,10 +436,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2016",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2016",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20160101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2016",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2016",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -448,10 +450,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2015",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2015",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20150101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2015",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2015",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -462,10 +464,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2014",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2014",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20140101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2014",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2014",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -476,10 +478,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2013",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2013",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20130101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2013",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2013",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -490,10 +492,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2012",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2012",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20120101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2012",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2012",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -504,10 +506,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2011",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2011",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20110101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2011",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2011",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
@@ -518,10 +520,10 @@
                                     }
                                 },
                                 {
-                                    "name": "Indicadores a 1 de enero de los años 2010",
+                                    "name": "Indicadores Demográficos. Malla  de 250m. 2010",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20100101_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores a 1 de enero de 2010",
+                                    "description": "Índicadores Demográficos registrados a 1 de Enero de 2010",
                                     "opacity": ".8",
                                     "tableStyle": {
                                         "dataVariable": "poblacion",
