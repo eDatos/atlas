@@ -21,14 +21,15 @@
                     "type": "group",
                     "preserveOrder": true,
                     "isOpen": false,
-                    "items": [  
+                    "items": [
                         {
                             "layers": "mapastematicos:islas_20170101",
                             "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                             "type": "wms",
                             "name": "Islas",
                             "format": "image/png",
-                            "isLegendVisible": true
+                            "isLegendVisible": true,
+                            "styles": "line"
                         },
                         {
                             "name": "Comarcas estadísticas",
@@ -43,7 +44,8 @@
                                     "type": "wms",
                                     "name": "Grandes comarcas estadísticas",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:comarcas_20170101",
@@ -51,7 +53,8 @@
                                     "type": "wms",
                                     "name": "Comarcas estadísticas",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 }
                             ]
                         },
@@ -68,7 +71,8 @@
                                     "type": "wms",
                                     "name": "Municipios",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:municipios_20170101_antes2007",
@@ -76,7 +80,8 @@
                                     "type": "wms",
                                     "name": "Municipios (hasta 2007)",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 }
                             ]
                         },
@@ -93,7 +98,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2020",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20190101_generalizada",
@@ -101,7 +107,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2019",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20180101_generalizada",
@@ -109,7 +116,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2018",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20170101_generalizada",
@@ -117,7 +125,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2017",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20160101_generalizada",
@@ -125,7 +134,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2016",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20150101_generalizada",
@@ -133,7 +143,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2015",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20140101_generalizada",
@@ -141,7 +152,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2014",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20130101_generalizada",
@@ -149,7 +161,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2013",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20120101_generalizada",
@@ -157,7 +170,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2012",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20110101_generalizada",
@@ -165,7 +179,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2011",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20100101_generalizada",
@@ -173,7 +188,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2010",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20090101_generalizada",
@@ -181,7 +197,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2009",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20080101_generalizada",
@@ -189,7 +206,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2008",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20070101_generalizada",
@@ -197,7 +215,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2007",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20060101_generalizada",
@@ -205,7 +224,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2006",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20050101_generalizada",
@@ -213,7 +233,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2005",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:distritos_20040101_generalizada",
@@ -221,7 +242,8 @@
                                     "type": "wms",
                                     "name": "Distritos a 1 de Enero de 2004",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 }
                             ]
                         },
@@ -238,7 +260,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2020",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20190101_generalizada",
@@ -246,7 +269,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2019",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20180101_generalizada",
@@ -254,7 +278,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2018",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20170101_generalizada",
@@ -262,7 +287,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2017",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20160101_generalizada",
@@ -270,7 +296,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2016",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20150101_generalizada",
@@ -278,7 +305,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2015",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20140101_generalizada",
@@ -286,7 +314,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2014",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20130101_generalizada",
@@ -294,7 +323,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2013",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20120101_generalizada",
@@ -302,7 +332,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2012",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20110101_generalizada",
@@ -310,7 +341,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2011",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20100101_generalizada",
@@ -318,7 +350,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2010",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20090101_generalizada",
@@ -326,7 +359,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2009",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20080101_generalizada",
@@ -334,7 +368,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2008",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20070101_generalizada",
@@ -342,7 +377,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2007",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20060101_generalizada",
@@ -350,7 +386,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2006",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20050101_generalizada",
@@ -358,7 +395,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2005",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:secciones_20040101_generalizada",
@@ -366,7 +404,8 @@
                                     "type": "wms",
                                     "name": "Secciones a 1 de Enero de 2004",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 }
                             ]
                         },
@@ -383,7 +422,8 @@
                                     "type": "wms",
                                     "name": "Entidades turísticas",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:nucleos_turisticos_2014",
@@ -391,7 +431,8 @@
                                     "type": "wms",
                                     "name": "Núcleos turísticos",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 }
                             ]
                         },
@@ -403,12 +444,13 @@
                             "isOpen": false,
                             "items": [
                                 {
-                                    "layers": "mapastematicos:GRID_CAN_250M",
+                                    "layers": "mapastematicos:grid_1000_2011",
                                     "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
-                                    "name": "Malla de 250 metros",
+                                    "name": "Malla de 1 kilómetro",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
                                     "layers": "mapastematicos:grid_500_2011",
@@ -416,15 +458,17 @@
                                     "type": "wms",
                                     "name": "Malla de 500 metros",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 },
                                 {
-                                    "layers": "mapastematicos:grid_1000_2011",
+                                    "layers": "mapastematicos:GRID_CAN_250M",
                                     "url": "https://estadisticas.arte-consultores.com/geoserver/mapastematicos/wms",
                                     "type": "wms",
-                                    "name": "Malla de 1 kilómetro",
+                                    "name": "Malla de 250 metros",
                                     "format": "image/png",
-                                    "isLegendVisible": true
+                                    "isLegendVisible": true,
+                                    "styles": "line"
                                 }
                             ]
                         }
