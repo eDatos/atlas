@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import HelpMenuPanelBasic from "terriajs/lib/ReactViews/HelpScreens/HelpMenuPanelBasic.jsx";
 
-import SettingPanel from "./Panels/CustomSettingPanel.jsx";
-import SharePanel from "./Panels/SharePanel/SharePanel.jsx";
+import SettingPanel from "terriajs/lib/ReactViews/Map/Panels/SettingPanel";
+import SharePanel from "terriajs/lib/ReactViews/Map/Panels/SharePanel/SharePanel";
 import ToolsPanel from "terriajs/lib/ReactViews/Map/Panels/ToolsPanel/ToolsPanel.jsx";
 import Icon from "terriajs/lib/ReactViews/Icon.jsx";
 import ObserveModelMixin from "terriajs/lib/ReactViews/ObserveModelMixin";
