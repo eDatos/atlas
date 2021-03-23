@@ -44,6 +44,23 @@
 						</goals>
 					</execution>
 					<execution>
+						<!--
+							Esto hace falta debido a un error en la instalación mediante npm
+							de la versión de TerriaJS alojada en Github.
+							El error consiste en que, al hacer npm install, también se descarga
+							cesium dentro del directorio de terriajs.
+							En concreto se ha de borrar ./node_modules/terriajs/node_modules
+						-->
+						<id>npm delete double cesium</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+						<configuration>
+							<executable>npm</executable>
+							<arguments>run remove-double-cesium</arguments>
+						</configuration>
+					</execution>
+					<execution>
 						<id>npm run gulp</id>
 						<goals>
 							<goal>npm</goal>
