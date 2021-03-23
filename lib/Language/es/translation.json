@@ -302,8 +302,8 @@
     "name": "Descripción",
     "dataLocal": "Este archivo solo existe en su navegador. Para compartirlo, debe cargarlo en un servidor web público.",
     "dataNotLocal": "Este archivo solo existe en su navegador. Para compartirlo, debe cargarlo en un servidor web público.",
-    "wms": "Este es un servicio <0> WMS </0>, que genera imágenes de mapas a pedido. Se puede utilizar en software SIG con esta URL:",
-    "wfs": "Este es un servicio <0> WFS </0>, que transfiere datos espaciales sin procesar a pedido. Se puede utilizar en software SIG con esta URL:",
+    "wms": "Este es un servicio WMS, que genera imágenes de mapas a pedido. Se puede utilizar en software SIG con esta URL:",
+    "wfs": "Este es un servicio WFS, que transfiere datos espaciales sin procesar a pedido. Se puede utilizar en software SIG con esta URL:",
     "layerName": "Nombre de la capa",
     "typeName": "Escribe un nombre",
     "metadataUrl": "URL de metadatos",
@@ -357,7 +357,8 @@
       "togglePlay": "Reproducir",
       "playSlower": "Retroceder",
       "playFaster": "Avanzar rápido"
-    }
+    },
+    "time": "Fecha"
   },
   "satellite": {
     "pickPoint": "Seleccione un punto haciendo clic en el mapa.",

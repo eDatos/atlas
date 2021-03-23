@@ -70,6 +70,11 @@ module.exports = function(devMode, hot) {
                     loader: "file-loader",
                 },
                 {
+                    test: /\.(eot|woff|woff2|svg|ttf)([\?]?.*)$/,
+                    include: [path.resolve(__dirname, '..', 'node_modules', 'terriajs', 'lib', 'fonts')],
+                    loader: "file-loader",
+                },
+                {
                     test: /\.scss$/,
                     include: [path.resolve(__dirname, '..', 'lib')],
                     loader: hot ? [
