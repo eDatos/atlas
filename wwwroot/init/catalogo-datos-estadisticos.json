@@ -366,20 +366,6 @@
                             "isOpen": false,
                             "items": [
                                 {
-                                    "name": "Indicadores desde 1 de enero del año 2010 a 1 de enero del año 2020",
-                                    "type": "csv",
-                                    "url": "data/csv/mallas/2010-2020_indicadores_demograficos_pmh.csv",
-                                    "description": "Indicadores desde 1 de enero del año 2010 a 1 de enero del año 2020",
-                                    "opacity": ".8",
-                                    "tableStyle": {
-                                        "dataVariable": "poblacion",
-                                        "regionVariable": "GEOCODE",
-                                        "regionType": "MALLAS-2010",
-                                        "colorBins": 9,
-                                        "colorPalette": "9-class YlOrRd"
-                                    }
-                                },
-                                {
                                     "name": "Indicadores Demográficos. Malla  de 250m. 2020",
                                     "type": "csv",
                                     "url": "data/csv/mallas/20200101_indicadores_demograficos_pmh.csv",
