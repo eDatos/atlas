@@ -707,7 +707,7 @@
       "unexpectedTypeTitle": "Tipo inesperado de datos CSV",
       "unexpectedTypeMessage": "Se espera que los datos de CsvCatalogItem sean Blob, File o String, pero no fueron ninguno de estos. Esto puede indicar un error en terriajs o un uso incorrecto de la API de terriajs. Si cree que es un error en {{appName}}, infórmelo por correo electrónico",
       "unableToLoadTitle": "No se puede cargar el archivo CSV",
-      "unableToLoadMessage": "Consulte la <a href=\"https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au\"> csv-geo-au </a> para conocer los formatos CSV admitidos. \n \n { {mensaje}}",
+      "unableToLoadMessage": "Consulte la <a href=\"https://github.com/TerriaJS/nationalmap/wiki/csv-geo-au\"> csv-geo-au </a> para conocer los formatos CSV admitidos. \n \n {{message}}",
       "unableToLoadItemTitle": "No se puede cargar el elemento del catálogo CSV",
       "unableToLoadItemMessage": "CSV no tenía datos o URL desde donde cargar."
     },
