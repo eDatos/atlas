@@ -61,7 +61,7 @@
     "semver": "^5.0.0",
     "style-loader": "^0.23.1",
     "svg-sprite-loader": "4.1.3",
-    "terriajs": "github:josecarlosrodriguezcortes/terriajs",
+    "terriajs": "github:eDatos/terriajs",
     "terriajs-catalog-editor": "^0.2.0",
     "terriajs-cesium": "1.73.1",
     "terriajs-schema": "latest",
@@ -88,7 +88,9 @@
     "get-deploy-overrides": "aws s3 --profile $npm_package_config_awsProfile cp $npm_package_config_awsS3ServerConfigOverridePath ./privateserverconfig.json && aws s3 --profile $npm_package_config_awsProfile cp $npm_package_config_awsS3ClientConfigOverridePath ./wwwroot/privateconfig.json",
     "prettier": "prettier --write \"**/*\"",
     "pretty-quick": "pretty-quick",
-    "prettier-check": "prettier --check \"**/*\""
+    "prettier-check": "prettier --check \"**/*\"",
+    "logs": "pm2 logs --err --lines 50",
+    "log": "pm2 logs --err --lines 50"
   },
   "husky": {
     "hooks": {
