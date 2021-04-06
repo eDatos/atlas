@@ -27,7 +27,7 @@
                 {
                   "name": "Indicadores demográficos. Municipios después de 2007",
                   "type": "csv",
-                  "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_antes_2007.csv",
+                  "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_despues_2007.csv",
                   "description": "Indicadores demográficos. Municipios después de 2007",
                   "opacity": ".8",
                   "maxRefreshIntervals": 100,
@@ -59,7 +59,7 @@
                 {
                   "name": "Indicadores demográficos. Municipios antes de 2007",
                   "type": "csv",
-                  "url": "https://datos.canarias.es/catalogos/estadisticas/dataset/03f5044c-6d40-4c09-84db-eaf9d6681b48/resource/289d3a47-a804-4404-9bf6-4dfa597295c2/download/municipios_20170101_antes2007.csv",
+                  "url": "data/csv/municipios/PMH_SD_2000_20AA_Indicadores_MUNICIPALITIES_antes_2007.csv",
                   "description": "Indicadores demográficos. Municipios antes de 2007",
                   "opacity": ".8",
                   "maxRefreshIntervals": 100,
