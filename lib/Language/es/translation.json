@@ -59,7 +59,7 @@
     "zone": "ZONA",
     "e": "E",
     "n": "N",
-    "elev": "Elevado"
+    "elev": "Altitud"
   },
   "share": {
     "browserPrint": "Para obtener mejores resultados impresos, utilice {{appName}}'s Botón Imprimir en lugar de la función de impresión de su navegador web.",
@@ -842,10 +842,10 @@
       "safari": "Apple Safari",
       "unsupportedFileTzpe": "Tipo de archivo no soportado",
       "loadError": "El tamaño del archivo es mayor que el límite de {{maxConversionSizeMB}} MB del servicio de conversión {{appName}}",
-      "invalidFile": "Esto puede indicar que el archivo no es válido o que el servicio de conversión {{appName}} no lo admite.",
+      "invalidFile": " Esto puede indicar que el archivo no es válido o que el servicio de conversión {{appName}} no lo admite.",
       "errorConvertingToGeoJsonTitle": "Error al convertir el archivo a GeoJson",
       "errorConvertingToGeoJsonMessage": "Se produjo un error al intentar convertir este archivo a GeoJson.",
-      "emailUs": "Si desea asistencia o más información, envíenos un correo electrónico a {{email}}"
+      "emailUs": " Si desea asistencia o más información, envíenos un correo electrónico a {{email}}"
     },
     "openStreetMap": {
       "name": "Abrir callejero"
