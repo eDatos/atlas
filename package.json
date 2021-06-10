@@ -96,10 +96,5 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
-  },
-  "comments": {
-    "devDependencies": {
-      "terriajs": "Se utilizará provisionalmente este repositorio hasta que esté creado el repositorio con el fork oficial de Arte."
-    }
   }
 }
