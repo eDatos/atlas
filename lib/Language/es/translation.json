@@ -59,7 +59,7 @@
     "zone": "ZONA",
     "e": "E",
     "n": "N",
-    "elev": "Elevado"
+    "elev": "Altitud"
   },
   "share": {
     "browserPrint": "Para obtener mejores resultados impresos, utilice {{appName}}'s Botón Imprimir en lugar de la función de impresión de su navegador web.",
@@ -401,7 +401,7 @@
   "loader": {
     "loadingMessage": "Cargando"
   },
-  "emptyWorkbenchMessage": "<0> <0> Su banco de trabajo está vacío </0> <1> <strong> Haga clic en '$t(addData.addDataBtnText)' arriba para </strong></1><2> <0> Examinar el catálogo de datos </0> <1> Cargue sus propios datos en el mapa </1> </2> <3> <0> </0> <strong> CONSEJO. </strong> <2> Todos sus conjuntos de datos activos estar listado aquí </2> </3> </0>",
+  "emptyWorkbenchMessage": "<0> <0> Su banco de trabajo está vacío </0> <1> <strong> Haga clic en '$t(addData.addDataBtnText)' arriba para </strong></1><2> <0> Examinar el catálogo de datos </0> <1> Cargue sus propios datos en el mapa </1> </2> <3> <0> </0> <strong> CONSEJO. </strong> <2> Todos sus conjuntos de datos activos serán visibles aquí </2> </3> </0>",
   "dataCatalog": {
     "groupRemove": "eliminar este grupo",
     "groupEmpty": "Este grupo esta vacio"
@@ -842,10 +842,10 @@
       "safari": "Apple Safari",
       "unsupportedFileTzpe": "Tipo de archivo no soportado",
       "loadError": "El tamaño del archivo es mayor que el límite de {{maxConversionSizeMB}} MB del servicio de conversión {{appName}}",
-      "invalidFile": "Esto puede indicar que el archivo no es válido o que el servicio de conversión {{appName}} no lo admite.",
+      "invalidFile": " Esto puede indicar que el archivo no es válido o que el servicio de conversión {{appName}} no lo admite.",
       "errorConvertingToGeoJsonTitle": "Error al convertir el archivo a GeoJson",
       "errorConvertingToGeoJsonMessage": "Se produjo un error al intentar convertir este archivo a GeoJson.",
-      "emailUs": "Si desea asistencia o más información, envíenos un correo electrónico a {{email}}"
+      "emailUs": " Si desea asistencia o más información, envíenos un correo electrónico a {{email}}"
     },
     "openStreetMap": {
       "name": "Abrir callejero"
