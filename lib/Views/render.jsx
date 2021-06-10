@@ -5,10 +5,10 @@ import React from "react";
 export default function renderUi(terria, allBaseMaps, viewState) {
   let render = () => {
     const DropdownLanguage = require("./DropdownLanguage").default;
-    ReactDOM.render(
-      <DropdownLanguage />,
-      document.getElementById("dropdown-language-container")
-    );
+    var dropdownContainer = document.getElementById("dropdown-language-container");
+    if (dropdownContainer) {
+      ReactDOM.render(<DropdownLanguage />, dropdownContainer);
+    }
 
     const UI = require("./UserInterface").default;
     ReactDOM.render(

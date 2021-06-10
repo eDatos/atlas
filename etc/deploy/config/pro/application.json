@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "endpoint": "https://www3.gobiernodecanarias.org/istac/api/cmetadata/v1.0",
+        "endpoint": "https://datos.canarias.es/api/estadisticas/cmetadata/v1.0",
         "navbarPathKey": "metamac.app.style.header.url",
         "footerPathKey": "metamac.app.style.footer.url"
     },

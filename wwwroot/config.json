@@ -1,6 +1,6 @@
 {
     "initializationUrls": [
-        "catalogo-datos-estadisticos"
+        "catalogo-datos-estadisticos", "referencias-cartograficas"
     ],
     "parameters": {
         "proxyableDomainsUrl": "",
@@ -12,7 +12,7 @@
             "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
             "url": ""
         },
-        "appName": "Atlas Estadísticos de Canarias",
+        "appName": "Atlas Estadístico de Canarias",
         "supportEmail": "consultas.istac@gobiernodecanarias.org",
         "brandBarElements": [
             "",
